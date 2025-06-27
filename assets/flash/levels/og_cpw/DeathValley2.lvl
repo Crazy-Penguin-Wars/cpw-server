@@ -1,0 +1,2728 @@
+{
+    "zoom_side": "height",
+    "height": 800,
+    "elements": [
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_33",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 122,
+                    "x": 749
+                },
+                {
+                    "y": 100,
+                    "x": 776
+                },
+                {
+                    "y": 99,
+                    "x": 802
+                },
+                {
+                    "y": 123,
+                    "x": 799
+                },
+                {
+                    "y": 133,
+                    "x": 760
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_32",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 125,
+                    "x": 734
+                },
+                {
+                    "y": 88,
+                    "x": 714
+                },
+                {
+                    "y": 80,
+                    "x": 698
+                },
+                {
+                    "y": 71,
+                    "x": 689
+                },
+                {
+                    "y": 75,
+                    "x": 670
+                },
+                {
+                    "y": 83,
+                    "x": 670
+                },
+                {
+                    "y": 89,
+                    "x": 651
+                },
+                {
+                    "y": 98,
+                    "x": 642
+                },
+                {
+                    "y": 126,
+                    "x": 637
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_34",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 144,
+                    "x": 538
+                },
+                {
+                    "y": 136,
+                    "x": 522
+                },
+                {
+                    "y": 136,
+                    "x": 502
+                },
+                {
+                    "y": 156,
+                    "x": 487
+                },
+                {
+                    "y": 189,
+                    "x": 479
+                },
+                {
+                    "y": 204,
+                    "x": 501
+                },
+                {
+                    "y": 209,
+                    "x": 540
+                },
+                {
+                    "y": 194,
+                    "x": 579
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 36,
+            "id": "terrain_29",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 434.2,
+                    "x": 381.9500000000001
+                },
+                {
+                    "y": 406,
+                    "x": 386
+                },
+                {
+                    "y": 390.15,
+                    "x": 409.2000000000001
+                },
+                {
+                    "y": 384.15,
+                    "x": 445.7000000000001
+                },
+                {
+                    "y": 403.15,
+                    "x": 476.7000000000001
+                },
+                {
+                    "y": 420.65,
+                    "x": 485.7000000000001
+                },
+                {
+                    "y": 435.2,
+                    "x": 442.4500000000001
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_28",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 324,
+                    "x": 608
+                },
+                {
+                    "y": 301.5,
+                    "x": 632.6
+                },
+                {
+                    "y": 295,
+                    "x": 657.625
+                },
+                {
+                    "y": 305,
+                    "x": 682.6
+                },
+                {
+                    "y": 320,
+                    "x": 688.625
+                },
+                {
+                    "y": 331.5,
+                    "x": 691.625
+                },
+                {
+                    "y": 352.05,
+                    "x": 688.875
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_13",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 621.5,
+                    "x": 1061.5
+                },
+                {
+                    "y": 605,
+                    "x": 1026.5
+                },
+                {
+                    "y": 570.5,
+                    "x": 1012.5
+                },
+                {
+                    "y": 534.5,
+                    "x": 987
+                },
+                {
+                    "y": 506,
+                    "x": 956
+                },
+                {
+                    "y": 474.5,
+                    "x": 955
+                },
+                {
+                    "y": 465,
+                    "x": 966
+                },
+                {
+                    "y": 465,
+                    "x": 986.5
+                },
+                {
+                    "y": 480.375,
+                    "x": 1010.5
+                },
+                {
+                    "y": 488.5,
+                    "x": 1042.5
+                },
+                {
+                    "y": 520.5,
+                    "x": 1070.5
+                },
+                {
+                    "y": 591,
+                    "x": 1088.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_18",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 456,
+                    "x": 364
+                },
+                {
+                    "y": 447,
+                    "x": 378
+                },
+                {
+                    "y": 417,
+                    "x": 368
+                },
+                {
+                    "y": 418,
+                    "x": 382
+                },
+                {
+                    "y": 431,
+                    "x": 399
+                },
+                {
+                    "y": 418,
+                    "x": 442
+                },
+                {
+                    "y": 394.85,
+                    "x": 486.2999999999999
+                },
+                {
+                    "y": 403,
+                    "x": 522
+                },
+                {
+                    "y": 408.5,
+                    "x": 544.5
+                },
+                {
+                    "y": 437.5,
+                    "x": 547.5
+                },
+                {
+                    "y": 460,
+                    "x": 532
+                },
+                {
+                    "y": 478,
+                    "x": 498
+                },
+                {
+                    "y": 481,
+                    "x": 473
+                },
+                {
+                    "y": 474,
+                    "x": 439
+                },
+                {
+                    "y": 486,
+                    "x": 406
+                },
+                {
+                    "y": 475,
+                    "x": 371
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_20",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 323,
+                    "x": 596
+                },
+                {
+                    "y": 322,
+                    "x": 625
+                },
+                {
+                    "y": 322,
+                    "x": 687
+                },
+                {
+                    "y": 318,
+                    "x": 716
+                },
+                {
+                    "y": 339,
+                    "x": 732.525
+                },
+                {
+                    "y": 366,
+                    "x": 723
+                },
+                {
+                    "y": 368,
+                    "x": 698
+                },
+                {
+                    "y": 376,
+                    "x": 674.525
+                },
+                {
+                    "y": 378,
+                    "x": 654
+                },
+                {
+                    "y": 377,
+                    "x": 624.025
+                },
+                {
+                    "y": 367,
+                    "x": 601
+                },
+                {
+                    "y": 360,
+                    "x": 578
+                },
+                {
+                    "y": 342,
+                    "x": 569
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_11",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 746,
+                    "x": 451.5
+                },
+                {
+                    "y": 748.5,
+                    "x": 477.5
+                },
+                {
+                    "y": 738.5,
+                    "x": 490.5
+                },
+                {
+                    "y": 734,
+                    "x": 501
+                },
+                {
+                    "y": 730,
+                    "x": 510.5
+                },
+                {
+                    "y": 739,
+                    "x": 518
+                },
+                {
+                    "y": 747.5,
+                    "x": 521.5
+                },
+                {
+                    "y": 758,
+                    "x": 509
+                },
+                {
+                    "y": 773.5,
+                    "x": 502.5
+                },
+                {
+                    "y": 786,
+                    "x": 497.5
+                },
+                {
+                    "y": 796.5,
+                    "x": 478
+                },
+                {
+                    "y": 809,
+                    "x": 469.5
+                },
+                {
+                    "y": 825.5,
+                    "x": 451
+                },
+                {
+                    "y": 788,
+                    "x": 421
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 18,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_15",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 604.5,
+                    "x": 974
+                },
+                {
+                    "y": 617,
+                    "x": 994.5
+                },
+                {
+                    "y": 635,
+                    "x": 1011.5
+                },
+                {
+                    "y": 696.5,
+                    "x": 964
+                },
+                {
+                    "y": 690,
+                    "x": 910.5
+                },
+                {
+                    "y": 672,
+                    "x": 916
+                },
+                {
+                    "y": 663,
+                    "x": 925
+                },
+                {
+                    "y": 656.5,
+                    "x": 940.5
+                },
+                {
+                    "y": 634.5,
+                    "x": 951
+                },
+                {
+                    "y": 615,
+                    "x": 961.5
+                },
+                {
+                    "y": 611.5,
+                    "x": 969
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_14",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 626.5,
+                    "x": 1023
+                },
+                {
+                    "y": 619,
+                    "x": 1006
+                },
+                {
+                    "y": 625,
+                    "x": 981
+                },
+                {
+                    "y": 633,
+                    "x": 962
+                },
+                {
+                    "y": 651,
+                    "x": 956
+                },
+                {
+                    "y": 672,
+                    "x": 953
+                },
+                {
+                    "y": 699.5,
+                    "x": 962
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 58,
+            "id": "terrain_19",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 576.5,
+                    "x": 1051.5
+                },
+                {
+                    "y": 581,
+                    "x": 1018
+                },
+                {
+                    "y": 604,
+                    "x": 1003.5
+                },
+                {
+                    "y": 635,
+                    "x": 997.5
+                },
+                {
+                    "y": 655,
+                    "x": 1002.5
+                },
+                {
+                    "y": 620,
+                    "x": 1088.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 38,
+            "id": "terrain_16",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 672.5,
+                    "x": 968.5
+                },
+                {
+                    "y": 662,
+                    "x": 936
+                },
+                {
+                    "y": 665,
+                    "x": 910.5
+                },
+                {
+                    "y": 683.5,
+                    "x": 885
+                },
+                {
+                    "y": 708.5,
+                    "x": 952
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_12",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 737,
+                    "x": 708.5
+                },
+                {
+                    "y": 733.5,
+                    "x": 694.5
+                },
+                {
+                    "y": 727,
+                    "x": 679
+                },
+                {
+                    "y": 730.5,
+                    "x": 666
+                },
+                {
+                    "y": 743.5,
+                    "x": 665
+                },
+                {
+                    "y": 760,
+                    "x": 657
+                },
+                {
+                    "y": 783.5,
+                    "x": 678.5
+                },
+                {
+                    "y": 798,
+                    "x": 715.5
+                },
+                {
+                    "y": 791.5,
+                    "x": 753
+                },
+                {
+                    "y": 747.5,
+                    "x": 776.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_17",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 682.5,
+                    "x": 845.5
+                },
+                {
+                    "y": 668,
+                    "x": 856
+                },
+                {
+                    "y": 657.5,
+                    "x": 888.5
+                },
+                {
+                    "y": 665.5,
+                    "x": 902
+                },
+                {
+                    "y": 690.5,
+                    "x": 919
+                },
+                {
+                    "y": 695,
+                    "x": 846
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_27",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": -82.0499999999999,
+                    "x": 1098.6000000000004
+                },
+                {
+                    "y": -87.0499999999999,
+                    "x": 1063.5000000000002
+                },
+                {
+                    "y": -64.0499999999999,
+                    "x": 1033.4500000000005
+                },
+                {
+                    "y": -18.049999999999898,
+                    "x": 1016.6500000000004
+                },
+                {
+                    "y": 34.500000000000114,
+                    "x": 1020.5000000000002
+                },
+                {
+                    "y": 58.9500000000001,
+                    "x": 1036.9500000000005
+                },
+                {
+                    "y": 79.9500000000001,
+                    "x": 1094.9500000000005
+                },
+                {
+                    "y": 50.9500000000001,
+                    "x": 1153.9500000000005
+                },
+                {
+                    "y": -9.049999999999898,
+                    "x": 1168.9500000000005
+                },
+                {
+                    "y": -57.0499999999999,
+                    "x": 1140.2500000000002
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_1",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 764,
+                    "x": 697
+                },
+                {
+                    "y": 735,
+                    "x": 689
+                },
+                {
+                    "y": 723.5,
+                    "x": 688
+                },
+                {
+                    "y": 700.5,
+                    "x": 670
+                },
+                {
+                    "y": 674.5,
+                    "x": 683
+                },
+                {
+                    "y": 667.5,
+                    "x": 712
+                },
+                {
+                    "y": 673,
+                    "x": 741
+                },
+                {
+                    "y": 684,
+                    "x": 813
+                },
+                {
+                    "y": 678,
+                    "x": 879
+                },
+                {
+                    "y": 684,
+                    "x": 953
+                },
+                {
+                    "y": 647,
+                    "x": 989
+                },
+                {
+                    "y": 600,
+                    "x": 1057
+                },
+                {
+                    "y": 582,
+                    "x": 1043
+                },
+                {
+                    "y": 556,
+                    "x": 1033
+                },
+                {
+                    "y": 552,
+                    "x": 1010
+                },
+                {
+                    "y": 556,
+                    "x": 985
+                },
+                {
+                    "y": 537,
+                    "x": 966
+                },
+                {
+                    "y": 516,
+                    "x": 977
+                },
+                {
+                    "y": 509,
+                    "x": 1077
+                },
+                {
+                    "y": 492,
+                    "x": 1094
+                },
+                {
+                    "y": 455,
+                    "x": 1090
+                },
+                {
+                    "y": 420,
+                    "x": 1081
+                },
+                {
+                    "y": 376,
+                    "x": 1088
+                },
+                {
+                    "y": 370,
+                    "x": 1112
+                },
+                {
+                    "y": 344,
+                    "x": 1132
+                },
+                {
+                    "y": 333,
+                    "x": 1149
+                },
+                {
+                    "y": 303,
+                    "x": 1139
+                },
+                {
+                    "y": 255,
+                    "x": 1135
+                },
+                {
+                    "y": 231,
+                    "x": 1115
+                },
+                {
+                    "y": 180,
+                    "x": 1111
+                },
+                {
+                    "y": 162,
+                    "x": 1091
+                },
+                {
+                    "y": 128,
+                    "x": 1089
+                },
+                {
+                    "y": 122,
+                    "x": 1060
+                },
+                {
+                    "y": 100,
+                    "x": 1038
+                },
+                {
+                    "y": 52,
+                    "x": 1017
+                },
+                {
+                    "y": 26,
+                    "x": 1027
+                },
+                {
+                    "y": 11,
+                    "x": 1049
+                },
+                {
+                    "y": -7,
+                    "x": 1091
+                },
+                {
+                    "y": -38,
+                    "x": 1101
+                },
+                {
+                    "y": -81,
+                    "x": 1118
+                },
+                {
+                    "y": -148,
+                    "x": 1107
+                },
+                {
+                    "y": -210,
+                    "x": 1080
+                },
+                {
+                    "y": -322,
+                    "x": 1053
+                },
+                {
+                    "y": -468,
+                    "x": 1033
+                },
+                {
+                    "y": -463,
+                    "x": 1638
+                },
+                {
+                    "y": 767,
+                    "x": 1641
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_4",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 648,
+                    "x": 166
+                },
+                {
+                    "y": 631,
+                    "x": 192.5
+                },
+                {
+                    "y": 629,
+                    "x": 211.5
+                },
+                {
+                    "y": 642,
+                    "x": 228
+                },
+                {
+                    "y": 643,
+                    "x": 244.5
+                },
+                {
+                    "y": 660.5,
+                    "x": 249
+                },
+                {
+                    "y": 675.5,
+                    "x": 251
+                },
+                {
+                    "y": 681,
+                    "x": 238
+                },
+                {
+                    "y": 678,
+                    "x": 220.5
+                },
+                {
+                    "y": 680,
+                    "x": 197.5
+                },
+                {
+                    "y": 667.5,
+                    "x": 171.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 51,
+            "id": "terrain_3",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 579.5,
+                    "x": 162.5
+                },
+                {
+                    "y": 589,
+                    "x": 176
+                },
+                {
+                    "y": 595,
+                    "x": 187.5
+                },
+                {
+                    "y": 611.5,
+                    "x": 190.5
+                },
+                {
+                    "y": 619.5,
+                    "x": 195
+                },
+                {
+                    "y": 632,
+                    "x": 201.5
+                },
+                {
+                    "y": 648.5,
+                    "x": 195
+                },
+                {
+                    "y": 627.5,
+                    "x": 141.5
+                },
+                {
+                    "y": 584.5,
+                    "x": 144
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 51,
+            "id": "terrain_6",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 667.8,
+                    "x": 266.15
+                },
+                {
+                    "y": 663.3,
+                    "x": 290.65
+                },
+                {
+                    "y": 670.8,
+                    "x": 310.15
+                },
+                {
+                    "y": 678.8,
+                    "x": 330.65
+                },
+                {
+                    "y": 692.3,
+                    "x": 336.65
+                },
+                {
+                    "y": 704.8,
+                    "x": 336.15
+                },
+                {
+                    "y": 704.8,
+                    "x": 264.15
+                },
+                {
+                    "y": 683.5,
+                    "x": 256.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_26",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 192.10000000000008,
+                    "x": 227.2500000000001
+                },
+                {
+                    "y": 200.4000000000001,
+                    "x": 267.45000000000016
+                },
+                {
+                    "y": 206.5000000000001,
+                    "x": 321.55000000000007
+                },
+                {
+                    "y": 191.4500000000001,
+                    "x": 369.5000000000001
+                },
+                {
+                    "y": 165.4500000000001,
+                    "x": 396.5000000000001
+                },
+                {
+                    "y": 124.4500000000001,
+                    "x": 382.5000000000001
+                },
+                {
+                    "y": 78.25000000000011,
+                    "x": 344.4000000000001
+                },
+                {
+                    "y": 29.250000000000114,
+                    "x": 269.4000000000001
+                },
+                {
+                    "y": 4.450000000000102,
+                    "x": 231.5000000000001
+                },
+                {
+                    "y": -14.549999999999898,
+                    "x": 175.5000000000001
+                },
+                {
+                    "y": -16.749999999999886,
+                    "x": 113.40000000000008
+                },
+                {
+                    "y": 19.250000000000114,
+                    "x": 90.40000000000008
+                },
+                {
+                    "y": 89.25000000000011,
+                    "x": 110.40000000000008
+                },
+                {
+                    "y": 132.80000000000013,
+                    "x": 133.95000000000016
+                },
+                {
+                    "y": 157.4500000000001,
+                    "x": 168.5000000000001
+                },
+                {
+                    "y": 177.7500000000001,
+                    "x": 194.80000000000007
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_10",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 438.5,
+                    "x": 117
+                },
+                {
+                    "y": 418,
+                    "x": 169
+                },
+                {
+                    "y": 411.5,
+                    "x": 207.5
+                },
+                {
+                    "y": 411.5,
+                    "x": 228.5
+                },
+                {
+                    "y": 418,
+                    "x": 239
+                },
+                {
+                    "y": 430.5,
+                    "x": 235.5
+                },
+                {
+                    "y": 436,
+                    "x": 219
+                },
+                {
+                    "y": 443.5,
+                    "x": 209
+                },
+                {
+                    "y": 453.5,
+                    "x": 177.5
+                },
+                {
+                    "y": 470.5,
+                    "x": 159
+                },
+                {
+                    "y": 490.5,
+                    "x": 122.5
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 33,
+            "id": "terrain_25",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 75.9500000000001,
+                    "x": 172.95000000000005
+                },
+                {
+                    "y": 33.15000000000009,
+                    "x": 303.05000000000007
+                },
+                {
+                    "y": 32.15000000000009,
+                    "x": 326.05000000000007
+                },
+                {
+                    "y": 41.15000000000009,
+                    "x": 376.05000000000007
+                },
+                {
+                    "y": 65.15000000000009,
+                    "x": 419.05000000000007
+                },
+                {
+                    "y": 97.15000000000008,
+                    "x": 427.05000000000007
+                },
+                {
+                    "y": 130.1500000000001,
+                    "x": 366.05000000000007
+                },
+                {
+                    "y": 157.1500000000001,
+                    "x": 331.05000000000007
+                },
+                {
+                    "y": 175.1500000000001,
+                    "x": 243.05000000000007
+                },
+                {
+                    "y": 165.9500000000001,
+                    "x": 151.95000000000005
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_9",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 544,
+                    "x": 223.5
+                },
+                {
+                    "y": 534,
+                    "x": 220
+                },
+                {
+                    "y": 525.5,
+                    "x": 214
+                },
+                {
+                    "y": 512.5,
+                    "x": 202.5
+                },
+                {
+                    "y": 509.5,
+                    "x": 182.5
+                },
+                {
+                    "y": 507,
+                    "x": 168.5
+                },
+                {
+                    "y": 507,
+                    "x": 154
+                },
+                {
+                    "y": 514.5,
+                    "x": 137
+                },
+                {
+                    "y": 543.5,
+                    "x": 138
+                },
+                {
+                    "y": 549.5,
+                    "x": 196
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_5",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 662,
+                    "x": 245.5
+                },
+                {
+                    "y": 657.5,
+                    "x": 262
+                },
+                {
+                    "y": 667.5,
+                    "x": 277
+                },
+                {
+                    "y": 675,
+                    "x": 285.5
+                },
+                {
+                    "y": 685.5,
+                    "x": 285.5
+                },
+                {
+                    "y": 692,
+                    "x": 270.5
+                },
+                {
+                    "y": 684,
+                    "x": 258.5
+                },
+                {
+                    "y": 685,
+                    "x": 248
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_2",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 773,
+                    "x": 483
+                },
+                {
+                    "y": 782,
+                    "x": -358
+                },
+                {
+                    "y": -452,
+                    "x": -352
+                },
+                {
+                    "y": -452,
+                    "x": 228
+                },
+                {
+                    "y": -414,
+                    "x": 243
+                },
+                {
+                    "y": -356,
+                    "x": 227
+                },
+                {
+                    "y": -286,
+                    "x": 201
+                },
+                {
+                    "y": -222,
+                    "x": 161
+                },
+                {
+                    "y": -166,
+                    "x": 163
+                },
+                {
+                    "y": -86,
+                    "x": 143
+                },
+                {
+                    "y": -12,
+                    "x": 149
+                },
+                {
+                    "y": 10,
+                    "x": 166
+                },
+                {
+                    "y": 14,
+                    "x": 197
+                },
+                {
+                    "y": 31,
+                    "x": 242
+                },
+                {
+                    "y": 92,
+                    "x": 251
+                },
+                {
+                    "y": 130,
+                    "x": 234
+                },
+                {
+                    "y": 171,
+                    "x": 198
+                },
+                {
+                    "y": 187,
+                    "x": 201
+                },
+                {
+                    "y": 202,
+                    "x": 188
+                },
+                {
+                    "y": 209,
+                    "x": 173
+                },
+                {
+                    "y": 205,
+                    "x": 151
+                },
+                {
+                    "y": 230,
+                    "x": 113
+                },
+                {
+                    "y": 254,
+                    "x": 97
+                },
+                {
+                    "y": 301,
+                    "x": 93
+                },
+                {
+                    "y": 336,
+                    "x": 95
+                },
+                {
+                    "y": 345,
+                    "x": 118
+                },
+                {
+                    "y": 344,
+                    "x": 153
+                },
+                {
+                    "y": 360,
+                    "x": 166
+                },
+                {
+                    "y": 382,
+                    "x": 136
+                },
+                {
+                    "y": 400,
+                    "x": 152
+                },
+                {
+                    "y": 422,
+                    "x": 152
+                },
+                {
+                    "y": 452,
+                    "x": 140
+                },
+                {
+                    "y": 480,
+                    "x": 136
+                },
+                {
+                    "y": 533,
+                    "x": 160
+                },
+                {
+                    "y": 542,
+                    "x": 205
+                },
+                {
+                    "y": 542,
+                    "x": 229
+                },
+                {
+                    "y": 562,
+                    "x": 222
+                },
+                {
+                    "y": 560,
+                    "x": 194
+                },
+                {
+                    "y": 570,
+                    "x": 168
+                },
+                {
+                    "y": 594,
+                    "x": 154
+                },
+                {
+                    "y": 634,
+                    "x": 188
+                },
+                {
+                    "y": 666,
+                    "x": 245
+                },
+                {
+                    "y": 692,
+                    "x": 336
+                },
+                {
+                    "y": 692,
+                    "x": 408
+                },
+                {
+                    "y": 671,
+                    "x": 444
+                },
+                {
+                    "y": 668,
+                    "x": 471
+                },
+                {
+                    "y": 677,
+                    "x": 489
+                },
+                {
+                    "y": 699,
+                    "x": 502
+                },
+                {
+                    "y": 722,
+                    "x": 497
+                },
+                {
+                    "y": 748,
+                    "x": 495
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_7",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 695.5,
+                    "x": 125
+                },
+                {
+                    "y": 709,
+                    "x": 120.5
+                },
+                {
+                    "y": 722,
+                    "x": 112
+                },
+                {
+                    "y": 745,
+                    "x": 121
+                },
+                {
+                    "y": 754,
+                    "x": 151
+                },
+                {
+                    "y": 745,
+                    "x": 178
+                },
+                {
+                    "y": 719,
+                    "x": 189
+                },
+                {
+                    "y": 696.5,
+                    "x": 169
+                },
+                {
+                    "y": 677,
+                    "x": 177.5
+                },
+                {
+                    "y": 655.5,
+                    "x": 157.5
+                },
+                {
+                    "y": 672.5,
+                    "x": 130.5
+                },
+                {
+                    "y": 691,
+                    "x": 138
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_21",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 258,
+                    "x": 879
+                },
+                {
+                    "y": 248,
+                    "x": 911
+                },
+                {
+                    "y": 248,
+                    "x": 953
+                },
+                {
+                    "y": 252,
+                    "x": 998
+                },
+                {
+                    "y": 251,
+                    "x": 1016
+                },
+                {
+                    "y": 273,
+                    "x": 1000
+                },
+                {
+                    "y": 294,
+                    "x": 1000
+                },
+                {
+                    "y": 314,
+                    "x": 966
+                },
+                {
+                    "y": 331,
+                    "x": 922
+                },
+                {
+                    "y": 316,
+                    "x": 884
+                },
+                {
+                    "y": 325,
+                    "x": 857
+                },
+                {
+                    "y": 347,
+                    "x": 822
+                },
+                {
+                    "y": 342,
+                    "x": 785
+                },
+                {
+                    "y": 323,
+                    "x": 794
+                },
+                {
+                    "y": 311,
+                    "x": 828
+                },
+                {
+                    "y": 285,
+                    "x": 864
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_22",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 570,
+                    "x": -322
+                },
+                {
+                    "y": 518,
+                    "x": -258
+                },
+                {
+                    "y": 493,
+                    "x": -156
+                },
+                {
+                    "y": 504,
+                    "x": -52
+                },
+                {
+                    "y": 516,
+                    "x": -22
+                },
+                {
+                    "y": 550,
+                    "x": -3
+                },
+                {
+                    "y": 550,
+                    "x": 40
+                },
+                {
+                    "y": 583,
+                    "x": 60
+                },
+                {
+                    "y": 609,
+                    "x": 33
+                },
+                {
+                    "y": 642,
+                    "x": 28
+                },
+                {
+                    "y": 661,
+                    "x": 5
+                },
+                {
+                    "y": 703,
+                    "x": -41
+                },
+                {
+                    "y": 724,
+                    "x": -123
+                },
+                {
+                    "y": 730,
+                    "x": -192
+                },
+                {
+                    "y": 718,
+                    "x": -251
+                },
+                {
+                    "y": 703,
+                    "x": -290
+                },
+                {
+                    "y": 671,
+                    "x": -316
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_23",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 112,
+                    "x": -93
+                },
+                {
+                    "y": 166,
+                    "x": -76
+                },
+                {
+                    "y": 249,
+                    "x": -35
+                },
+                {
+                    "y": 353,
+                    "x": -32
+                },
+                {
+                    "y": 412,
+                    "x": -64
+                },
+                {
+                    "y": 412,
+                    "x": -134
+                },
+                {
+                    "y": 376,
+                    "x": -156
+                },
+                {
+                    "y": 355,
+                    "x": -167
+                },
+                {
+                    "y": 350,
+                    "x": -191
+                },
+                {
+                    "y": 397,
+                    "x": -214
+                },
+                {
+                    "y": 446,
+                    "x": -185
+                },
+                {
+                    "y": 479,
+                    "x": -97
+                },
+                {
+                    "y": 464,
+                    "x": -31
+                },
+                {
+                    "y": 400,
+                    "x": 18
+                },
+                {
+                    "y": 323,
+                    "x": 27
+                },
+                {
+                    "y": 248,
+                    "x": 16
+                },
+                {
+                    "y": 177,
+                    "x": -14
+                },
+                {
+                    "y": 119,
+                    "x": -41
+                },
+                {
+                    "y": 90,
+                    "x": -65
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_24",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 78,
+                    "x": -178
+                },
+                {
+                    "y": 98,
+                    "x": -122
+                },
+                {
+                    "y": 75,
+                    "x": -75
+                },
+                {
+                    "y": 44,
+                    "x": -74
+                },
+                {
+                    "y": 49,
+                    "x": -109
+                },
+                {
+                    "y": 20,
+                    "x": -146
+                },
+                {
+                    "y": 23,
+                    "x": -193
+                },
+                {
+                    "y": 75,
+                    "x": -220
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_30",
+            "texture_swf": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 118,
+                    "x": 547
+                },
+                {
+                    "y": 96,
+                    "x": 566
+                },
+                {
+                    "y": 78,
+                    "x": 594
+                },
+                {
+                    "y": 75,
+                    "x": 616
+                },
+                {
+                    "y": 99,
+                    "x": 622
+                },
+                {
+                    "y": 130,
+                    "x": 610
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Stone",
+            "red": 0,
+            "grass_theme": "[None]"
+        },
+        {
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "dynamic": false,
+            "tint": 0,
+            "blue": 0,
+            "unbreakable": false,
+            "texture_export": null,
+            "shade": 0,
+            "id": "terrain_8",
+            "texture_swf": null,
+            "outline": true,
+            "points": [
+                {
+                    "y": 108.25,
+                    "x": 515.2
+                },
+                {
+                    "y": 98.3,
+                    "x": 536.2
+                },
+                {
+                    "y": 112,
+                    "x": 581
+                },
+                {
+                    "y": 121,
+                    "x": 661
+                },
+                {
+                    "y": 107,
+                    "x": 712
+                },
+                {
+                    "y": 123,
+                    "x": 765
+                },
+                {
+                    "y": 147,
+                    "x": 768
+                },
+                {
+                    "y": 145,
+                    "x": 740
+                },
+                {
+                    "y": 163,
+                    "x": 709
+                },
+                {
+                    "y": 171,
+                    "x": 671
+                },
+                {
+                    "y": 166,
+                    "x": 642
+                },
+                {
+                    "y": 181,
+                    "x": 620
+                },
+                {
+                    "y": 196,
+                    "x": 611
+                },
+                {
+                    "y": 206,
+                    "x": 590
+                },
+                {
+                    "y": 206,
+                    "x": 571
+                },
+                {
+                    "y": 198,
+                    "x": 548
+                },
+                {
+                    "y": 182,
+                    "x": 529
+                },
+                {
+                    "y": 161,
+                    "x": 523
+                }
+            ],
+            "green": 0,
+            "texture_rotation": 0,
+            "theme": "Desert",
+            "red": 0,
+            "grass_theme": "[Material]"
+        },
+        {
+            "id": "dynamic_4",
+            "y": 309.6,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 1064.7,
+            "sleep": false,
+            "angle": -5.576772789441613,
+            "fixture": "plank_small",
+            "name": "PlankSmall"
+        },
+        {
+            "id": "dynamic_5",
+            "y": 267.65,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 679.75,
+            "sleep": false,
+            "angle": -1.6068092425270284,
+            "fixture": "cube_medium",
+            "name": "CubeMedium"
+        },
+        {
+            "id": "dynamic_6",
+            "y": 320.25,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 576.55,
+            "sleep": false,
+            "angle": -16.32132942510326,
+            "fixture": "cube_small",
+            "name": "CubeSmall"
+        },
+        {
+            "id": "dynamic_7",
+            "y": 306.45,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 702.2,
+            "sleep": false,
+            "angle": -1.7024776070525005,
+            "fixture": "cube_small",
+            "name": "CubeSmall"
+        },
+        {
+            "id": "dynamic_8",
+            "y": 351.5,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 461.8,
+            "sleep": false,
+            "angle": -3.363297365651321,
+            "fixture": "rectangle_medium",
+            "name": "RectangleMedium"
+        },
+        {
+            "id": "dynamic_9",
+            "y": 312.8,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 453.55,
+            "sleep": false,
+            "angle": -3.365584600665372,
+            "fixture": "cube_small",
+            "name": "CubeSmall"
+        },
+        {
+            "id": "dynamic_10",
+            "y": 386.05,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 507.4,
+            "sleep": false,
+            "angle": -2.917723677670326,
+            "fixture": "cube_small",
+            "name": "CubeSmall"
+        },
+        {
+            "id": "dynamic_11",
+            "y": 289.15,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 803.3,
+            "sleep": false,
+            "angle": -3.590623246168771,
+            "fixture": "cube_medium",
+            "name": "CubeMedium"
+        },
+        {
+            "id": "dynamic_12",
+            "y": 263.3,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 860.55,
+            "sleep": false,
+            "angle": -4.42147412741425,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        },
+        {
+            "id": "dynamic_13",
+            "y": 282.25,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 844.5,
+            "sleep": false,
+            "angle": -3.599949285868949,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        },
+        {
+            "id": "dynamic_14",
+            "y": 259,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 832,
+            "sleep": false,
+            "angle": -3.131171576067586,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        },
+        {
+            "id": "dynamic_15",
+            "y": 465.5,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 279.45,
+            "sleep": false,
+            "angle": -3.47397841865482,
+            "fixture": "plank_medium",
+            "name": "PlankMedium"
+        },
+        {
+            "id": "dynamic_16",
+            "y": 105.05,
+            "theme": "Wood",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 477.85,
+            "sleep": false,
+            "angle": -3.5182333059670525,
+            "fixture": "plank_medium",
+            "name": "PlankMedium"
+        },
+        {
+            "id": "dynamic_1",
+            "y": 62.75,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 639.1,
+            "sleep": false,
+            "angle": -3.6664044607885344,
+            "fixture": "cube_medium",
+            "name": "CubeMedium"
+        },
+        {
+            "id": "dynamic_2",
+            "y": 90.55,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 438.65,
+            "sleep": false,
+            "angle": -3.870108717108152,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        },
+        {
+            "id": "dynamic_3",
+            "y": 80.45,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 462.9,
+            "sleep": false,
+            "angle": -3.432277936841916,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        },
+        {
+            "id": "dynamic_17",
+            "y": 70.8,
+            "theme": "Stone",
+            "element_type": "DynamicObject",
+            "unbreakable": false,
+            "x": 487.5,
+            "sleep": false,
+            "angle": -3.748164796953258,
+            "fixture": "ball_small",
+            "name": "BallSmall"
+        }
+    ],
+    "water_density": 100,
+    "water_theme": "NotDefined",
+    "water_line": 750,
+    "spawn_points": [
+        {
+            "name": "SpawnPoint0",
+            "y": 212,
+            "x": 948
+        },
+        {
+            "name": "SpawnPoint1",
+            "y": 307,
+            "x": 130
+        },
+        {
+            "name": "SpawnPoint2",
+            "y": 217,
+            "x": 946
+        },
+        {
+            "name": "SpawnPoint3",
+            "y": 310,
+            "x": 135
+        }
+    ],
+    "water_lineardrag": 2,
+    "power_ups": [
+        {
+            "id": "powerup_4",
+            "y": 656.25,
+            "element_type": "PowerUpObject",
+            "appear_percentage": 35,
+            "export_name": "Treasure",
+            "angle": -274.9671327467816,
+            "x": 808.05
+        },
+        {
+            "id": "powerup_10",
+            "y": 479.05,
+            "element_type": "PowerUpObject",
+            "appear_percentage": 100,
+            "export_name": "PointsCrate",
+            "angle": -275.4300523725618,
+            "x": 1066.75
+        },
+        {
+            "id": "powerup_16",
+            "y": 665.65,
+            "element_type": "PowerUpObject",
+            "appear_percentage": 90,
+            "export_name": "AmmoCrate",
+            "angle": -276.4592029544983,
+            "x": 381.75
+        }
+    ],
+    "water_angulardrag": 1,
+    "parallax_layers": [
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_1",
+            "y": 810,
+            "gap": 445,
+            "camera_z": 0.6,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.4,
+            "tile_horizontally": true,
+            "camera_y_pan": 0.75,
+            "graphics_export": [
+                "parallax_1_1.png",
+                "parallax_1_2.png"
+            ],
+            "x": -100
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_2",
+            "y": 700,
+            "gap": 300,
+            "camera_z": 0.35,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.45,
+            "tile_horizontally": false,
+            "camera_y_pan": 0.8,
+            "graphics_export": [
+                "parallax_2_2.png",
+                "parallax_2_1.png",
+                "parallax_2_3.png"
+            ],
+            "x": 300
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_3",
+            "y": 850,
+            "gap": 630,
+            "camera_z": 0.3,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.6,
+            "tile_horizontally": true,
+            "camera_y_pan": 0.85,
+            "graphics_export": [
+                "parallax_3_1.png"
+            ],
+            "x": 0
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_4",
+            "y": 650,
+            "gap": 650,
+            "camera_z": 0.2,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.7,
+            "tile_horizontally": true,
+            "camera_y_pan": 0.9,
+            "graphics_export": [
+                "parallax_4_1.png"
+            ],
+            "x": 70
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_6",
+            "y": 400,
+            "gap": 0,
+            "camera_z": 0.1,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.97,
+            "tile_horizontally": false,
+            "camera_y_pan": 0.97,
+            "graphics_export": [
+                "parallax_6_1.png"
+            ],
+            "x": 200
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_5",
+            "y": 700,
+            "gap": 0,
+            "camera_z": 0.15,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.8,
+            "tile_horizontally": false,
+            "camera_y_pan": 0.95,
+            "graphics_export": [
+                "parallax_5_1.png"
+            ],
+            "x": 700
+        },
+        {
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_7",
+            "y": 300,
+            "gap": 0,
+            "camera_z": 0.1,
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.97,
+            "tile_horizontally": false,
+            "camera_y_pan": 0.97,
+            "graphics_export": [
+                "parallax_6_2.png"
+            ],
+            "x": 900
+        }
+    ],
+    "water_velocity_x": 0,
+    "theme": "Desert",
+    "camera_bounds_width": 100,
+    "water_velocity_y": 0,
+    "camera_bounds_height": 100,
+    "level_name": "DeathValley2",
+    "power_up_percentage": 0,
+    "width": 1200
+}

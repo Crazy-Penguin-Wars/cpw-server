@@ -1,0 +1,629 @@
+{
+    "elements": [
+        {
+            "unbreakable": false,
+            "texture_rotation": 0,
+            "red": 0,
+            "grass_theme": "[Material]",
+            "texture_swf": null,
+            "id": "terrain_1",
+            "texture_export": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 344,
+                    "x": 389.9999999999999
+                },
+                {
+                    "y": 370,
+                    "x": 349.9999999999999
+                },
+                {
+                    "y": 384,
+                    "x": 297.9999999999999
+                },
+                {
+                    "y": 722,
+                    "x": 352
+                },
+                {
+                    "y": 742,
+                    "x": 412
+                },
+                {
+                    "y": 769,
+                    "x": 431
+                },
+                {
+                    "y": 824,
+                    "x": 443
+                },
+                {
+                    "y": 826,
+                    "x": 487
+                },
+                {
+                    "y": 854,
+                    "x": 524
+                },
+                {
+                    "y": 919,
+                    "x": 540
+                },
+                {
+                    "y": 918,
+                    "x": 593
+                },
+                {
+                    "y": 950,
+                    "x": 643
+                },
+                {
+                    "y": 980,
+                    "x": 655
+                },
+                {
+                    "y": 982,
+                    "x": 694
+                },
+                {
+                    "y": 1016,
+                    "x": 715
+                },
+                {
+                    "y": 1024,
+                    "x": 752
+                },
+                {
+                    "y": 1026,
+                    "x": 1296
+                },
+                {
+                    "y": 1020,
+                    "x": 1348
+                },
+                {
+                    "y": 982,
+                    "x": 1358
+                },
+                {
+                    "y": 980,
+                    "x": 1402
+                },
+                {
+                    "y": 934,
+                    "x": 1428
+                },
+                {
+                    "y": 930,
+                    "x": 1492
+                },
+                {
+                    "y": 876,
+                    "x": 1520
+                },
+                {
+                    "y": 850,
+                    "x": 1568
+                },
+                {
+                    "y": 840,
+                    "x": 1620
+                },
+                {
+                    "y": 774,
+                    "x": 1628
+                },
+                {
+                    "y": 740,
+                    "x": 1664
+                },
+                {
+                    "y": 740,
+                    "x": 1730
+                },
+                {
+                    "y": 390,
+                    "x": 1800
+                },
+                {
+                    "y": 378,
+                    "x": 1734.8
+                },
+                {
+                    "y": 344,
+                    "x": 1695.9
+                },
+                {
+                    "y": 342,
+                    "x": 1794
+                },
+                {
+                    "y": -6,
+                    "x": 1828
+                },
+                {
+                    "y": -8,
+                    "x": 2006
+                },
+                {
+                    "y": 1112,
+                    "x": 2008
+                },
+                {
+                    "y": 1098,
+                    "x": 8
+                },
+                {
+                    "y": -8,
+                    "x": 1.599999999999909
+                },
+                {
+                    "y": -4,
+                    "x": 289.5999999999999
+                },
+                {
+                    "y": 342,
+                    "x": 294
+                }
+            ],
+            "theme": "Stone",
+            "dynamic": false,
+            "shade": 0,
+            "green": 0,
+            "tint": 0,
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "blue": 0
+        },
+        {
+            "unbreakable": false,
+            "texture_rotation": 0,
+            "red": 0,
+            "grass_theme": "[Material]",
+            "texture_swf": null,
+            "id": "terrain_2",
+            "texture_export": null,
+            "outline": false,
+            "points": [
+                {
+                    "y": 739,
+                    "x": 635.5
+                },
+                {
+                    "y": 706,
+                    "x": 699.5
+                },
+                {
+                    "y": 711,
+                    "x": 735.5
+                },
+                {
+                    "y": 694,
+                    "x": 778.5
+                },
+                {
+                    "y": 690,
+                    "x": 839.5
+                },
+                {
+                    "y": 703,
+                    "x": 876.5
+                },
+                {
+                    "y": 686,
+                    "x": 941.5
+                },
+                {
+                    "y": 688,
+                    "x": 966.5
+                },
+                {
+                    "y": 690,
+                    "x": 975.5
+                },
+                {
+                    "y": 691,
+                    "x": 1082.5
+                },
+                {
+                    "y": 686,
+                    "x": 1095.5
+                },
+                {
+                    "y": 687,
+                    "x": 1220.5
+                },
+                {
+                    "y": 711,
+                    "x": 1282.5
+                },
+                {
+                    "y": 718,
+                    "x": 1291.5
+                },
+                {
+                    "y": 720,
+                    "x": 1403.5
+                },
+                {
+                    "y": 754,
+                    "x": 1451.5
+                },
+                {
+                    "y": 774,
+                    "x": 1530.5
+                },
+                {
+                    "y": 806,
+                    "x": 1421.5
+                },
+                {
+                    "y": 828,
+                    "x": 1103.5
+                },
+                {
+                    "y": 816,
+                    "x": 905.5
+                },
+                {
+                    "y": 786,
+                    "x": 621.5
+                },
+                {
+                    "y": 764,
+                    "x": 557.5
+                }
+            ],
+            "theme": "Wood",
+            "dynamic": false,
+            "shade": 0,
+            "green": 0,
+            "tint": 0,
+            "shape": "edgeShape",
+            "element_type": "TerrainBlockEntity",
+            "blue": 0
+        },
+        {
+            "x": 1022.3,
+            "theme": "Metal",
+            "y": 639.6,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.121341034809652,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_3"
+        },
+        {
+            "x": 1021.5,
+            "theme": "Stone",
+            "y": 539.6,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.1216568831234643,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_4"
+        },
+        {
+            "x": 1181,
+            "theme": "Metal",
+            "y": 647.5,
+            "fixture": "cube_small",
+            "sleep": true,
+            "name": "CubeSmall",
+            "angle": -3.13050771076478,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_5"
+        },
+        {
+            "x": 790.6,
+            "theme": "Stone",
+            "y": 679.9,
+            "fixture": "cube_small",
+            "sleep": false,
+            "name": "CubeSmall",
+            "angle": -3.2070301380532737,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_6"
+        },
+        {
+            "x": 1178.1,
+            "theme": "Metal",
+            "y": 673.4,
+            "fixture": "cube_small",
+            "sleep": true,
+            "name": "CubeSmall",
+            "angle": -3.132514832687476,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_7"
+        },
+        {
+            "x": 1181.3,
+            "theme": "Wood",
+            "y": 621.5,
+            "fixture": "cube_small",
+            "sleep": true,
+            "name": "CubeSmall",
+            "angle": -3.129752973326966,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_8"
+        },
+        {
+            "x": 1016.5,
+            "theme": "Stone",
+            "y": 259,
+            "fixture": "triangle_medium",
+            "sleep": true,
+            "name": "TriangleMedium",
+            "angle": -5.4863851094056875,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_10"
+        },
+        {
+            "x": 1014.8,
+            "theme": "Stone",
+            "y": 309.4,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.1210316646034775,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_11"
+        },
+        {
+            "x": 1736.4,
+            "theme": "Wood",
+            "y": 293.1,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -1.590660599969412,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_12"
+        },
+        {
+            "x": 353.6,
+            "theme": "Wood",
+            "y": 292.8,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.120302900004747,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_13"
+        },
+        {
+            "x": 1017.2,
+            "theme": "Wood",
+            "y": 409.6,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.1221634338032542,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_14"
+        },
+        {
+            "x": 1014.9,
+            "theme": "Wood",
+            "y": 474.6,
+            "fixture": "plank_medium",
+            "sleep": true,
+            "name": "PlankMedium",
+            "angle": -3.1213753158468296,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_15"
+        },
+        {
+            "x": 1748.8,
+            "theme": "Wood",
+            "y": 92.2,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.156174252500059,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_9"
+        },
+        {
+            "x": 351.2,
+            "theme": "Stone",
+            "y": 91.8,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.1160665068463818,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_16"
+        },
+        {
+            "x": 1741.9,
+            "theme": "Metal",
+            "y": 192.7,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.157396971795294,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_17"
+        },
+        {
+            "x": 350.9,
+            "theme": "Wood",
+            "y": 192.3,
+            "fixture": "cube_big",
+            "sleep": true,
+            "name": "CubeLarge",
+            "angle": -3.117974105948496,
+            "unbreakable": false,
+            "element_type": "DynamicObject",
+            "id": "dynamic_18"
+        }
+    ],
+    "water_line": 1000,
+    "water_theme": "NotDefined",
+    "spawn_points": [
+        {
+            "name": "SpawnPoint0",
+            "y": 659,
+            "x": 732
+        },
+        {
+            "name": "SpawnPoint1",
+            "y": 643,
+            "x": 1128
+        },
+        {
+            "name": "SpawnPoint2",
+            "y": 644,
+            "x": 1128
+        },
+        {
+            "name": "SpawnPoint3",
+            "y": 670,
+            "x": 728
+        }
+    ],
+    "water_density": 100,
+    "power_ups": [],
+    "parallax_layers": [
+        {
+            "camera_y_pan": 0.75,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.6,
+            "tile_horizontally": true,
+            "x": -100,
+            "id": "parallax_1",
+            "camera_x_pan": 0.4,
+            "y": 1050,
+            "gap": 400,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_1_1.png",
+                "parallax_1_2.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.8,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.35,
+            "tile_horizontally": false,
+            "x": 400,
+            "id": "parallax_2",
+            "camera_x_pan": 0.45,
+            "y": 1100,
+            "gap": 700,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_2_2.png",
+                "parallax_2_1.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.85,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.3,
+            "tile_horizontally": true,
+            "x": -100,
+            "id": "parallax_3",
+            "camera_x_pan": 0.6,
+            "y": 1000,
+            "gap": 630,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_3_1.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.9,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.2,
+            "tile_horizontally": true,
+            "x": 0,
+            "id": "parallax_4",
+            "camera_x_pan": 0.7,
+            "y": 900,
+            "gap": 350,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_4_1.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.95,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.15,
+            "tile_horizontally": false,
+            "x": 300,
+            "id": "parallax_5",
+            "camera_x_pan": 0.8,
+            "y": 700,
+            "gap": 500,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_5_1.png",
+                "parallax_5_2.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.97,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.1,
+            "tile_horizontally": false,
+            "x": 400,
+            "id": "parallax_6",
+            "camera_x_pan": 0.97,
+            "y": 150,
+            "gap": 850,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_6_1.png",
+                "parallax_6_2.png"
+            ]
+        },
+        {
+            "camera_y_pan": 0.97,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "camera_z": 0.1,
+            "tile_horizontally": false,
+            "x": 750,
+            "id": "parallax_7",
+            "camera_x_pan": 0.97,
+            "y": 250,
+            "gap": 0,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_6_3.png"
+            ]
+        }
+    ],
+    "theme": "Forest",
+    "camera_bounds_width": 100,
+    "water_lineardrag": 2,
+    "width": 2000,
+    "camera_bounds_height": 100,
+    "water_angulardrag": 1,
+    "height": 1150,
+    "level_name": "Forest_03_average",
+    "water_velocity_x": 0,
+    "power_up_percentage": 0,
+    "water_velocity_y": 0,
+    "zoom_side": "height"
+}

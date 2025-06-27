@@ -1,0 +1,3637 @@
+{
+    "elements": [
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_20",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 819,
+                    "x": 817
+                },
+                {
+                    "y": 785,
+                    "x": 855
+                },
+                {
+                    "y": 777,
+                    "x": 947
+                },
+                {
+                    "y": 797,
+                    "x": 1001
+                },
+                {
+                    "y": 827,
+                    "x": 1031
+                },
+                {
+                    "y": 871,
+                    "x": 1067
+                },
+                {
+                    "y": 987,
+                    "x": 1079
+                },
+                {
+                    "y": 983,
+                    "x": 829
+                },
+                {
+                    "y": 887,
+                    "x": 807
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_41",
+            "blue": 0,
+            "red": 81,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 819,
+                    "x": 817
+                },
+                {
+                    "y": 785,
+                    "x": 855
+                },
+                {
+                    "y": 777,
+                    "x": 947
+                },
+                {
+                    "y": 797,
+                    "x": 1001
+                },
+                {
+                    "y": 827,
+                    "x": 1030.25
+                },
+                {
+                    "y": 843,
+                    "x": 1006
+                },
+                {
+                    "y": 887,
+                    "x": 1012
+                },
+                {
+                    "y": 987,
+                    "x": 1079
+                },
+                {
+                    "y": 983,
+                    "x": 829
+                },
+                {
+                    "y": 882,
+                    "x": 849
+                },
+                {
+                    "y": 843,
+                    "x": 848
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_19",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 696,
+                    "x": 847
+                },
+                {
+                    "y": 707,
+                    "x": 981
+                },
+                {
+                    "y": 735,
+                    "x": 1063
+                },
+                {
+                    "y": 795,
+                    "x": 1107
+                },
+                {
+                    "y": 815,
+                    "x": 1079
+                },
+                {
+                    "y": 813,
+                    "x": 1001
+                },
+                {
+                    "y": 787,
+                    "x": 821
+                },
+                {
+                    "y": 769,
+                    "x": 797
+                },
+                {
+                    "y": 729,
+                    "x": 785
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_42",
+            "blue": 0,
+            "red": 80,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 708,
+                    "x": 858
+                },
+                {
+                    "y": 727,
+                    "x": 1021
+                },
+                {
+                    "y": 748,
+                    "x": 993
+                },
+                {
+                    "y": 775,
+                    "x": 998
+                },
+                {
+                    "y": 794,
+                    "x": 1037
+                },
+                {
+                    "y": 795.5,
+                    "x": 1105
+                },
+                {
+                    "y": 814,
+                    "x": 1078
+                },
+                {
+                    "y": 811.75,
+                    "x": 1001.25
+                },
+                {
+                    "y": 786,
+                    "x": 823
+                },
+                {
+                    "y": 768.5,
+                    "x": 799.5
+                },
+                {
+                    "y": 758,
+                    "x": 844
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 25,
+            "id": "terrain_1",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 1058,
+                    "x": 178
+                },
+                {
+                    "y": 980,
+                    "x": 152
+                },
+                {
+                    "y": 876,
+                    "x": 142
+                },
+                {
+                    "y": 816,
+                    "x": 162
+                },
+                {
+                    "y": 786,
+                    "x": 206
+                },
+                {
+                    "y": 792,
+                    "x": 276
+                },
+                {
+                    "y": 804,
+                    "x": 374
+                },
+                {
+                    "y": 800,
+                    "x": 434
+                },
+                {
+                    "y": 816,
+                    "x": 478
+                },
+                {
+                    "y": 896,
+                    "x": 480
+                },
+                {
+                    "y": 952,
+                    "x": 444
+                },
+                {
+                    "y": 1026,
+                    "x": 380
+                },
+                {
+                    "y": 1060,
+                    "x": 380
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 85,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 25,
+            "id": "terrain_37",
+            "blue": 0,
+            "red": 81,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 1058,
+                    "x": 178
+                },
+                {
+                    "y": 980,
+                    "x": 152
+                },
+                {
+                    "y": 891,
+                    "x": 160
+                },
+                {
+                    "y": 828,
+                    "x": 179
+                },
+                {
+                    "y": 791,
+                    "x": 231
+                },
+                {
+                    "y": 792,
+                    "x": 276
+                },
+                {
+                    "y": 804,
+                    "x": 374
+                },
+                {
+                    "y": 895,
+                    "x": 368
+                },
+                {
+                    "y": 934,
+                    "x": 388
+                },
+                {
+                    "y": 939,
+                    "x": 426
+                },
+                {
+                    "y": 952,
+                    "x": 444
+                },
+                {
+                    "y": 1026,
+                    "x": 380
+                },
+                {
+                    "y": 1060,
+                    "x": 380
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 154,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_2",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 782,
+                    "x": 206
+                },
+                {
+                    "y": 768,
+                    "x": 224
+                },
+                {
+                    "y": 756,
+                    "x": 324
+                },
+                {
+                    "y": 740,
+                    "x": 404
+                },
+                {
+                    "y": 746,
+                    "x": 466
+                },
+                {
+                    "y": 782,
+                    "x": 472
+                },
+                {
+                    "y": 808,
+                    "x": 452
+                },
+                {
+                    "y": 806,
+                    "x": 358
+                },
+                {
+                    "y": 794,
+                    "x": 256
+                },
+                {
+                    "y": 789,
+                    "x": 216.75
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_25",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 412,
+                    "x": 626
+                },
+                {
+                    "y": 401,
+                    "x": 599
+                },
+                {
+                    "y": 377,
+                    "x": 594
+                },
+                {
+                    "y": 358,
+                    "x": 791
+                },
+                {
+                    "y": 394,
+                    "x": 776
+                },
+                {
+                    "y": 407,
+                    "x": 760
+                },
+                {
+                    "y": 415,
+                    "x": 750
+                },
+                {
+                    "y": 426,
+                    "x": 700
+                },
+                {
+                    "y": 417,
+                    "x": 647
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_16",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 831,
+                    "x": 1858
+                },
+                {
+                    "y": 854,
+                    "x": 2066
+                },
+                {
+                    "y": 903,
+                    "x": 2062
+                },
+                {
+                    "y": 949,
+                    "x": 2086
+                },
+                {
+                    "y": 1001,
+                    "x": 2120
+                },
+                {
+                    "y": 998,
+                    "x": 1824
+                },
+                {
+                    "y": 942,
+                    "x": 1824
+                },
+                {
+                    "y": 874,
+                    "x": 1842
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_50",
+            "blue": 0,
+            "red": 80,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 831,
+                    "x": 1858
+                },
+                {
+                    "y": 854,
+                    "x": 2066
+                },
+                {
+                    "y": 896,
+                    "x": 2040
+                },
+                {
+                    "y": 966,
+                    "x": 2057
+                },
+                {
+                    "y": 1001,
+                    "x": 2120
+                },
+                {
+                    "y": 998,
+                    "x": 1824
+                },
+                {
+                    "y": 959,
+                    "x": 1852
+                },
+                {
+                    "y": 878,
+                    "x": 1895
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_7",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 403,
+                    "x": 612
+                },
+                {
+                    "y": 388,
+                    "x": 563
+                },
+                {
+                    "y": 354,
+                    "x": 548
+                },
+                {
+                    "y": 341,
+                    "x": 578
+                },
+                {
+                    "y": 327,
+                    "x": 664
+                },
+                {
+                    "y": 323,
+                    "x": 806
+                },
+                {
+                    "y": 339,
+                    "x": 831
+                },
+                {
+                    "y": 375,
+                    "x": 833
+                },
+                {
+                    "y": 399,
+                    "x": 798
+                },
+                {
+                    "y": 386,
+                    "x": 712
+                },
+                {
+                    "y": 402,
+                    "x": 664
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_18",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 820,
+                    "x": 1307
+                },
+                {
+                    "y": 819,
+                    "x": 1429
+                },
+                {
+                    "y": 855,
+                    "x": 1477
+                },
+                {
+                    "y": 905,
+                    "x": 1497
+                },
+                {
+                    "y": 955,
+                    "x": 1503
+                },
+                {
+                    "y": 941,
+                    "x": 1263
+                },
+                {
+                    "y": 909,
+                    "x": 1291
+                },
+                {
+                    "y": 869,
+                    "x": 1293
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_46",
+            "blue": 0,
+            "red": 84,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 820,
+                    "x": 1307
+                },
+                {
+                    "y": 819,
+                    "x": 1429
+                },
+                {
+                    "y": 841,
+                    "x": 1460
+                },
+                {
+                    "y": 857,
+                    "x": 1442
+                },
+                {
+                    "y": 888,
+                    "x": 1439
+                },
+                {
+                    "y": 931,
+                    "x": 1484
+                },
+                {
+                    "y": 955,
+                    "x": 1503
+                },
+                {
+                    "y": 941,
+                    "x": 1263
+                },
+                {
+                    "y": 927,
+                    "x": 1298
+                },
+                {
+                    "y": 863,
+                    "x": 1324
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_22",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 342,
+                    "x": 1351
+                },
+                {
+                    "y": 343,
+                    "x": 1575
+                },
+                {
+                    "y": 383,
+                    "x": 1533
+                },
+                {
+                    "y": 404,
+                    "x": 1515
+                },
+                {
+                    "y": 416,
+                    "x": 1500
+                },
+                {
+                    "y": 415,
+                    "x": 1457
+                },
+                {
+                    "y": 397,
+                    "x": 1426
+                },
+                {
+                    "y": 376,
+                    "x": 1382
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_17",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 698,
+                    "x": 1344
+                },
+                {
+                    "y": 673,
+                    "x": 1429
+                },
+                {
+                    "y": 737,
+                    "x": 1459
+                },
+                {
+                    "y": 821,
+                    "x": 1473
+                },
+                {
+                    "y": 841,
+                    "x": 1461
+                },
+                {
+                    "y": 832,
+                    "x": 1313
+                },
+                {
+                    "y": 813,
+                    "x": 1297
+                },
+                {
+                    "y": 783,
+                    "x": 1313
+                },
+                {
+                    "y": 743,
+                    "x": 1341
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_24",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 439,
+                    "x": 1861
+                },
+                {
+                    "y": 430,
+                    "x": 1821
+                },
+                {
+                    "y": 412,
+                    "x": 1797
+                },
+                {
+                    "y": 393,
+                    "x": 1994
+                },
+                {
+                    "y": 429,
+                    "x": 1955
+                },
+                {
+                    "y": 433,
+                    "x": 1934
+                },
+                {
+                    "y": 460,
+                    "x": 1918
+                },
+                {
+                    "y": 475,
+                    "x": 1906
+                },
+                {
+                    "y": 451,
+                    "x": 1885
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_8",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 367,
+                    "x": 1377
+                },
+                {
+                    "y": 360,
+                    "x": 1344
+                },
+                {
+                    "y": 345,
+                    "x": 1328
+                },
+                {
+                    "y": 324,
+                    "x": 1322
+                },
+                {
+                    "y": 305,
+                    "x": 1332
+                },
+                {
+                    "y": 299,
+                    "x": 1440
+                },
+                {
+                    "y": 301,
+                    "x": 1529
+                },
+                {
+                    "y": 305,
+                    "x": 1586
+                },
+                {
+                    "y": 325,
+                    "x": 1612
+                },
+                {
+                    "y": 361,
+                    "x": 1641
+                },
+                {
+                    "y": 376,
+                    "x": 1609
+                },
+                {
+                    "y": 377,
+                    "x": 1564
+                },
+                {
+                    "y": 372,
+                    "x": 1521
+                },
+                {
+                    "y": 372,
+                    "x": 1484
+                },
+                {
+                    "y": 368,
+                    "x": 1443
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_26",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 389,
+                    "x": 195
+                },
+                {
+                    "y": 378,
+                    "x": 168
+                },
+                {
+                    "y": 354,
+                    "x": 163
+                },
+                {
+                    "y": 348,
+                    "x": 358
+                },
+                {
+                    "y": 387,
+                    "x": 369
+                },
+                {
+                    "y": 403,
+                    "x": 361
+                },
+                {
+                    "y": 418,
+                    "x": 328
+                },
+                {
+                    "y": 414,
+                    "x": 286
+                },
+                {
+                    "y": 403,
+                    "x": 239
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_11",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 426,
+                    "x": 1792
+                },
+                {
+                    "y": 409,
+                    "x": 1749
+                },
+                {
+                    "y": 389,
+                    "x": 1732
+                },
+                {
+                    "y": 376,
+                    "x": 1774
+                },
+                {
+                    "y": 366,
+                    "x": 1812
+                },
+                {
+                    "y": 361,
+                    "x": 1854
+                },
+                {
+                    "y": 341,
+                    "x": 1975
+                },
+                {
+                    "y": 342,
+                    "x": 2002
+                },
+                {
+                    "y": 358,
+                    "x": 2043
+                },
+                {
+                    "y": 393,
+                    "x": 2046
+                },
+                {
+                    "y": 418,
+                    "x": 1994
+                },
+                {
+                    "y": 427,
+                    "x": 1952
+                },
+                {
+                    "y": 431,
+                    "x": 1889
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_12",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 376,
+                    "x": 170
+                },
+                {
+                    "y": 366,
+                    "x": 141
+                },
+                {
+                    "y": 332,
+                    "x": 127
+                },
+                {
+                    "y": 310,
+                    "x": 152
+                },
+                {
+                    "y": 291,
+                    "x": 230
+                },
+                {
+                    "y": 298,
+                    "x": 295
+                },
+                {
+                    "y": 308,
+                    "x": 353
+                },
+                {
+                    "y": 323,
+                    "x": 386
+                },
+                {
+                    "y": 344,
+                    "x": 426
+                },
+                {
+                    "y": 365,
+                    "x": 429
+                },
+                {
+                    "y": 368,
+                    "x": 372
+                },
+                {
+                    "y": 378,
+                    "x": 291
+                },
+                {
+                    "y": 373,
+                    "x": 235
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_15",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 735,
+                    "x": 1842
+                },
+                {
+                    "y": 727,
+                    "x": 2054
+                },
+                {
+                    "y": 755,
+                    "x": 2096
+                },
+                {
+                    "y": 799,
+                    "x": 2104
+                },
+                {
+                    "y": 823,
+                    "x": 2094
+                },
+                {
+                    "y": 868,
+                    "x": 2060
+                },
+                {
+                    "y": 872,
+                    "x": 2002
+                },
+                {
+                    "y": 852,
+                    "x": 1912
+                },
+                {
+                    "y": 834,
+                    "x": 1846
+                },
+                {
+                    "y": 802,
+                    "x": 1832
+                },
+                {
+                    "y": 764,
+                    "x": 1828
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_21",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 610,
+                    "x": 867
+                },
+                {
+                    "y": 641,
+                    "x": 997
+                },
+                {
+                    "y": 697,
+                    "x": 1031
+                },
+                {
+                    "y": 727,
+                    "x": 1021
+                },
+                {
+                    "y": 736,
+                    "x": 987
+                },
+                {
+                    "y": 738,
+                    "x": 935.5
+                },
+                {
+                    "y": 724,
+                    "x": 881
+                },
+                {
+                    "y": 701,
+                    "x": 841
+                },
+                {
+                    "y": 663,
+                    "x": 841
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_43",
+            "blue": 0,
+            "red": 82,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 610,
+                    "x": 867
+                },
+                {
+                    "y": 641,
+                    "x": 997
+                },
+                {
+                    "y": 684,
+                    "x": 947
+                },
+                {
+                    "y": 721,
+                    "x": 940
+                },
+                {
+                    "y": 734.5,
+                    "x": 985
+                },
+                {
+                    "y": 736.5,
+                    "x": 935
+                },
+                {
+                    "y": 722.5,
+                    "x": 881.5
+                },
+                {
+                    "y": 709,
+                    "x": 858
+                },
+                {
+                    "y": 675,
+                    "x": 881
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 136,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_14",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 582,
+                    "x": 863
+                },
+                {
+                    "y": 575,
+                    "x": 994
+                },
+                {
+                    "y": 611.5,
+                    "x": 1005.5
+                },
+                {
+                    "y": 651,
+                    "x": 1015
+                },
+                {
+                    "y": 677,
+                    "x": 1008
+                },
+                {
+                    "y": 686,
+                    "x": 993
+                },
+                {
+                    "y": 666,
+                    "x": 918
+                },
+                {
+                    "y": 650,
+                    "x": 876.5
+                },
+                {
+                    "y": 634,
+                    "x": 856
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_23",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 451,
+                    "x": 1463
+                },
+                {
+                    "y": 435,
+                    "x": 1453
+                },
+                {
+                    "y": 424,
+                    "x": 1451
+                },
+                {
+                    "y": 425,
+                    "x": 1503
+                },
+                {
+                    "y": 436,
+                    "x": 1508
+                },
+                {
+                    "y": 443,
+                    "x": 1498
+                },
+                {
+                    "y": 457,
+                    "x": 1485
+                },
+                {
+                    "y": 472,
+                    "x": 1472
+                },
+                {
+                    "y": 461,
+                    "x": 1467
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_27",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 402,
+                    "x": 170
+                },
+                {
+                    "y": 395,
+                    "x": 176
+                },
+                {
+                    "y": 399,
+                    "x": 195
+                },
+                {
+                    "y": 418,
+                    "x": 251
+                },
+                {
+                    "y": 426,
+                    "x": 260
+                },
+                {
+                    "y": 442,
+                    "x": 248
+                },
+                {
+                    "y": 455,
+                    "x": 226
+                },
+                {
+                    "y": 444,
+                    "x": 196
+                },
+                {
+                    "y": 422,
+                    "x": 176
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_28",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 40,
+                    "x": 875
+                },
+                {
+                    "y": 20,
+                    "x": 889
+                },
+                {
+                    "y": -7,
+                    "x": 905
+                },
+                {
+                    "y": 7,
+                    "x": 927
+                },
+                {
+                    "y": 23,
+                    "x": 941
+                },
+                {
+                    "y": 59,
+                    "x": 959
+                },
+                {
+                    "y": 110,
+                    "x": 951
+                },
+                {
+                    "y": 138,
+                    "x": 922
+                },
+                {
+                    "y": 118,
+                    "x": 894
+                },
+                {
+                    "y": 87,
+                    "x": 880
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_51",
+            "blue": 0,
+            "red": 82,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 736,
+                    "x": 1888
+                },
+                {
+                    "y": 727,
+                    "x": 2054
+                },
+                {
+                    "y": 739,
+                    "x": 2068
+                },
+                {
+                    "y": 767,
+                    "x": 2055
+                },
+                {
+                    "y": 817,
+                    "x": 2053
+                },
+                {
+                    "y": 846,
+                    "x": 2051
+                },
+                {
+                    "y": 867.25,
+                    "x": 2059.5
+                },
+                {
+                    "y": 871,
+                    "x": 2002.25
+                },
+                {
+                    "y": 851.5,
+                    "x": 1912.25
+                },
+                {
+                    "y": 837,
+                    "x": 1860
+                },
+                {
+                    "y": 823,
+                    "x": 1868
+                },
+                {
+                    "y": 791,
+                    "x": 1879
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_29",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 90,
+                    "x": 1017
+                },
+                {
+                    "y": 59,
+                    "x": 1025
+                },
+                {
+                    "y": 42,
+                    "x": 1046
+                },
+                {
+                    "y": 63,
+                    "x": 1065
+                },
+                {
+                    "y": 96,
+                    "x": 1074
+                },
+                {
+                    "y": 121,
+                    "x": 1066
+                },
+                {
+                    "y": 134,
+                    "x": 1051
+                },
+                {
+                    "y": 123,
+                    "x": 1028
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_30",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 3,
+                    "x": 1001
+                },
+                {
+                    "y": 28,
+                    "x": 992
+                },
+                {
+                    "y": 54,
+                    "x": 1000
+                },
+                {
+                    "y": 52,
+                    "x": 1009
+                },
+                {
+                    "y": 37,
+                    "x": 1014
+                },
+                {
+                    "y": 14,
+                    "x": 1013
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": null,
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": null,
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_6",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 647,
+                    "x": 1822
+                },
+                {
+                    "y": 623,
+                    "x": 2110
+                },
+                {
+                    "y": 661,
+                    "x": 2102
+                },
+                {
+                    "y": 702,
+                    "x": 2092
+                },
+                {
+                    "y": 739,
+                    "x": 2076
+                },
+                {
+                    "y": 751,
+                    "x": 2030
+                },
+                {
+                    "y": 753,
+                    "x": 1962
+                },
+                {
+                    "y": 739,
+                    "x": 1888
+                },
+                {
+                    "y": 726,
+                    "x": 1836
+                },
+                {
+                    "y": 708,
+                    "x": 1818
+                },
+                {
+                    "y": 672,
+                    "x": 1812
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_31",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 140,
+                    "x": 948.7
+                },
+                {
+                    "y": 126,
+                    "x": 960.7
+                },
+                {
+                    "y": 132,
+                    "x": 971.7
+                },
+                {
+                    "y": 145.5,
+                    "x": 975.55
+                },
+                {
+                    "y": 159.5,
+                    "x": 972.55
+                },
+                {
+                    "y": 172.5,
+                    "x": 964.55
+                },
+                {
+                    "y": 161,
+                    "x": 952.7
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_32",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 86,
+                    "x": 984
+                },
+                {
+                    "y": 67,
+                    "x": 994
+                },
+                {
+                    "y": 79,
+                    "x": 998.4
+                },
+                {
+                    "y": 92.5,
+                    "x": 1002.25
+                },
+                {
+                    "y": 106.5,
+                    "x": 999.25
+                },
+                {
+                    "y": 122,
+                    "x": 986
+                },
+                {
+                    "y": 108,
+                    "x": 979.4
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_33",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 79,
+                    "x": 411
+                },
+                {
+                    "y": 56,
+                    "x": 422
+                },
+                {
+                    "y": 0,
+                    "x": 435
+                },
+                {
+                    "y": 21,
+                    "x": 447
+                },
+                {
+                    "y": 53,
+                    "x": 454
+                },
+                {
+                    "y": 77,
+                    "x": 455
+                },
+                {
+                    "y": 132,
+                    "x": 446
+                },
+                {
+                    "y": 152,
+                    "x": 442
+                },
+                {
+                    "y": 147,
+                    "x": 431
+                },
+                {
+                    "y": 115,
+                    "x": 421
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_47",
+            "blue": 0,
+            "red": 82,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 702,
+                    "x": 1368
+                },
+                {
+                    "y": 673,
+                    "x": 1429
+                },
+                {
+                    "y": 769,
+                    "x": 1451
+                },
+                {
+                    "y": 820,
+                    "x": 1452
+                },
+                {
+                    "y": 821.5,
+                    "x": 1470.5
+                },
+                {
+                    "y": 840.5,
+                    "x": 1459.5
+                },
+                {
+                    "y": 831.5,
+                    "x": 1315
+                },
+                {
+                    "y": 812.5,
+                    "x": 1299.5
+                },
+                {
+                    "y": 804,
+                    "x": 1317
+                },
+                {
+                    "y": 756,
+                    "x": 1349
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 136,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_34",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 127,
+                    "x": 465
+                },
+                {
+                    "y": 58,
+                    "x": 476
+                },
+                {
+                    "y": 79,
+                    "x": 494
+                },
+                {
+                    "y": 118,
+                    "x": 505
+                },
+                {
+                    "y": 149,
+                    "x": 505
+                },
+                {
+                    "y": 166,
+                    "x": 499
+                },
+                {
+                    "y": 189,
+                    "x": 489
+                },
+                {
+                    "y": 160,
+                    "x": 476
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_35",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 63,
+                    "x": 1710
+                },
+                {
+                    "y": 5,
+                    "x": 1714
+                },
+                {
+                    "y": 11,
+                    "x": 1724
+                },
+                {
+                    "y": 25,
+                    "x": 1746
+                },
+                {
+                    "y": 53,
+                    "x": 1752
+                },
+                {
+                    "y": 84,
+                    "x": 1752
+                },
+                {
+                    "y": 128,
+                    "x": 1749
+                },
+                {
+                    "y": 156,
+                    "x": 1741
+                },
+                {
+                    "y": 142,
+                    "x": 1726
+                },
+                {
+                    "y": 114,
+                    "x": 1720
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_13",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 622,
+                    "x": 1319
+                },
+                {
+                    "y": 621,
+                    "x": 1441
+                },
+                {
+                    "y": 665,
+                    "x": 1443
+                },
+                {
+                    "y": 687,
+                    "x": 1439
+                },
+                {
+                    "y": 703,
+                    "x": 1385
+                },
+                {
+                    "y": 703,
+                    "x": 1368
+                },
+                {
+                    "y": 700,
+                    "x": 1346
+                },
+                {
+                    "y": 685,
+                    "x": 1335
+                },
+                {
+                    "y": 653,
+                    "x": 1319
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_48",
+            "blue": 0,
+            "red": 79,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 620.5,
+                    "x": 1319
+                },
+                {
+                    "y": 619.5,
+                    "x": 1441
+                },
+                {
+                    "y": 663.5,
+                    "x": 1443
+                },
+                {
+                    "y": 693.5,
+                    "x": 1412
+                },
+                {
+                    "y": 701.5,
+                    "x": 1385
+                },
+                {
+                    "y": 701.5,
+                    "x": 1368
+                },
+                {
+                    "y": 677.5,
+                    "x": 1351
+                },
+                {
+                    "y": 651.5,
+                    "x": 1319
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_38",
+            "blue": 0,
+            "red": 82,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 788,
+                    "x": 216.5
+                },
+                {
+                    "y": 781.75,
+                    "x": 207.25
+                },
+                {
+                    "y": 768,
+                    "x": 224
+                },
+                {
+                    "y": 756,
+                    "x": 324
+                },
+                {
+                    "y": 754,
+                    "x": 368
+                },
+                {
+                    "y": 772,
+                    "x": 336
+                },
+                {
+                    "y": 785,
+                    "x": 344
+                },
+                {
+                    "y": 792,
+                    "x": 361
+                },
+                {
+                    "y": 805,
+                    "x": 358.25
+                },
+                {
+                    "y": 793.25,
+                    "x": 256.5
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 144,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_36",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 116,
+                    "x": 1626
+                },
+                {
+                    "y": 85,
+                    "x": 1634
+                },
+                {
+                    "y": 45,
+                    "x": 1650
+                },
+                {
+                    "y": 102,
+                    "x": 1665
+                },
+                {
+                    "y": 134,
+                    "x": 1674
+                },
+                {
+                    "y": 173,
+                    "x": 1667
+                },
+                {
+                    "y": 189,
+                    "x": 1660
+                },
+                {
+                    "y": 149,
+                    "x": 1637
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_9",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 655,
+                    "x": 1241
+                },
+                {
+                    "y": 648,
+                    "x": 1194
+                },
+                {
+                    "y": 615,
+                    "x": 1192
+                },
+                {
+                    "y": 589,
+                    "x": 1223
+                },
+                {
+                    "y": 583,
+                    "x": 1285
+                },
+                {
+                    "y": 576,
+                    "x": 1333
+                },
+                {
+                    "y": 571,
+                    "x": 1451
+                },
+                {
+                    "y": 582,
+                    "x": 1554
+                },
+                {
+                    "y": 607,
+                    "x": 1594
+                },
+                {
+                    "y": 631,
+                    "x": 1602
+                },
+                {
+                    "y": 642,
+                    "x": 1593
+                },
+                {
+                    "y": 641,
+                    "x": 1447
+                },
+                {
+                    "y": 646,
+                    "x": 1348
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 25,
+            "id": "terrain_3",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 776,
+                    "x": 188
+                },
+                {
+                    "y": 748,
+                    "x": 166
+                },
+                {
+                    "y": 670,
+                    "x": 164
+                },
+                {
+                    "y": 626,
+                    "x": 210
+                },
+                {
+                    "y": 634,
+                    "x": 302
+                },
+                {
+                    "y": 646,
+                    "x": 356
+                },
+                {
+                    "y": 646,
+                    "x": 424
+                },
+                {
+                    "y": 640,
+                    "x": 468
+                },
+                {
+                    "y": 690,
+                    "x": 484
+                },
+                {
+                    "y": 744,
+                    "x": 470
+                },
+                {
+                    "y": 746,
+                    "x": 402
+                },
+                {
+                    "y": 764,
+                    "x": 320
+                },
+                {
+                    "y": 780,
+                    "x": 224
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 87,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 25,
+            "id": "terrain_39",
+            "blue": 0,
+            "red": 80,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 775.25,
+                    "x": 188.5
+                },
+                {
+                    "y": 751,
+                    "x": 179
+                },
+                {
+                    "y": 677,
+                    "x": 177
+                },
+                {
+                    "y": 636,
+                    "x": 199
+                },
+                {
+                    "y": 635,
+                    "x": 302
+                },
+                {
+                    "y": 647,
+                    "x": 356
+                },
+                {
+                    "y": 647,
+                    "x": 424
+                },
+                {
+                    "y": 641,
+                    "x": 468
+                },
+                {
+                    "y": 710,
+                    "x": 335
+                },
+                {
+                    "y": 737,
+                    "x": 320
+                },
+                {
+                    "y": 755,
+                    "x": 336
+                },
+                {
+                    "y": 763,
+                    "x": 320
+                },
+                {
+                    "y": 778.75,
+                    "x": 224
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 138,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_44",
+            "blue": 0,
+            "red": 80,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 582,
+                    "x": 863
+                },
+                {
+                    "y": 575,
+                    "x": 994
+                },
+                {
+                    "y": 611.5,
+                    "x": 1003.5
+                },
+                {
+                    "y": 649,
+                    "x": 997
+                },
+                {
+                    "y": 671,
+                    "x": 976
+                },
+                {
+                    "y": 674,
+                    "x": 953.5
+                },
+                {
+                    "y": 664.5,
+                    "x": 918
+                },
+                {
+                    "y": 649,
+                    "x": 877
+                },
+                {
+                    "y": 634,
+                    "x": 868
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_4",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 647,
+                    "x": 290
+                },
+                {
+                    "y": 641,
+                    "x": 200
+                },
+                {
+                    "y": 621,
+                    "x": 148
+                },
+                {
+                    "y": 581,
+                    "x": 102
+                },
+                {
+                    "y": 543,
+                    "x": 102
+                },
+                {
+                    "y": 533,
+                    "x": 136
+                },
+                {
+                    "y": 547,
+                    "x": 206
+                },
+                {
+                    "y": 575,
+                    "x": 352
+                },
+                {
+                    "y": 589,
+                    "x": 536
+                },
+                {
+                    "y": 601,
+                    "x": 604
+                },
+                {
+                    "y": 633,
+                    "x": 604
+                },
+                {
+                    "y": 647,
+                    "x": 584
+                },
+                {
+                    "y": 655,
+                    "x": 418
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 24,
+            "id": "terrain_52",
+            "blue": 0,
+            "red": 80,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 647,
+                    "x": 1822
+                },
+                {
+                    "y": 623,
+                    "x": 2110
+                },
+                {
+                    "y": 661.5,
+                    "x": 2100.5
+                },
+                {
+                    "y": 673,
+                    "x": 2054
+                },
+                {
+                    "y": 700,
+                    "x": 2028
+                },
+                {
+                    "y": 732,
+                    "x": 2044
+                },
+                {
+                    "y": 738.75,
+                    "x": 2075.25
+                },
+                {
+                    "y": 750.25,
+                    "x": 2030
+                },
+                {
+                    "y": 752.25,
+                    "x": 1962
+                },
+                {
+                    "y": 738,
+                    "x": 1888.25
+                },
+                {
+                    "y": 724,
+                    "x": 1892
+                },
+                {
+                    "y": 705,
+                    "x": 1888
+                },
+                {
+                    "y": 682,
+                    "x": 1861
+                },
+                {
+                    "y": 672,
+                    "x": 1813.25
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 137,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_5",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 653,
+                    "x": 1854
+                },
+                {
+                    "y": 647,
+                    "x": 1764
+                },
+                {
+                    "y": 627,
+                    "x": 1712
+                },
+                {
+                    "y": 615,
+                    "x": 1666
+                },
+                {
+                    "y": 590,
+                    "x": 1699
+                },
+                {
+                    "y": 577,
+                    "x": 1864
+                },
+                {
+                    "y": 579,
+                    "x": 2026
+                },
+                {
+                    "y": 607,
+                    "x": 2168
+                },
+                {
+                    "y": 625,
+                    "x": 2162
+                },
+                {
+                    "y": 637,
+                    "x": 2134
+                },
+                {
+                    "y": 641,
+                    "x": 2010
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_53",
+            "blue": 0,
+            "red": 35,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 652.25,
+                    "x": 1854
+                },
+                {
+                    "y": 646.25,
+                    "x": 1764.25
+                },
+                {
+                    "y": 626.75,
+                    "x": 1713.25
+                },
+                {
+                    "y": 623,
+                    "x": 1733
+                },
+                {
+                    "y": 631,
+                    "x": 1752
+                },
+                {
+                    "y": 620,
+                    "x": 1804
+                },
+                {
+                    "y": 612,
+                    "x": 1906
+                },
+                {
+                    "y": 607,
+                    "x": 2034
+                },
+                {
+                    "y": 615,
+                    "x": 2132
+                },
+                {
+                    "y": 624.75,
+                    "x": 2161.25
+                },
+                {
+                    "y": 636.25,
+                    "x": 2133.75
+                },
+                {
+                    "y": 640.5,
+                    "x": 2009.75
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 71,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": true,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_10",
+            "blue": 0,
+            "red": 0,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 599.75,
+                    "x": 828.75
+                },
+                {
+                    "y": 598.75,
+                    "x": 739.75
+                },
+                {
+                    "y": 588.75,
+                    "x": 699.75
+                },
+                {
+                    "y": 564.75,
+                    "x": 728.75
+                },
+                {
+                    "y": 533.75,
+                    "x": 810.75
+                },
+                {
+                    "y": 521.75,
+                    "x": 887.75
+                },
+                {
+                    "y": 519.75,
+                    "x": 959.75
+                },
+                {
+                    "y": 523.75,
+                    "x": 1046.75
+                },
+                {
+                    "y": 528.75,
+                    "x": 1091.75
+                },
+                {
+                    "y": 544.75,
+                    "x": 1121.75
+                },
+                {
+                    "y": 574.75,
+                    "x": 1121.75
+                },
+                {
+                    "y": 587.75,
+                    "x": 1087.75
+                },
+                {
+                    "y": 591.75,
+                    "x": 1030.75
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[Material]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 0,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_40",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 645.5,
+                    "x": 290
+                },
+                {
+                    "y": 640,
+                    "x": 200
+                },
+                {
+                    "y": 619.5,
+                    "x": 149
+                },
+                {
+                    "y": 581,
+                    "x": 104
+                },
+                {
+                    "y": 596,
+                    "x": 153
+                },
+                {
+                    "y": 607,
+                    "x": 169
+                },
+                {
+                    "y": 605,
+                    "x": 275
+                },
+                {
+                    "y": 621,
+                    "x": 410
+                },
+                {
+                    "y": 626,
+                    "x": 548
+                },
+                {
+                    "y": 627,
+                    "x": 578
+                },
+                {
+                    "y": 632.5,
+                    "x": 602.5
+                },
+                {
+                    "y": 646,
+                    "x": 583.5
+                },
+                {
+                    "y": 654,
+                    "x": 418.5
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 70,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_49",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 653.5,
+                    "x": 1242
+                },
+                {
+                    "y": 647,
+                    "x": 1194
+                },
+                {
+                    "y": 638,
+                    "x": 1207
+                },
+                {
+                    "y": 631,
+                    "x": 1231
+                },
+                {
+                    "y": 609,
+                    "x": 1311
+                },
+                {
+                    "y": 607,
+                    "x": 1382
+                },
+                {
+                    "y": 605,
+                    "x": 1484
+                },
+                {
+                    "y": 611,
+                    "x": 1560
+                },
+                {
+                    "y": 606,
+                    "x": 1594
+                },
+                {
+                    "y": 630,
+                    "x": 1602
+                },
+                {
+                    "y": 641,
+                    "x": 1593
+                },
+                {
+                    "y": 638.5,
+                    "x": 1447.5
+                },
+                {
+                    "y": 644.5,
+                    "x": 1347.5
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 71,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "texture_rotation": 0,
+            "outline": false,
+            "tint": 0,
+            "green": 0,
+            "id": "terrain_45",
+            "blue": 0,
+            "red": 36,
+            "theme": "Desert",
+            "dynamic": false,
+            "points": [
+                {
+                    "y": 598.5,
+                    "x": 831
+                },
+                {
+                    "y": 597,
+                    "x": 740.5
+                },
+                {
+                    "y": 588,
+                    "x": 719
+                },
+                {
+                    "y": 577,
+                    "x": 740
+                },
+                {
+                    "y": 568,
+                    "x": 827
+                },
+                {
+                    "y": 564,
+                    "x": 920
+                },
+                {
+                    "y": 563,
+                    "x": 1011
+                },
+                {
+                    "y": 558,
+                    "x": 1066
+                },
+                {
+                    "y": 560,
+                    "x": 1100
+                },
+                {
+                    "y": 567,
+                    "x": 1113
+                },
+                {
+                    "y": 574.5,
+                    "x": 1121.5
+                },
+                {
+                    "y": 586.5,
+                    "x": 1088.5
+                },
+                {
+                    "y": 591.5,
+                    "x": 1030
+                }
+            ],
+            "element_type": "TerrainBlockEntity",
+            "grass_theme": "[None]",
+            "texture_swf": "level_graphics/level_assets_desert.swf",
+            "shade": 71,
+            "shape": "edgeShape",
+            "texture_export": "landmass_bg_tile.png",
+            "unbreakable": false
+        },
+        {
+            "theme": "Stone",
+            "y": 298.2,
+            "sleep": false,
+            "id": "dynamic_1",
+            "name": "CubeMedium",
+            "angle": -3.1661178369486596,
+            "element_type": "DynamicObject",
+            "fixture": "cube_medium",
+            "unbreakable": false,
+            "x": 758.8
+        },
+        {
+            "theme": "Stone",
+            "y": 259.1,
+            "sleep": false,
+            "id": "dynamic_2",
+            "name": "CubeSmall",
+            "angle": -3.1647728123982413,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 769
+        },
+        {
+            "theme": "Wood",
+            "y": 361.2,
+            "sleep": false,
+            "id": "dynamic_3",
+            "name": "PlankSmall",
+            "angle": -3.1296345160134935,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 971.6
+        },
+        {
+            "theme": "Wood",
+            "y": 449,
+            "sleep": false,
+            "id": "dynamic_4",
+            "name": "PlankSmall",
+            "angle": -1.5880821329374024,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 910.7
+        },
+        {
+            "theme": "Wood",
+            "y": 450.8,
+            "sleep": false,
+            "id": "dynamic_5",
+            "name": "PlankSmall",
+            "angle": -1.52260390656083,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 1029.2
+        },
+        {
+            "theme": "Stone",
+            "y": 312.2,
+            "sleep": false,
+            "id": "dynamic_6",
+            "name": "CubeSmall",
+            "angle": -3.174628866624616,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 712.9
+        },
+        {
+            "theme": "Stone",
+            "y": 320,
+            "sleep": false,
+            "id": "dynamic_7",
+            "name": "CubeMedium",
+            "angle": -3.126917299929338,
+            "element_type": "DynamicObject",
+            "fixture": "cube_medium",
+            "unbreakable": false,
+            "x": 942.5
+        },
+        {
+            "theme": "Stone",
+            "y": 320.7,
+            "sleep": false,
+            "id": "dynamic_8",
+            "name": "CubeMedium",
+            "angle": -3.126448773153867,
+            "element_type": "DynamicObject",
+            "fixture": "cube_medium",
+            "unbreakable": false,
+            "x": 1005.7
+        },
+        {
+            "theme": "Wood",
+            "y": 418.3,
+            "sleep": false,
+            "id": "dynamic_9",
+            "name": "PlankSmall",
+            "angle": -3.257444485312437,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 1309.6
+        },
+        {
+            "theme": "Wood",
+            "y": 515.1,
+            "sleep": false,
+            "id": "dynamic_10",
+            "name": "PlankSmall",
+            "angle": -1.6616662709092536,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 1235.6
+        },
+        {
+            "theme": "Wood",
+            "y": 502.6,
+            "sleep": false,
+            "id": "dynamic_11",
+            "name": "PlankSmall",
+            "angle": -1.6133882490612903,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 1356.9
+        },
+        {
+            "theme": "Stone",
+            "y": 395.2,
+            "sleep": false,
+            "id": "dynamic_13",
+            "name": "PlankMedium",
+            "angle": -2.7938462929623915,
+            "element_type": "DynamicObject",
+            "fixture": "plank_medium",
+            "unbreakable": false,
+            "x": 1139
+        },
+        {
+            "theme": "Stone",
+            "y": 379.5,
+            "sleep": false,
+            "id": "dynamic_12",
+            "name": "CubeMedium",
+            "angle": -3.2543811967311367,
+            "element_type": "DynamicObject",
+            "fixture": "cube_medium",
+            "unbreakable": false,
+            "x": 1288.9
+        },
+        {
+            "theme": "Stone",
+            "y": 397.6,
+            "sleep": false,
+            "id": "dynamic_14",
+            "name": "CubeSmall",
+            "angle": -3.258396612208108,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 1244.9
+        },
+        {
+            "theme": "Stone",
+            "y": 339.8,
+            "sleep": false,
+            "id": "dynamic_15",
+            "name": "CubeSmall",
+            "angle": -3.2529301637870742,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 1295.5
+        },
+        {
+            "theme": "Stone",
+            "y": 276.9,
+            "sleep": false,
+            "id": "dynamic_16",
+            "name": "CubeMedium",
+            "angle": -3.1940594510219578,
+            "element_type": "DynamicObject",
+            "fixture": "cube_medium",
+            "unbreakable": false,
+            "x": 1367.2
+        },
+        {
+            "theme": "Stone",
+            "y": 287.2,
+            "sleep": false,
+            "id": "dynamic_17",
+            "name": "CubeSmall",
+            "angle": -3.1998908019067387,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 1412.6
+        },
+        {
+            "theme": "Stone",
+            "y": 238.9,
+            "sleep": false,
+            "id": "dynamic_18",
+            "name": "CubeSmall",
+            "angle": -3.194791903080132,
+            "element_type": "DynamicObject",
+            "fixture": "cube_small",
+            "unbreakable": false,
+            "x": 1351.8
+        },
+        {
+            "theme": "Wood",
+            "y": 571.8,
+            "sleep": false,
+            "id": "dynamic_19",
+            "name": "PlankSmall",
+            "angle": -3.250949047449897,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 638.5
+        },
+        {
+            "theme": "Wood",
+            "y": 571.4,
+            "sleep": false,
+            "id": "dynamic_20",
+            "name": "PlankSmall",
+            "angle": -3.0951826949245933,
+            "element_type": "DynamicObject",
+            "fixture": "plank_small",
+            "unbreakable": false,
+            "x": 1629.2
+        }
+    ],
+    "zoom_side": "height",
+    "water_line": 900,
+    "camera_bounds_width": 20,
+    "level_name": "desert_03_hard",
+    "camera_bounds_height": 100,
+    "water_density": 100,
+    "parallax_layers": [
+        {
+            "y": 1000,
+            "graphics_export": [
+                "parallax_1_1.png",
+                "parallax_1_2.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.3,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_1",
+            "tile_horizontally": true,
+            "camera_z": 0.6,
+            "gap": 300,
+            "camera_y_pan": 0.35,
+            "x": 0
+        },
+        {
+            "y": 800,
+            "graphics_export": [
+                "parallax_2_2.png",
+                "parallax_2_3.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.45,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_2",
+            "tile_horizontally": false,
+            "camera_z": 0.35,
+            "gap": 500,
+            "camera_y_pan": 0.5,
+            "x": 1200
+        },
+        {
+            "y": 930,
+            "graphics_export": [
+                "parallax_3_1.png",
+                "parallax_3_2.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.45,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_3",
+            "tile_horizontally": true,
+            "camera_z": 0.3,
+            "gap": 300,
+            "camera_y_pan": 0.5,
+            "x": 100
+        },
+        {
+            "y": 850,
+            "graphics_export": [
+                "parallax_4_2.png",
+                "parallax_4_1.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.7,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_4",
+            "tile_horizontally": true,
+            "camera_z": 0.2,
+            "gap": 650,
+            "camera_y_pan": 0.75,
+            "x": 700
+        },
+        {
+            "y": 820,
+            "graphics_export": [
+                "parallax_5_1.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.8,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_5",
+            "tile_horizontally": true,
+            "camera_z": 0.15,
+            "gap": 500,
+            "camera_y_pan": 0.85,
+            "x": 570
+        },
+        {
+            "y": 0,
+            "graphics_export": [
+                "parallax_6_1.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.9,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_6",
+            "tile_horizontally": true,
+            "camera_z": 0.1,
+            "gap": 1200,
+            "camera_y_pan": 0.9,
+            "x": 500
+        },
+        {
+            "y": -300,
+            "graphics_export": [
+                "parallax_6_2.png"
+            ],
+            "element_type": "ParallaxLayer",
+            "camera_x_pan": 0.97,
+            "graphics_swf": "level_graphics/level_bg_desert.swf",
+            "id": "parallax_7",
+            "tile_horizontally": true,
+            "camera_z": 0.1,
+            "gap": 1000,
+            "camera_y_pan": 0.97,
+            "x": 200
+        }
+    ],
+    "water_theme": "NotDefined",
+    "water_lineardrag": 2,
+    "theme": "Desert",
+    "water_velocity_x": 0,
+    "width": 2300,
+    "water_angulardrag": 1,
+    "spawn_points": [
+        {
+            "name": "SpawnPoint0",
+            "y": 315,
+            "x": 1878
+        },
+        {
+            "name": "SpawnPoint1",
+            "y": 288,
+            "x": 672
+        },
+        {
+            "name": "SpawnPoint2",
+            "y": 255,
+            "x": 258
+        },
+        {
+            "name": "SpawnPoint3",
+            "y": 259,
+            "x": 1496
+        }
+    ],
+    "height": 900,
+    "water_velocity_y": 0,
+    "power_up_percentage": 0,
+    "power_ups": []
+}

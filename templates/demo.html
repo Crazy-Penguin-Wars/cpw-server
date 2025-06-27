@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Penguin Wars Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center">Crazy Penguin Wars Demo</h1>
+        <form id="gameForm" action="/start_game" method="POST" class="space-y-4">
+            <div>
+                <label class="block mb-1">Match Time (min:sec)</label>
+                <input type="number" id="match_minutes" class="w-20 p-2 rounded bg-gray-700" placeholder="Min">
+                <input type="number" id="match_seconds" class="w-20 p-2 rounded bg-gray-700" placeholder="Sec">
+            </div>
+            <div>
+                <label class="block mb-1">Turn Time (seconds)</label>
+                <input type="number" id="turn_time" name="turn_time" class="w-full p-2 rounded bg-gray-700" required>
+            </div>
+            <div>
+                <label class="block mb-1">Player Name</label>
+                <input type="text" id="player_name" name="player_name" class="w-full p-2 rounded bg-gray-700" required>
+            </div>
+            <div style="display: none;">
+                <label class="block mb-1">Map</label>
+                <select name="map" class="w-full p-2 rounded bg-gray-700">
+                    <option value="random">Random</option>
+                    <option value="map1">Placeholder Map 1</option>
+                    <option value="map2">Placeholder Map 2</option>
+                </select>
+            </div>
+            <div>
+                <label class="block mb-1">Number of Bots</label>
+                <select name="botCount" id="botCount" class="w-full p-2 rounded bg-gray-700">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div id="botContainer"></div>
+            <button type="submit" class="w-full bg-blue-500 p-2 rounded">Start Game</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("botCount").addEventListener("change", updateBots);
+        document.getElementById("gameForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const matchMinutes = parseInt(document.getElementById("match_minutes").value) || 0;
+            const matchSeconds = parseInt(document.getElementById("match_seconds").value) || 0;
+            const totalMatchTime = (matchMinutes * 60) + matchSeconds;
+            
+            const formData = new FormData(form);
+            formData.append("match_time", totalMatchTime);
+            formData.delete("match_minutes");
+            formData.delete("match_seconds");
+            
+            fetch(form.action, {
+        method: "POST",
+        body: formData
+    }).then(response => {
+        if (response.redirected) {
+            window.location.href = response.url;
+        }
+    });
+        });
+        
+        document.getElementById("match_minutes").value = "{{match_minutes}}";
+        document.getElementById("match_seconds").value = "{{match_seconds}}";
+        document.getElementById("turn_time").value = "{{turn_time}}";
+        document.getElementById("player_name").value = "{{player_name}}";
+        //document.getElementById("map").value = "{{map}}";
+        document.getElementById("botCount").value = "{{botCount}}";
+
+        const botNamesByServer = ["{{bot1_name}}", "{{bot2_name}}", "{{bot3_name}}", "{{bot4_name}}"]
+
+        function updateBots() {
+            const botContainer = document.getElementById("botContainer");
+            botContainer.innerHTML = "";
+            const count = document.getElementById("botCount").value;
+            for (let i = 1; i <= count; i++) {
+                const input = document.createElement("input");
+                input.type = "text";
+                input.name = `bot${i}_name`;
+                input.id = `bot${i}_name`;
+                input.placeholder = `Bot ${i} Name`;
+                input.className = "w-full p-2 rounded bg-gray-700 mt-2";
+                input.value = botNamesByServer[i-1]
+                botContainer.appendChild(input);
+            }
+        }
+        updateBots();
+
+    </script>
+</body>
+</html>

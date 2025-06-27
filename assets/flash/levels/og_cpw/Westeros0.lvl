@@ -1,0 +1,444 @@
+{
+    "water_density": 100,
+    "height": 800,
+    "elements": [
+        {
+            "shape": "edgeShape",
+            "id": 1,
+            "points": [
+                {"y": 651, "x": 2.5},
+                {"y": 627, "x": 3},
+                {"y": 627.5, "x": 103.5},
+                {"y": 616, "x": 153},
+                {"y": 587.5, "x": 199},
+                {"y": 551.5, "x": 227},
+                {"y": 578.5, "x": 302.5},
+                {"y": 602, "x": 312},
+                {"y": 619, "x": 326.5},
+                {"y": 651, "x": 326.5}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 2,
+            "points": [
+                {"y": 619.5, "x": 338},
+                {"y": 650.5, "x": 336.5},
+                {"y": 650.5, "x": 401.5},
+                {"y": 625.5, "x": 401}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 3,
+            "points": [
+                {"y": 625.5, "x": 414.5},
+                {"y": 650.5, "x": 414.5},
+                {"y": 648.5, "x": 495},
+                {"y": 637, "x": 495.5}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 4,
+            "points": [
+                {"y": 626.5, "x": 600.5},
+                {"y": 650, "x": 600.5},
+                {"y": 651, "x": 665.5},
+                {"y": 619.5, "x": 664.5}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 5,
+            "points": [
+                {"y": 636.5, "x": 505},
+                {"y": 648, "x": 507},
+                {"y": 649, "x": 591},
+                {"y": 626.5, "x": 590}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 6,
+            "points": [
+                {"y": 650.5, "x": 675.5},
+                {"y": 616, "x": 675.5},
+                {"y": 600.5, "x": 690},
+                {"y": 576, "x": 701},
+                {"y": 551, "x": 776.5},
+                {"y": 586, "x": 803.5},
+                {"y": 613.5, "x": 850.5},
+                {"y": 627, "x": 901},
+                {"y": 626, "x": 1000},
+                {"y": 650.5, "x": 1000}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 7,
+            "points": [
+                {"y": 567.5, "x": 307},
+                {"y": 535.5, "x": 239.5},
+                {"y": 501, "x": 276.5},
+                {"y": 541, "x": 332.5}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 8,
+            "points": [
+                {"y": 533.5, "x": 343.5},
+                {"y": 488.5, "x": 293.5},
+                {"y": 465, "x": 346},
+                {"y": 521, "x": 373.5}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 9,
+            "points": [
+                {"y": 517, "x": 384.5},
+                {"y": 458, "x": 359.5},
+                {"y": 441.5, "x": 423.5},
+                {"y": 499, "x": 433.5}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 10,
+            "points": [
+                {"y": 497, "x": 449},
+                {"y": 438.5, "x": 437},
+                {"y": 437.5, "x": 563.5},
+                {"y": 496.5, "x": 551.5}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 12,
+            "points": [
+                {"y": 565.5, "x": 697.5},
+                {"y": 540, "x": 671.5},
+                {"y": 499.5, "x": 727},
+                {"y": 536, "x": 763}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 13,
+            "points": [
+                {"y": 532, "x": 661.5},
+                {"y": 521.5, "x": 628},
+                {"y": 465.5, "x": 654},
+                {"y": 489, "x": 711}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 14,
+            "points": [
+                {"y": 515.5, "x": 616.5},
+                {"y": 500.5, "x": 567.5},
+                {"y": 439, "x": 577},
+                {"y": 458, "x": 641.5}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 11,
+            "points": [
+                {"y": 497, "x": -1},
+                {"y": 478.5, "x": 35.5},
+                {"y": 475.5, "x": 91},
+                {"y": 455.5, "x": 56},
+                {"y": 451, "x": 0}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 15,
+            "points": [
+                {"y": 329, "x": -2},
+                {"y": 332, "x": 71},
+                {"y": 355, "x": 109},
+                {"y": 360, "x": 39.5},
+                {"y": 381.5, "x": -1}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 16,
+            "points": [
+                {"y": 269.5, "x": 189},
+                {"y": 253, "x": 237.5},
+                {"y": 252.5, "x": 336},
+                {"y": 274, "x": 373},
+                {"y": 279.5, "x": 310.5},
+                {"y": 279, "x": 247}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 17,
+            "points": [
+                {"y": 253, "x": 651},
+                {"y": 253, "x": 758},
+                {"y": 274, "x": 804},
+                {"y": 275, "x": 741},
+                {"y": 288, "x": 731},
+                {"y": 288, "x": 686},
+                {"y": 277, "x": 673},
+                {"y": 278, "x": 612}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 18,
+            "points": [
+                {"y": 323, "x": 1000},
+                {"y": 332, "x": 896},
+                {"y": 355, "x": 858},
+                {"y": 352, "x": 943},
+                {"y": 368, "x": 1001}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 19,
+            "points": [
+                {"y": 446, "x": 1004},
+                {"y": 450, "x": 933},
+                {"y": 472, "x": 902},
+                {"y": 469, "x": 944},
+                {"y": 486, "x": 1003}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 20,
+            "points": [
+                {"y": 331, "x": 452},
+                {"y": 331, "x": 548},
+                {"y": 353, "x": 522},
+                {"y": 359, "x": 501},
+                {"y": 353, "x": 471}
+            ],
+            "texture_export": null,
+            "theme": "Ice",
+            "texture_swf": null,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "shape": "edgeShape",
+            "id": 21,
+            "points": [
+                {"y": 263, "x": -4},
+                {"y": 202, "x": 28},
+                {"y": 171, "x": 82},
+                {"y": 153, "x": 129},
+                {"y": 183, "x": 161},
+                {"y": 195, "x": 191},
+                {"y": 158, "x": 174},
+                {"y": 103, "x": 192},
+                {"y": 73, "x": 270},
+                {"y": 79, "x": 359},
+                {"y": 108, "x": 380},
+                {"y": 135, "x": 365},
+                {"y": 107, "x": 422},
+                {"y": 140, "x": 463},
+                {"y": 209, "x": 486},
+                {"y": 224, "x": 497},
+                {"y": 209, "x": 513},
+                {"y": 142, "x": 531},
+                {"y": 107, "x": 566},
+                {"y": 137, "x": 613},
+                {"y": 111, "x": 608},
+                {"y": 77, "x": 637},
+                {"y": 63, "x": 725},
+                {"y": 88, "x": 796},
+                {"y": 132, "x": 826},
+                {"y": 162, "x": 831},
+                {"y": 184, "x": 823},
+                {"y": 158, "x": 858},
+                {"y": 126, "x": 877},
+                {"y": 147, "x": 949},
+                {"y": 188, "x": 978},
+                {"y": 250, "x": 1002},
+                {"y": -1, "x": 1001},
+                {"y": 0, "x": -3}
+            ],
+            "texture_export": "",
+            "theme": "Stone",
+            "texture_swf": "",
+            "element_type": "TerrainBlockEntity"
+        }
+    ],
+    "water_velocity_x": 0,
+    "water_angulardrag": 1,
+    "water_lineardrag": 2,
+    "theme": "Winter",
+    "water_velocity_y": 0,
+    "power_ups": [
+        {
+            "id": 22,
+            "y": 604,
+            "export_name": "AmmoCrate",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 498
+        },
+        {
+            "id": 23,
+            "y": 226,
+            "export_name": "HealthCrate",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 705
+        },
+        {
+            "id": 24,
+            "y": 413,
+            "export_name": "PointsCrate",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 498
+        },
+        {
+            "id": 25,
+            "y": 224,
+            "export_name": "HealthCrate",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 282
+        },
+        {
+            "id": 26,
+            "y": 319,
+            "export_name": "FireMine",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 501
+        },
+        {
+            "id": 27,
+            "y": 439,
+            "export_name": "LandMine",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 22
+        },
+        {
+            "id": 28,
+            "y": 435,
+            "export_name": "LandMine",
+            "angle": 0,
+            "appear_percentage": 100,
+            "x": 977
+        },
+        {
+            "id": 29,
+            "y": 596,
+            "export_name": "HealthCrate",
+            "angle": 0,
+            "appear_percentage": 50,
+            "x": 575
+        },
+        {
+            "id": 30,
+            "y": 590,
+            "export_name": "Treasure",
+            "angle": 0,
+            "appear_percentage": 50,
+            "x": 433
+        }
+    ],
+    "parallax_layers": [],
+    "spawn_points": [
+        {"y": 291, "x": 969},
+        {"y": 588, "x": 58},
+        {"y": 591, "x": 946},
+        {"y": 293, "x": 51}
+    ],
+    "level_name": "Westeros0",
+    "power_up_percentage": 0,
+    "zoom_side": "width",
+    "water_line": 700,
+    "width": 1000
+}

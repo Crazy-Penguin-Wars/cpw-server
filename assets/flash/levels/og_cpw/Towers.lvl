@@ -1,0 +1,96 @@
+{
+    "power_ups": [],
+    "parallax_layers": [
+        {
+            "graphics_export": ["parallax_1_1.png", "parallax_1_2.png"],
+            "id": 4,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 0,
+            "gap": 1500,
+            "element_type": "ParallaxLayer",
+            "y": 800,
+            "tile_horizontally": true
+        },
+        {
+            "graphics_export": ["parallax_2_2.png", "parallax_2_1.png"],
+            "id": 1,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 400,
+            "gap": 800,
+            "element_type": "ParallaxLayer",
+            "y": 800,
+            "tile_horizontally": false
+        },
+        {
+            "graphics_export": ["parallax_3_1.png"],
+            "id": 2,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 200,
+            "gap": 700,
+            "element_type": "ParallaxLayer",
+            "y": 700,
+            "tile_horizontally": true
+        },
+        {
+            "graphics_export": ["parallax_4_1.png"],
+            "id": 3,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 500,
+            "gap": 1000,
+            "element_type": "ParallaxLayer",
+            "y": 600,
+            "tile_horizontally": true
+        },
+        {
+            "graphics_export": ["parallax_5_1.png", "parallax_5_2.png"],
+            "id": 5,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 200,
+            "gap": 500,
+            "element_type": "ParallaxLayer",
+            "y": 400,
+            "tile_horizontally": false
+        },
+        {
+            "graphics_export": ["parallax_6_1.png", "parallax_6_2.png"],
+            "id": 6,
+            "camera_y_pan": 0,
+            "camera_x_pan": 0,
+            "graphics_swf": "flash/level_obstacles/level_background_forest.swf",
+            "x": 300,
+            "gap": 500,
+            "element_type": "ParallaxLayer",
+            "y": 200,
+            "tile_horizontally": true
+        }
+    ],
+    "level_name": "tutorial_level",
+    "power_up_percentage": 0,
+    "zoom_side": "height",
+    "theme": "Forest",
+    "elements": [],
+    "water_density": 32,
+    "width": 1593,
+    "water_lineardrag": 15,
+    "height": 900,
+    "water_line": 700,
+    "water_angulardrag": 15,
+    "water_velocity_x": 0,
+    "spawn_points": [
+        {"y": -22.5, "x": 176},
+        {"y": -16.5, "x": 126},
+        {"y": -9.5, "x": 106},
+        {"y": 0.3, "x": 68}
+    ],
+    "water_velocity_y": 0
+}

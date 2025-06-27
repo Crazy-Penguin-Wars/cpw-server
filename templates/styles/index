@@ -1,0 +1,39 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/* cached on: Mon, 10 Feb 2014 13:02:02 GMT */ 
+(function(a){var g=a.document,i=g.location,c=/sgad=([a-z0-9-.]+)/i.exec(i.search)||[0,"api.spilgames.com"],f=/sgav=([0-9.]+)/.exec(i.search)||[0,"last"],h=/sgsi=([0-9]+)/.exec(i.search)||/siteid=([0-9]+)/.exec(i.search)||[0,0],b=/sgci=([0-9]+)/.exec(i.search)||/channelid=([0-9]+)/.exec(i.search)||[0,0],j='<script type="text/javascript" src="//';j+=c[1]+"/sa/";j+=f[1]+"/";j+=b[1]+"/";j+=h[1]+"/";j+="js/spilgames.external.api.js";j+='"><\/script>';try{if(!a.parent.SpilGames){throw""}a.SpilGames=a.parent.SpilGames}catch(d){if(!a.SpilGames){g.write(j)}}}(window));
+
+}
+/*
+     FILE ARCHIVED ON 07:06:48 Feb 15, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 13:47:21 Jul 29, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 326.81
+  exclusion.robots: 139.295
+  exclusion.robots.policy: 139.286
+  xauthn.identify: 79.523
+  xauthn.chkprivs: 59.506
+  cdx.remote: 0.079
+  esindex: 0.011
+  LoadShardBlock: 139.754 (3)
+  PetaboxLoader3.datanode: 158.802 (4)
+  CDXLines.iter: 23.628 (3)
+  load_resource: 93.239
+  PetaboxLoader3.resolve: 30.227
+*/

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+	<bodies>
+
+		<body name="custom_object_tree">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>100</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -117.5000, 25.0000  ,  -123.5000, -6.0000  ,  -103.0000, -28.5000  ,  -49.5000, -27.0000  ,  -86.5000, 27.0000 </polygon>
+
+                        <polygon>  -77.0000, 62.5000  ,  -86.5000, 27.0000  ,  -49.5000, -27.0000  ,  14.5000, -39.0000  ,  60.0000, -1.5000  ,  98.5000, 45.0000  ,  114.5000, 95.0000  ,  -41.5000, 70.0000 </polygon>
+
+                        <polygon>  -14.4070, -134.4186  ,  -4.0465, -146.6628  ,  56.9186, -135.0000  ,  5.8947, -115.1579 </polygon>
+
+                        <polygon>  121.5000, 19.0000  ,  98.5000, 45.0000  ,  60.0000, -1.5000  ,  112.0000, -8.5000 </polygon>
+
+                        <polygon>  -30.5000, 122.0000  ,  -41.5000, 70.0000  ,  114.5000, 95.0000  ,  16.0000, 147.5000 </polygon>
+
+                        <polygon>  -34.5000, -70.0000  ,  2.0000, -83.5000  ,  14.5000, -39.0000  ,  -49.5000, -27.0000 </polygon>
+
+                        <polygon>  5.8947, -115.1579  ,  56.9186, -135.0000  ,  2.0000, -83.5000 </polygon>
+
+                        <polygon>  29.0000, -68.5000  ,  10.5000, -54.0000  ,  2.0000, -83.5000  ,  40.1628, -119.1512 </polygon>
+
+                        <polygon>  109.0000, 58.5000  ,  114.5000, 95.0000  ,  98.5000, 45.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+	</bodies>
+	<metadata>
+		<format>1</format>
+		<ptm_ratio>2</ptm_ratio>
+	</metadata>
+</bodydef>
+
+
+

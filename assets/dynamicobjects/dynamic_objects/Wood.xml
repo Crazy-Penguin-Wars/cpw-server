@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with http://www.physicseditor.de -->
+<bodydef version="1.0">
+	<bodies>
+
+		<body name="ball_medium">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>CIRCLE</fixture_type>
+
+
+                    <circle r="26.173" x="-0.004" y="0.167"/>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="ball_small">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>CIRCLE</fixture_type>
+
+
+                    <circle r="13.000" x="0.393" y="-0.004"/>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="cube_big">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  49.0000, 48.0000  ,  -49.0000, 48.0000  ,  -49.0000, -49.0000  ,  49.0000, -49.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="cube_medium">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -25.0000, 26.0000  ,  -25.0000, -25.0000  ,  25.0000, -25.0000  ,  25.0000, 26.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="cube_small">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -12.0000, 13.0000  ,  -12.0000, -12.0000  ,  12.0000, -12.0000  ,  12.0000, 13.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="triangle_medium">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -26.0000, -26.5000  ,  26.0000, -26.5000  ,  26.0000, -22.5000  ,  -22.0000, 26.5000  ,  -26.0000, 26.5000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="triangle_small">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -13.0000, -13.5000  ,  13.0000, -13.5000  ,  13.0000, -11.5000  ,  -11.0000, 13.5000  ,  -13.0000, 13.5000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="rectangle_large">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  96.0000, 25.5000  ,  -96.0000, 25.5000  ,  -96.0000, -25.5000  ,  96.0000, -25.5000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="rectangle_medium">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  49.0000, 25.5000  ,  -49.0000, 25.5000  ,  -49.0000, -25.5000  ,  49.0000, -25.5000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="plank_medium">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -96.0000, 14.0000  ,  -96.0000, -14.0000  ,  96.0000, -14.0000  ,  96.0000, 14.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="plank_large">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  199.5000, 14.0000  ,  -199.5000, 14.0000  ,  -199.5000, -14.0000  ,  199.5000, -14.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+		<body name="plank_small">
+            <anchorpoint>0.5000,0.5000</anchorpoint>
+			<fixtures>
+
+				<fixture>
+					<density>20</density>
+					<friction>1</friction>
+					<restitution>0.2</restitution>
+					<filter_categoryBits>1</filter_categoryBits>
+					<filter_groupIndex>0</filter_groupIndex>
+					<filter_maskBits>65535</filter_maskBits>
+					<fixture_type>POLYGON</fixture_type>
+
+
+					<polygons>
+
+                        <polygon>  -73.5000, 14.0000  ,  -73.5000, -14.0000  ,  73.5000, -14.0000  ,  73.5000, 14.0000 </polygon>
+
+					</polygons>
+
+				</fixture>
+
+			</fixtures>
+		</body>
+
+	</bodies>
+	<metadata>
+		<format>1</format>
+		<ptm_ratio>2</ptm_ratio>
+	</metadata>
+</bodydef>
+
+
+

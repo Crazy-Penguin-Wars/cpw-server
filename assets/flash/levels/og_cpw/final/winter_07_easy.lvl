@@ -1,0 +1,1502 @@
+{
+    "elements": [
+        {
+            "no_fixtures": false,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 807,
+                    "x": 853
+                },
+                {
+                    "y": 738,
+                    "x": 863
+                },
+                {
+                    "y": 681,
+                    "x": 874
+                },
+                {
+                    "y": 648,
+                    "x": 897
+                },
+                {
+                    "y": 645,
+                    "x": 959
+                },
+                {
+                    "y": 648,
+                    "x": 1026
+                },
+                {
+                    "y": 667,
+                    "x": 1046
+                },
+                {
+                    "y": 739,
+                    "x": 1057
+                },
+                {
+                    "y": 780,
+                    "x": 1068
+                },
+                {
+                    "y": 815,
+                    "x": 1085
+                }
+            ],
+            "id": "terrain_8",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "Ice",
+            "theme": "Stone",
+            "dynamic": false,
+            "blue": 0,
+            "green": 0,
+            "shade": 0,
+            "texture_rotation": 0,
+            "unbreakable": true,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": false,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 820,
+                    "x": 109
+                },
+                {
+                    "y": 736,
+                    "x": 128
+                },
+                {
+                    "y": 679,
+                    "x": 139
+                },
+                {
+                    "y": 638,
+                    "x": 159
+                },
+                {
+                    "y": 643,
+                    "x": 224
+                },
+                {
+                    "y": 644,
+                    "x": 307
+                },
+                {
+                    "y": 665,
+                    "x": 315
+                },
+                {
+                    "y": 737,
+                    "x": 322
+                },
+                {
+                    "y": 778,
+                    "x": 333
+                },
+                {
+                    "y": 819,
+                    "x": 342
+                }
+            ],
+            "id": "terrain_7",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "Ice",
+            "theme": "Stone",
+            "dynamic": false,
+            "blue": 0,
+            "green": 0,
+            "shade": 0,
+            "texture_rotation": 0,
+            "unbreakable": true,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": true,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 618,
+                    "x": 259
+                },
+                {
+                    "y": 592,
+                    "x": 97
+                },
+                {
+                    "y": 574,
+                    "x": 100
+                },
+                {
+                    "y": 478,
+                    "x": 146
+                },
+                {
+                    "y": 404,
+                    "x": 148
+                },
+                {
+                    "y": 328,
+                    "x": 148
+                },
+                {
+                    "y": 266,
+                    "x": 124
+                },
+                {
+                    "y": 234,
+                    "x": 99
+                },
+                {
+                    "y": 201,
+                    "x": 132
+                },
+                {
+                    "y": 187,
+                    "x": 178
+                },
+                {
+                    "y": 312,
+                    "x": 212
+                },
+                {
+                    "y": 362,
+                    "x": 231
+                },
+                {
+                    "y": 317,
+                    "x": 237
+                },
+                {
+                    "y": 357,
+                    "x": 256
+                },
+                {
+                    "y": 304,
+                    "x": 270
+                },
+                {
+                    "y": 270,
+                    "x": 278
+                },
+                {
+                    "y": 248,
+                    "x": 279
+                },
+                {
+                    "y": 248,
+                    "x": 319
+                },
+                {
+                    "y": 228,
+                    "x": 350
+                },
+                {
+                    "y": 194,
+                    "x": 467
+                },
+                {
+                    "y": 238,
+                    "x": 454
+                },
+                {
+                    "y": 322,
+                    "x": 442
+                },
+                {
+                    "y": 414,
+                    "x": 440
+                },
+                {
+                    "y": 541,
+                    "x": 444
+                },
+                {
+                    "y": 538,
+                    "x": 369
+                },
+                {
+                    "y": 494,
+                    "x": 361
+                },
+                {
+                    "y": 472,
+                    "x": 352
+                },
+                {
+                    "y": 462,
+                    "x": 337
+                },
+                {
+                    "y": 478,
+                    "x": 325
+                },
+                {
+                    "y": 511,
+                    "x": 320
+                },
+                {
+                    "y": 577,
+                    "x": 309
+                }
+            ],
+            "id": "terrain_3",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "[None]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 43,
+            "green": 19,
+            "shade": 115,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": true,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 576,
+                    "x": 819
+                },
+                {
+                    "y": 502,
+                    "x": 849
+                },
+                {
+                    "y": 372,
+                    "x": 858
+                },
+                {
+                    "y": 324,
+                    "x": 858
+                },
+                {
+                    "y": 242,
+                    "x": 846
+                },
+                {
+                    "y": 198,
+                    "x": 816
+                },
+                {
+                    "y": 179.5,
+                    "x": 800
+                },
+                {
+                    "y": 179,
+                    "x": 873
+                },
+                {
+                    "y": 203,
+                    "x": 863
+                },
+                {
+                    "y": 266,
+                    "x": 877
+                },
+                {
+                    "y": 311,
+                    "x": 890
+                },
+                {
+                    "y": 272,
+                    "x": 903
+                },
+                {
+                    "y": 223,
+                    "x": 908
+                },
+                {
+                    "y": 182,
+                    "x": 906
+                },
+                {
+                    "y": 196,
+                    "x": 970
+                },
+                {
+                    "y": 251,
+                    "x": 1015
+                },
+                {
+                    "y": 307,
+                    "x": 1030
+                },
+                {
+                    "y": 242,
+                    "x": 1037
+                },
+                {
+                    "y": 201,
+                    "x": 1053
+                },
+                {
+                    "y": 186,
+                    "x": 1108
+                },
+                {
+                    "y": 232,
+                    "x": 1063
+                },
+                {
+                    "y": 356,
+                    "x": 1060
+                },
+                {
+                    "y": 436,
+                    "x": 1059
+                },
+                {
+                    "y": 376,
+                    "x": 1043
+                },
+                {
+                    "y": 457,
+                    "x": 1038
+                },
+                {
+                    "y": 526,
+                    "x": 1060
+                },
+                {
+                    "y": 504,
+                    "x": 1074
+                },
+                {
+                    "y": 554,
+                    "x": 1078
+                },
+                {
+                    "y": 594,
+                    "x": 1086
+                },
+                {
+                    "y": 604,
+                    "x": 889
+                }
+            ],
+            "id": "terrain_4",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "[None]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 43,
+            "green": 21,
+            "shade": 114,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": false,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 222,
+                    "x": -10
+                },
+                {
+                    "y": 196,
+                    "x": -54
+                },
+                {
+                    "y": 114,
+                    "x": -52
+                },
+                {
+                    "y": 46,
+                    "x": -24
+                },
+                {
+                    "y": -4,
+                    "x": 44
+                },
+                {
+                    "y": -28,
+                    "x": 136
+                },
+                {
+                    "y": -50,
+                    "x": 390
+                },
+                {
+                    "y": -48,
+                    "x": 686
+                },
+                {
+                    "y": -22,
+                    "x": 1104
+                },
+                {
+                    "y": -4,
+                    "x": 1206
+                },
+                {
+                    "y": 36,
+                    "x": 1260
+                },
+                {
+                    "y": 100,
+                    "x": 1282
+                },
+                {
+                    "y": 160,
+                    "x": 1260
+                },
+                {
+                    "y": 206,
+                    "x": 1228
+                },
+                {
+                    "y": 252,
+                    "x": 1214
+                },
+                {
+                    "y": 292,
+                    "x": 1206
+                },
+                {
+                    "y": 252,
+                    "x": 1180
+                },
+                {
+                    "y": 226,
+                    "x": 1160
+                },
+                {
+                    "y": 202,
+                    "x": 1132
+                },
+                {
+                    "y": 190,
+                    "x": 1106
+                },
+                {
+                    "y": 202,
+                    "x": 1060
+                },
+                {
+                    "y": 238,
+                    "x": 1044
+                },
+                {
+                    "y": 292,
+                    "x": 1038
+                },
+                {
+                    "y": 340,
+                    "x": 1034
+                },
+                {
+                    "y": 252,
+                    "x": 1008
+                },
+                {
+                    "y": 210,
+                    "x": 972
+                },
+                {
+                    "y": 188,
+                    "x": 922
+                },
+                {
+                    "y": 186,
+                    "x": 870
+                },
+                {
+                    "y": 186,
+                    "x": 780
+                },
+                {
+                    "y": 214,
+                    "x": 746
+                },
+                {
+                    "y": 260,
+                    "x": 700
+                },
+                {
+                    "y": 326,
+                    "x": 664
+                },
+                {
+                    "y": 300,
+                    "x": 652
+                },
+                {
+                    "y": 248,
+                    "x": 646
+                },
+                {
+                    "y": 208,
+                    "x": 636
+                },
+                {
+                    "y": 190,
+                    "x": 616
+                },
+                {
+                    "y": 236,
+                    "x": 594
+                },
+                {
+                    "y": 254,
+                    "x": 579
+                },
+                {
+                    "y": 314,
+                    "x": 559
+                },
+                {
+                    "y": 242,
+                    "x": 528
+                },
+                {
+                    "y": 221,
+                    "x": 510
+                },
+                {
+                    "y": 194,
+                    "x": 490
+                },
+                {
+                    "y": 232,
+                    "x": 358
+                },
+                {
+                    "y": 270,
+                    "x": 324
+                },
+                {
+                    "y": 286,
+                    "x": 318
+                },
+                {
+                    "y": 312,
+                    "x": 304
+                },
+                {
+                    "y": 278,
+                    "x": 290
+                },
+                {
+                    "y": 250,
+                    "x": 274
+                },
+                {
+                    "y": 220,
+                    "x": 252
+                },
+                {
+                    "y": 196,
+                    "x": 232
+                },
+                {
+                    "y": 194,
+                    "x": 178
+                },
+                {
+                    "y": 204,
+                    "x": 138
+                },
+                {
+                    "y": 242,
+                    "x": 98
+                },
+                {
+                    "y": 270,
+                    "x": 92
+                },
+                {
+                    "y": 312,
+                    "x": 86
+                },
+                {
+                    "y": 246,
+                    "x": 68
+                },
+                {
+                    "y": 208,
+                    "x": 42
+                }
+            ],
+            "id": "terrain_1",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "[Material]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 0,
+            "green": 0,
+            "shade": 0,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": true,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 298,
+                    "x": 85
+                },
+                {
+                    "y": 246,
+                    "x": 83
+                },
+                {
+                    "y": 199,
+                    "x": 60
+                },
+                {
+                    "y": 204,
+                    "x": -9
+                },
+                {
+                    "y": 177,
+                    "x": -30
+                },
+                {
+                    "y": 141,
+                    "x": -23
+                },
+                {
+                    "y": 173,
+                    "x": 68
+                },
+                {
+                    "y": 168,
+                    "x": 210
+                },
+                {
+                    "y": 138,
+                    "x": 373
+                },
+                {
+                    "y": 131,
+                    "x": 469
+                },
+                {
+                    "y": 139,
+                    "x": 566
+                },
+                {
+                    "y": 82,
+                    "x": 648
+                },
+                {
+                    "y": 114,
+                    "x": 679
+                },
+                {
+                    "y": 115,
+                    "x": 839
+                },
+                {
+                    "y": 70,
+                    "x": 909
+                },
+                {
+                    "y": 90,
+                    "x": 1078
+                },
+                {
+                    "y": 128,
+                    "x": 1109
+                },
+                {
+                    "y": 107,
+                    "x": 1226
+                },
+                {
+                    "y": 76,
+                    "x": 1256
+                },
+                {
+                    "y": 127,
+                    "x": 1265
+                },
+                {
+                    "y": 160,
+                    "x": 1259
+                },
+                {
+                    "y": 207,
+                    "x": 1227
+                },
+                {
+                    "y": 251,
+                    "x": 1214
+                },
+                {
+                    "y": 289,
+                    "x": 1206
+                },
+                {
+                    "y": 253,
+                    "x": 1188
+                },
+                {
+                    "y": 222,
+                    "x": 1168
+                },
+                {
+                    "y": 196,
+                    "x": 1139
+                },
+                {
+                    "y": 189,
+                    "x": 1104
+                },
+                {
+                    "y": 201,
+                    "x": 1058
+                },
+                {
+                    "y": 239,
+                    "x": 1042
+                },
+                {
+                    "y": 295,
+                    "x": 1036
+                },
+                {
+                    "y": 331,
+                    "x": 1033
+                },
+                {
+                    "y": 250,
+                    "x": 1021
+                },
+                {
+                    "y": 205,
+                    "x": 994
+                },
+                {
+                    "y": 175,
+                    "x": 945
+                },
+                {
+                    "y": 182,
+                    "x": 878
+                },
+                {
+                    "y": 184,
+                    "x": 781
+                },
+                {
+                    "y": 214,
+                    "x": 746
+                },
+                {
+                    "y": 261,
+                    "x": 698
+                },
+                {
+                    "y": 323,
+                    "x": 666
+                },
+                {
+                    "y": 295,
+                    "x": 665
+                },
+                {
+                    "y": 266,
+                    "x": 677
+                },
+                {
+                    "y": 243,
+                    "x": 676
+                },
+                {
+                    "y": 215,
+                    "x": 657
+                },
+                {
+                    "y": 191,
+                    "x": 656
+                },
+                {
+                    "y": 189,
+                    "x": 618
+                },
+                {
+                    "y": 236,
+                    "x": 592
+                },
+                {
+                    "y": 254,
+                    "x": 576
+                },
+                {
+                    "y": 311,
+                    "x": 560
+                },
+                {
+                    "y": 225,
+                    "x": 554
+                },
+                {
+                    "y": 197,
+                    "x": 575
+                },
+                {
+                    "y": 184,
+                    "x": 527
+                },
+                {
+                    "y": 193,
+                    "x": 493
+                },
+                {
+                    "y": 232,
+                    "x": 356
+                },
+                {
+                    "y": 271,
+                    "x": 321
+                },
+                {
+                    "y": 287,
+                    "x": 309
+                },
+                {
+                    "y": 265,
+                    "x": 305
+                },
+                {
+                    "y": 222,
+                    "x": 303
+                },
+                {
+                    "y": 200,
+                    "x": 286
+                },
+                {
+                    "y": 186,
+                    "x": 247
+                },
+                {
+                    "y": 186,
+                    "x": 212
+                },
+                {
+                    "y": 190,
+                    "x": 181
+                },
+                {
+                    "y": 194,
+                    "x": 155
+                },
+                {
+                    "y": 204,
+                    "x": 135
+                },
+                {
+                    "y": 239,
+                    "x": 98
+                }
+            ],
+            "id": "terrain_5",
+            "red": 0,
+            "outline": false,
+            "tint": 0,
+            "grass_theme": "[None]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 20,
+            "green": 0,
+            "shade": 55,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": false,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 804,
+                    "x": -80
+                },
+                {
+                    "y": 778,
+                    "x": -60
+                },
+                {
+                    "y": 738,
+                    "x": -50
+                },
+                {
+                    "y": 652,
+                    "x": -4
+                },
+                {
+                    "y": 588,
+                    "x": 62
+                },
+                {
+                    "y": 586,
+                    "x": 122
+                },
+                {
+                    "y": 602,
+                    "x": 196
+                },
+                {
+                    "y": 610,
+                    "x": 260
+                },
+                {
+                    "y": 574,
+                    "x": 302
+                },
+                {
+                    "y": 554,
+                    "x": 330
+                },
+                {
+                    "y": 520,
+                    "x": 388
+                },
+                {
+                    "y": 534,
+                    "x": 440
+                },
+                {
+                    "y": 560,
+                    "x": 474
+                },
+                {
+                    "y": 569,
+                    "x": 530
+                },
+                {
+                    "y": 613,
+                    "x": 518
+                },
+                {
+                    "y": 679,
+                    "x": 512
+                },
+                {
+                    "y": 796,
+                    "x": 518
+                },
+                {
+                    "y": 796,
+                    "x": 613
+                },
+                {
+                    "y": 668,
+                    "x": 627
+                },
+                {
+                    "y": 611,
+                    "x": 620
+                },
+                {
+                    "y": 568,
+                    "x": 612
+                },
+                {
+                    "y": 561,
+                    "x": 677
+                },
+                {
+                    "y": 529,
+                    "x": 741
+                },
+                {
+                    "y": 528,
+                    "x": 780
+                },
+                {
+                    "y": 566,
+                    "x": 824
+                },
+                {
+                    "y": 596,
+                    "x": 888
+                },
+                {
+                    "y": 596,
+                    "x": 942
+                },
+                {
+                    "y": 588,
+                    "x": 1054
+                },
+                {
+                    "y": 558,
+                    "x": 1104
+                },
+                {
+                    "y": 568,
+                    "x": 1158
+                },
+                {
+                    "y": 624,
+                    "x": 1204
+                },
+                {
+                    "y": 688,
+                    "x": 1252
+                },
+                {
+                    "y": 756,
+                    "x": 1272
+                },
+                {
+                    "y": 808,
+                    "x": 1306
+                }
+            ],
+            "id": "terrain_2",
+            "red": 0,
+            "outline": true,
+            "tint": 0,
+            "grass_theme": "[Material]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 0,
+            "green": 0,
+            "shade": 0,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "no_fixtures": true,
+            "texture_swf": "",
+            "shape": "edgeShape",
+            "texture_export": "",
+            "points": [
+                {
+                    "y": 801,
+                    "x": 57
+                },
+                {
+                    "y": 728,
+                    "x": 114
+                },
+                {
+                    "y": 681,
+                    "x": 163
+                },
+                {
+                    "y": 692,
+                    "x": 275
+                },
+                {
+                    "y": 653,
+                    "x": 297
+                },
+                {
+                    "y": 618,
+                    "x": 390
+                },
+                {
+                    "y": 539,
+                    "x": 438
+                },
+                {
+                    "y": 562,
+                    "x": 471
+                },
+                {
+                    "y": 571,
+                    "x": 527
+                },
+                {
+                    "y": 610,
+                    "x": 514
+                },
+                {
+                    "y": 677,
+                    "x": 507
+                },
+                {
+                    "y": 798,
+                    "x": 512
+                },
+                {
+                    "y": 798,
+                    "x": 636
+                },
+                {
+                    "y": 694,
+                    "x": 656
+                },
+                {
+                    "y": 636,
+                    "x": 657
+                },
+                {
+                    "y": 592,
+                    "x": 640
+                },
+                {
+                    "y": 588,
+                    "x": 668
+                },
+                {
+                    "y": 548,
+                    "x": 715
+                },
+                {
+                    "y": 532,
+                    "x": 759
+                },
+                {
+                    "y": 531,
+                    "x": 777
+                },
+                {
+                    "y": 569,
+                    "x": 825
+                },
+                {
+                    "y": 599,
+                    "x": 887
+                },
+                {
+                    "y": 633,
+                    "x": 945
+                },
+                {
+                    "y": 642,
+                    "x": 1092
+                },
+                {
+                    "y": 606,
+                    "x": 1128
+                },
+                {
+                    "y": 605,
+                    "x": 1174
+                },
+                {
+                    "y": 648,
+                    "x": 1203
+                },
+                {
+                    "y": 703,
+                    "x": 1247
+                },
+                {
+                    "y": 766,
+                    "x": 1260
+                },
+                {
+                    "y": 802,
+                    "x": 1291
+                }
+            ],
+            "id": "terrain_6",
+            "red": 0,
+            "outline": false,
+            "tint": 0,
+            "grass_theme": "[None]",
+            "theme": "Ice",
+            "dynamic": false,
+            "blue": 20,
+            "green": 0,
+            "shade": 55,
+            "texture_rotation": 0,
+            "unbreakable": false,
+            "element_type": "TerrainBlockEntity"
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Ice",
+            "y": 507.25,
+            "fixture": "ball_medium",
+            "id": "dynamic_1",
+            "name": "BallMedium",
+            "angle": -3.1440625733091654,
+            "x": 518.1,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Ice",
+            "y": 507.7,
+            "fixture": "ball_medium",
+            "id": "dynamic_2",
+            "name": "BallMedium",
+            "angle": -3.1447550220670197,
+            "x": 602.4,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Wood",
+            "y": 546.25,
+            "fixture": "plank_medium",
+            "id": "dynamic_3",
+            "name": "PlankMedium",
+            "angle": -3.1358632623413776,
+            "x": 573.6,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Wood",
+            "y": 455.8,
+            "fixture": "rectangle_medium",
+            "id": "dynamic_4",
+            "name": "RectangleMedium",
+            "angle": -3.13625779293752,
+            "x": 559.75,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Ice",
+            "y": 403.4,
+            "fixture": "cube_medium",
+            "id": "dynamic_5",
+            "name": "CubeMedium",
+            "angle": -3.1349588422643557,
+            "x": 532.9,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Ice",
+            "y": 403.55,
+            "fixture": "cube_medium",
+            "id": "dynamic_6",
+            "name": "CubeMedium",
+            "angle": -3.1342542675302414,
+            "x": 586.05,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Wood",
+            "y": 352.8,
+            "fixture": "triangle_medium",
+            "id": "dynamic_7",
+            "name": "TriangleMedium",
+            "angle": -3.122623686459256,
+            "x": 535.35,
+            "unbreakable": false,
+            "sleep": false
+        },
+        {
+            "element_type": "DynamicObject",
+            "theme": "Wood",
+            "y": 353.5,
+            "fixture": "triangle_medium",
+            "id": "dynamic_8",
+            "name": "TriangleMedium",
+            "angle": -1.577181196092606,
+            "x": 586.35,
+            "unbreakable": false,
+            "sleep": false
+        }
+    ],
+    "water_line": 700,
+    "water_theme": "NotDefined",
+    "water_density": 32,
+    "level_name": "winter_07_easy",
+    "water_lineardrag": 15,
+    "power_ups": [],
+    "water_angulardrag": 15,
+    "parallax_layers": [
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.75,
+            "graphics_export": [
+                "parallax_1_4",
+                "parallax_1_5"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.6,
+            "id": "parallax_8",
+            "gap": 1200,
+            "y": 800,
+            "camera_x_pan": 0.4,
+            "tile_horizontally": false,
+            "x": -50
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.75,
+            "graphics_export": [
+                "parallax_1_1",
+                "parallax_1_2"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.6,
+            "id": "parallax_1",
+            "gap": 400,
+            "y": 775,
+            "camera_x_pan": 0.4,
+            "tile_horizontally": true,
+            "x": -100
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.8,
+            "graphics_export": [
+                "parallax_2_2",
+                "parallax_2_1"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.35,
+            "id": "parallax_2",
+            "gap": 700,
+            "y": 750,
+            "camera_x_pan": 0.45,
+            "tile_horizontally": false,
+            "x": 300
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.85,
+            "graphics_export": [
+                "parallax_3_1",
+                "parallax_3_2"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.3,
+            "id": "parallax_3",
+            "gap": 500,
+            "y": 700,
+            "camera_x_pan": 0.6,
+            "tile_horizontally": true,
+            "x": -100
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.9,
+            "graphics_export": [
+                "parallax_4_1"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.2,
+            "id": "parallax_4",
+            "gap": 350,
+            "y": 600,
+            "camera_x_pan": 0.7,
+            "tile_horizontally": true,
+            "x": 0
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.95,
+            "graphics_export": [
+                "parallax_5_1",
+                "parallax_5_2"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.15,
+            "id": "parallax_5",
+            "gap": 500,
+            "y": 500,
+            "camera_x_pan": 0.8,
+            "tile_horizontally": false,
+            "x": 300
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.97,
+            "graphics_export": [
+                "parallax_6_1",
+                "parallax_6_2"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.1,
+            "id": "parallax_6",
+            "gap": 850,
+            "y": 100,
+            "camera_x_pan": 0.97,
+            "tile_horizontally": false,
+            "x": 400
+        },
+        {
+            "element_type": "ParallaxLayer",
+            "camera_y_pan": 0.97,
+            "graphics_export": [
+                "parallax_6_3"
+            ],
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "camera_z": 0.1,
+            "id": "parallax_7",
+            "gap": 0,
+            "y": 200,
+            "camera_x_pan": 0.97,
+            "tile_horizontally": false,
+            "x": 750
+        }
+    ],
+    "theme": "Winter",
+    "camera_bounds_width": 200,
+    "water_velocity_y": 0,
+    "width": 1200,
+    "height": 800,
+    "water_velocity_x": 0,
+    "spawn_points": [
+        {
+            "name": "SpawnPoint0",
+            "y": 494,
+            "x": 428
+        },
+        {
+            "name": "SpawnPoint1",
+            "y": 559,
+            "x": 969
+        },
+        {
+            "name": "SpawnPoint2",
+            "y": 557,
+            "x": 234
+        },
+        {
+            "name": "SpawnPoint3",
+            "y": 487,
+            "x": 736
+        }
+    ],
+    "power_up_percentage": 10,
+    "camera_bounds_height": 120,
+    "zoom_side": "width"
+}

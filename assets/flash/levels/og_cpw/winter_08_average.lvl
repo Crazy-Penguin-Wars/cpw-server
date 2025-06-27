@@ -1,0 +1,3405 @@
+{
+    "water_velocity_x": 0,
+    "camera_bounds_width": 200,
+    "targets": [],
+    "camera_bounds_height": 200,
+    "elements": [
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_10",
+            "points": [
+                {
+                    "y": 689,
+                    "x": 759
+                },
+                {
+                    "y": 659,
+                    "x": 762.5
+                },
+                {
+                    "y": 753,
+                    "x": 799
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 29,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 213
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_3",
+            "points": [
+                {
+                    "y": 908,
+                    "x": 580
+                },
+                {
+                    "y": 838,
+                    "x": 551
+                },
+                {
+                    "y": 766,
+                    "x": 549
+                },
+                {
+                    "y": 809.5,
+                    "x": 530
+                },
+                {
+                    "y": 676.5,
+                    "x": 550.5
+                },
+                {
+                    "y": 610,
+                    "x": 564
+                },
+                {
+                    "y": 538,
+                    "x": 583
+                },
+                {
+                    "y": 462,
+                    "x": 606
+                },
+                {
+                    "y": 438,
+                    "x": 641
+                },
+                {
+                    "y": 448,
+                    "x": 710
+                },
+                {
+                    "y": 489,
+                    "x": 743
+                },
+                {
+                    "y": 558,
+                    "x": 754
+                },
+                {
+                    "y": 633,
+                    "x": 756
+                },
+                {
+                    "y": 744,
+                    "x": 785
+                },
+                {
+                    "y": 808,
+                    "x": 798
+                },
+                {
+                    "y": 877,
+                    "x": 798
+                },
+                {
+                    "y": 909,
+                    "x": 770
+                },
+                {
+                    "y": 935,
+                    "x": 673
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 222
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_4",
+            "points": [
+                {
+                    "y": 914,
+                    "x": 608.0000000000001
+                },
+                {
+                    "y": 847,
+                    "x": 617
+                },
+                {
+                    "y": 782,
+                    "x": 604
+                },
+                {
+                    "y": 706,
+                    "x": 608
+                },
+                {
+                    "y": 613,
+                    "x": 627
+                },
+                {
+                    "y": 548,
+                    "x": 646
+                },
+                {
+                    "y": 547,
+                    "x": 676
+                },
+                {
+                    "y": 557,
+                    "x": 696
+                },
+                {
+                    "y": 605,
+                    "x": 714.5
+                },
+                {
+                    "y": 723,
+                    "x": 726
+                },
+                {
+                    "y": 817,
+                    "x": 747
+                },
+                {
+                    "y": 909,
+                    "x": 765.5
+                },
+                {
+                    "y": 933.5,
+                    "x": 673.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 27
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_5",
+            "points": [
+                {
+                    "y": 531,
+                    "x": 649.5
+                },
+                {
+                    "y": 527,
+                    "x": 631
+                },
+                {
+                    "y": 513,
+                    "x": 623.5
+                },
+                {
+                    "y": 494,
+                    "x": 625.5
+                },
+                {
+                    "y": 486.5,
+                    "x": 636.5
+                },
+                {
+                    "y": 488,
+                    "x": 652.5
+                },
+                {
+                    "y": 497,
+                    "x": 664.5
+                },
+                {
+                    "y": 508,
+                    "x": 666
+                },
+                {
+                    "y": 526,
+                    "x": 662.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 27
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_2",
+            "points": [
+                {
+                    "y": 832,
+                    "x": 565
+                },
+                {
+                    "y": 795,
+                    "x": 674
+                },
+                {
+                    "y": 780,
+                    "x": 802
+                },
+                {
+                    "y": 813,
+                    "x": 912
+                },
+                {
+                    "y": 875,
+                    "x": 951
+                },
+                {
+                    "y": 925,
+                    "x": 939
+                },
+                {
+                    "y": 992,
+                    "x": 947
+                },
+                {
+                    "y": 994,
+                    "x": 512
+                },
+                {
+                    "y": 947,
+                    "x": 513
+                },
+                {
+                    "y": 880,
+                    "x": 534
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_6",
+            "points": [
+                {
+                    "y": 535.5,
+                    "x": 702.25
+                },
+                {
+                    "y": 531.5,
+                    "x": 690.75
+                },
+                {
+                    "y": 519.5,
+                    "x": 686.25
+                },
+                {
+                    "y": 508,
+                    "x": 691.75
+                },
+                {
+                    "y": 503,
+                    "x": 702.25
+                },
+                {
+                    "y": 508,
+                    "x": 713.75
+                },
+                {
+                    "y": 521.5,
+                    "x": 718.75
+                },
+                {
+                    "y": 530.5,
+                    "x": 715.25
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 27
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_7",
+            "points": [
+                {
+                    "y": 522,
+                    "x": 638.5
+                },
+                {
+                    "y": 514,
+                    "x": 629
+                },
+                {
+                    "y": 503,
+                    "x": 633
+                },
+                {
+                    "y": 502,
+                    "x": 639.5
+                },
+                {
+                    "y": 506.5,
+                    "x": 644
+                },
+                {
+                    "y": 515,
+                    "x": 644
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 167
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_8",
+            "points": [
+                {
+                    "y": 524.75,
+                    "x": 708
+                },
+                {
+                    "y": 521.75,
+                    "x": 705
+                },
+                {
+                    "y": 517.75,
+                    "x": 706
+                },
+                {
+                    "y": 515.75,
+                    "x": 709.5
+                },
+                {
+                    "y": 518.75,
+                    "x": 713.5
+                },
+                {
+                    "y": 522.25,
+                    "x": 712.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 147
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_33",
+            "points": [
+                {
+                    "y": 645,
+                    "x": 1632
+                },
+                {
+                    "y": 553,
+                    "x": 1699
+                },
+                {
+                    "y": 450,
+                    "x": 1756
+                },
+                {
+                    "y": 320,
+                    "x": 1816
+                },
+                {
+                    "y": 293,
+                    "x": 1904
+                },
+                {
+                    "y": 455,
+                    "x": 1984.25
+                },
+                {
+                    "y": 581,
+                    "x": 2001.25
+                },
+                {
+                    "y": 826,
+                    "x": 2032.1999999999998
+                },
+                {
+                    "y": 975,
+                    "x": 2098.2
+                },
+                {
+                    "y": 974,
+                    "x": 1846.3000000000002
+                },
+                {
+                    "y": 925,
+                    "x": 1533
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_9",
+            "points": [
+                {
+                    "y": 535.5,
+                    "x": 652
+                },
+                {
+                    "y": 531,
+                    "x": 670
+                },
+                {
+                    "y": 539.5,
+                    "x": 693.5
+                },
+                {
+                    "y": 555.5,
+                    "x": 707
+                },
+                {
+                    "y": 565.5,
+                    "x": 689
+                },
+                {
+                    "y": 560.5,
+                    "x": 652.5
+                },
+                {
+                    "y": 544,
+                    "x": 631
+                }
+            ],
+            "red": 211,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 118,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_18",
+            "points": [
+                {
+                    "y": 465,
+                    "x": 1616
+                },
+                {
+                    "y": 423,
+                    "x": 1611
+                },
+                {
+                    "y": 407,
+                    "x": 1633
+                },
+                {
+                    "y": 420,
+                    "x": 1679
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_1",
+            "points": [
+                {
+                    "y": 656,
+                    "x": 1447
+                },
+                {
+                    "y": 603,
+                    "x": 1422
+                },
+                {
+                    "y": 544,
+                    "x": 1424
+                },
+                {
+                    "y": 503,
+                    "x": 1440
+                },
+                {
+                    "y": 460,
+                    "x": 1483
+                },
+                {
+                    "y": 452,
+                    "x": 1522
+                },
+                {
+                    "y": 452,
+                    "x": 1602
+                },
+                {
+                    "y": 431,
+                    "x": 1645
+                },
+                {
+                    "y": 374,
+                    "x": 1668
+                },
+                {
+                    "y": 326,
+                    "x": 1670
+                },
+                {
+                    "y": 280,
+                    "x": 1700
+                },
+                {
+                    "y": 278,
+                    "x": 1769
+                },
+                {
+                    "y": 305,
+                    "x": 1798
+                },
+                {
+                    "y": 367,
+                    "x": 1816
+                },
+                {
+                    "y": 469,
+                    "x": 1818
+                },
+                {
+                    "y": 576,
+                    "x": 1800
+                },
+                {
+                    "y": 648,
+                    "x": 1742
+                },
+                {
+                    "y": 688,
+                    "x": 1670
+                },
+                {
+                    "y": 707,
+                    "x": 1577
+                },
+                {
+                    "y": 691,
+                    "x": 1487
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 29,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 213
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_11",
+            "points": [
+                {
+                    "y": 578,
+                    "x": 1547
+                },
+                {
+                    "y": 573,
+                    "x": 1470
+                },
+                {
+                    "y": 545,
+                    "x": 1449
+                },
+                {
+                    "y": 508,
+                    "x": 1442
+                },
+                {
+                    "y": 463,
+                    "x": 1484
+                },
+                {
+                    "y": 456,
+                    "x": 1524
+                },
+                {
+                    "y": 456,
+                    "x": 1604
+                },
+                {
+                    "y": 435,
+                    "x": 1648
+                },
+                {
+                    "y": 382,
+                    "x": 1679
+                },
+                {
+                    "y": 379,
+                    "x": 1738
+                },
+                {
+                    "y": 418,
+                    "x": 1740
+                },
+                {
+                    "y": 467,
+                    "x": 1733
+                },
+                {
+                    "y": 512,
+                    "x": 1694
+                },
+                {
+                    "y": 532,
+                    "x": 1638
+                },
+                {
+                    "y": 560,
+                    "x": 1573
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 146,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 29,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 26
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_12",
+            "points": [
+                {
+                    "y": 328,
+                    "x": 1658.5
+                },
+                {
+                    "y": 317,
+                    "x": 1690.5
+                },
+                {
+                    "y": 315,
+                    "x": 1748
+                },
+                {
+                    "y": 327.5,
+                    "x": 1799
+                },
+                {
+                    "y": 336.5,
+                    "x": 1820.5
+                },
+                {
+                    "y": 351.5,
+                    "x": 1816
+                },
+                {
+                    "y": 341,
+                    "x": 1809.5
+                },
+                {
+                    "y": 339,
+                    "x": 1778.5
+                },
+                {
+                    "y": 370,
+                    "x": 1752
+                },
+                {
+                    "y": 367.5,
+                    "x": 1718.5
+                },
+                {
+                    "y": 344.5,
+                    "x": 1705
+                },
+                {
+                    "y": 344.5,
+                    "x": 1698.5
+                },
+                {
+                    "y": 370,
+                    "x": 1684.5
+                },
+                {
+                    "y": 368,
+                    "x": 1661.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 29,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 246
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_13",
+            "points": [
+                {
+                    "y": 375.5,
+                    "x": 1663.5
+                },
+                {
+                    "y": 359.5,
+                    "x": 1683.5
+                },
+                {
+                    "y": 358.5,
+                    "x": 1726.5
+                },
+                {
+                    "y": 376.5,
+                    "x": 1750.5
+                },
+                {
+                    "y": 385.5,
+                    "x": 1703
+                }
+            ],
+            "red": 214,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 119,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_20",
+            "points": [
+                {
+                    "y": 776,
+                    "x": 973
+                },
+                {
+                    "y": 571,
+                    "x": 954
+                },
+                {
+                    "y": 543,
+                    "x": 917
+                },
+                {
+                    "y": 552,
+                    "x": 983
+                },
+                {
+                    "y": 734,
+                    "x": 1016
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_14",
+            "points": [
+                {
+                    "y": 591.6210331313827,
+                    "x": 1438.420799761522
+                },
+                {
+                    "y": 488.85,
+                    "x": 1371.15
+                },
+                {
+                    "y": 486.7999999999999,
+                    "x": 1385.55
+                },
+                {
+                    "y": 464.9446859041456,
+                    "x": 1405.4912833186058
+                },
+                {
+                    "y": 469.9,
+                    "x": 1422.95
+                },
+                {
+                    "y": 459,
+                    "x": 1439.5
+                },
+                {
+                    "y": 582.151395899514,
+                    "x": 1462.10256427975
+                }
+            ],
+            "red": 214,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 119,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_19",
+            "points": [
+                {
+                    "y": 887,
+                    "x": 877
+                },
+                {
+                    "y": 798,
+                    "x": 907
+                },
+                {
+                    "y": 705,
+                    "x": 964
+                },
+                {
+                    "y": 624,
+                    "x": 1013
+                },
+                {
+                    "y": 547,
+                    "x": 1058
+                },
+                {
+                    "y": 532,
+                    "x": 1106
+                },
+                {
+                    "y": 552,
+                    "x": 1148
+                },
+                {
+                    "y": 585,
+                    "x": 1162
+                },
+                {
+                    "y": 668,
+                    "x": 1167
+                },
+                {
+                    "y": 840,
+                    "x": 1149
+                },
+                {
+                    "y": 897,
+                    "x": 1147
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_15",
+            "points": [
+                {
+                    "y": 585.3353141700054,
+                    "x": 1512.1384458266668
+                },
+                {
+                    "y": 469.41980942973305,
+                    "x": 1553.5823327197645
+                },
+                {
+                    "y": 483.66953098241777,
+                    "x": 1566.159909420821
+                },
+                {
+                    "y": 468.6431454754039,
+                    "x": 1597.038020415417
+                },
+                {
+                    "y": 491.5042926236752,
+                    "x": 1602.9004389491856
+                },
+                {
+                    "y": 495.65346682639097,
+                    "x": 1621.177045675696
+                },
+                {
+                    "y": 597.2,
+                    "x": 1540.9
+                }
+            ],
+            "red": 214,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 119,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_16",
+            "points": [
+                {
+                    "y": 350.5,
+                    "x": 1664
+                },
+                {
+                    "y": 333,
+                    "x": 1662
+                },
+                {
+                    "y": 323,
+                    "x": 1689
+                },
+                {
+                    "y": 336.5,
+                    "x": 1670.5
+                }
+            ],
+            "red": 4,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 226,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 5,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_17",
+            "points": [
+                {
+                    "y": 446,
+                    "x": 1768
+                },
+                {
+                    "y": 403,
+                    "x": 1831
+                },
+                {
+                    "y": 417,
+                    "x": 1872
+                },
+                {
+                    "y": 462,
+                    "x": 1855
+                },
+                {
+                    "y": 485,
+                    "x": 1791
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_22",
+            "points": [
+                {
+                    "y": 885,
+                    "x": 911
+                },
+                {
+                    "y": 727,
+                    "x": 974
+                },
+                {
+                    "y": 645,
+                    "x": 1039
+                },
+                {
+                    "y": 649.5,
+                    "x": 1066.5
+                },
+                {
+                    "y": 668.5,
+                    "x": 1091
+                },
+                {
+                    "y": 735,
+                    "x": 1075
+                },
+                {
+                    "y": 889,
+                    "x": 1070
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 148,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 24
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_23",
+            "points": [
+                {
+                    "y": 586.5,
+                    "x": 1027
+                },
+                {
+                    "y": 574,
+                    "x": 1023.5
+                },
+                {
+                    "y": 561,
+                    "x": 1028
+                },
+                {
+                    "y": 556.5,
+                    "x": 1043
+                },
+                {
+                    "y": 563.5,
+                    "x": 1059.5
+                },
+                {
+                    "y": 582,
+                    "x": 1060.5
+                },
+                {
+                    "y": 592.5,
+                    "x": 1045
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 148,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 24
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_24",
+            "points": [
+                {
+                    "y": 583.5,
+                    "x": 1087.5
+                },
+                {
+                    "y": 571,
+                    "x": 1087
+                },
+                {
+                    "y": 562.5,
+                    "x": 1091.5
+                },
+                {
+                    "y": 559,
+                    "x": 1102.5
+                },
+                {
+                    "y": 561.5,
+                    "x": 1116.5
+                },
+                {
+                    "y": 568.5,
+                    "x": 1126.5
+                },
+                {
+                    "y": 579.5,
+                    "x": 1126.5
+                },
+                {
+                    "y": 585.5,
+                    "x": 1113.5
+                },
+                {
+                    "y": 582.5,
+                    "x": 1103
+                },
+                {
+                    "y": 582,
+                    "x": 1096.5
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 148,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 24
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_25",
+            "points": [
+                {
+                    "y": 573.75,
+                    "x": 1034.25
+                },
+                {
+                    "y": 570.75,
+                    "x": 1031.25
+                },
+                {
+                    "y": 566.75,
+                    "x": 1032.25
+                },
+                {
+                    "y": 564.75,
+                    "x": 1035.75
+                },
+                {
+                    "y": 567.75,
+                    "x": 1039.75
+                },
+                {
+                    "y": 571.25,
+                    "x": 1038.75
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 147
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_26",
+            "points": [
+                {
+                    "y": 575,
+                    "x": 1116
+                },
+                {
+                    "y": 572,
+                    "x": 1113
+                },
+                {
+                    "y": 568,
+                    "x": 1114
+                },
+                {
+                    "y": 566,
+                    "x": 1117.5
+                },
+                {
+                    "y": 569,
+                    "x": 1121.5
+                },
+                {
+                    "y": 572.5,
+                    "x": 1120.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 147
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_31",
+            "points": [
+                {
+                    "y": 504.6679454777578,
+                    "x": 856.877950240768
+                },
+                {
+                    "y": 456.5443299147613,
+                    "x": 907.1944728781498
+                },
+                {
+                    "y": 402.7927397955755,
+                    "x": 939.2773196916581
+                },
+                {
+                    "y": 443.2790503750752,
+                    "x": 989.6238204517537
+                },
+                {
+                    "y": 416.07771254466365,
+                    "x": 1012.1867816988031
+                },
+                {
+                    "y": 375.6877786991081,
+                    "x": 964.1585010305168
+                },
+                {
+                    "y": 335.91974784906904,
+                    "x": 1022.8057833401874
+                },
+                {
+                    "y": 404.57438938751966,
+                    "x": 1055.4033706010089
+                },
+                {
+                    "y": 389.24056864514347,
+                    "x": 1087.974430476928
+                },
+                {
+                    "y": 319.73404817656075,
+                    "x": 1057.1863465425467
+                },
+                {
+                    "y": 303.3867727044267,
+                    "x": 1103.648875365655
+                },
+                {
+                    "y": 303.8097545691307,
+                    "x": 1121.5324176977015
+                },
+                {
+                    "y": 355.11919330759076,
+                    "x": 1115.8454592536673
+                },
+                {
+                    "y": 359.9036182886775,
+                    "x": 1152.637738030611
+                },
+                {
+                    "y": 306.83828835695584,
+                    "x": 1155.0111868372028
+                },
+                {
+                    "y": 309.7610766786053,
+                    "x": 1184.019070393692
+                },
+                {
+                    "y": 302.4290026787454,
+                    "x": 1237.1573869916108
+                },
+                {
+                    "y": 314.2377318329685,
+                    "x": 1282.506630819509
+                },
+                {
+                    "y": 310.8558766715503,
+                    "x": 1329.601912490471
+                },
+                {
+                    "y": 374.9934144947167,
+                    "x": 1317.7961409366098
+                },
+                {
+                    "y": 444.35758356602787,
+                    "x": 1238.5422795225027
+                },
+                {
+                    "y": 458.847658779268,
+                    "x": 1156.1129144860397
+                },
+                {
+                    "y": 527.579573253796,
+                    "x": 1035.9425190774095
+                },
+                {
+                    "y": 546.424436982604,
+                    "x": 1014.6955519751939
+                },
+                {
+                    "y": 553.0919412257545,
+                    "x": 923.0570945069039
+                },
+                {
+                    "y": 537.878653951366,
+                    "x": 866.1575699894972
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_28",
+            "points": [
+                {
+                    "y": 645,
+                    "x": 1050
+                },
+                {
+                    "y": 597.5,
+                    "x": 1077
+                },
+                {
+                    "y": 607,
+                    "x": 1108.5
+                },
+                {
+                    "y": 667,
+                    "x": 1093
+                }
+            ],
+            "red": 76,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 14,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 13,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 236
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_52",
+            "points": [
+                {
+                    "y": 845,
+                    "x": 886
+                },
+                {
+                    "y": 878,
+                    "x": 947
+                },
+                {
+                    "y": 921,
+                    "x": 926
+                },
+                {
+                    "y": 897,
+                    "x": 897
+                },
+                {
+                    "y": 857,
+                    "x": 875
+                },
+                {
+                    "y": 838,
+                    "x": 834
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_51",
+            "points": [
+                {
+                    "y": 992,
+                    "x": 516
+                },
+                {
+                    "y": 948,
+                    "x": 517
+                },
+                {
+                    "y": 883,
+                    "x": 538
+                },
+                {
+                    "y": 839,
+                    "x": 573
+                },
+                {
+                    "y": 850,
+                    "x": 605
+                },
+                {
+                    "y": 915,
+                    "x": 637
+                },
+                {
+                    "y": 936,
+                    "x": 670
+                },
+                {
+                    "y": 916,
+                    "x": 736
+                },
+                {
+                    "y": 865,
+                    "x": 775
+                },
+                {
+                    "y": 877,
+                    "x": 797
+                },
+                {
+                    "y": 930,
+                    "x": 845
+                },
+                {
+                    "y": 940,
+                    "x": 909
+                },
+                {
+                    "y": 993,
+                    "x": 901
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_53",
+            "points": [
+                {
+                    "y": 535.4696065157766,
+                    "x": 869.9195398561048
+                },
+                {
+                    "y": 505.398003159122,
+                    "x": 863.2338333444459
+                },
+                {
+                    "y": 522.802894082879,
+                    "x": 889.350298877365
+                },
+                {
+                    "y": 507.23067451408446,
+                    "x": 951.7642875153401
+                },
+                {
+                    "y": 464.59732179331604,
+                    "x": 971.2167227301534
+                },
+                {
+                    "y": 466.61824309229246,
+                    "x": 1043.1953020236024
+                },
+                {
+                    "y": 435.60539001556884,
+                    "x": 1119.2689698991667
+                },
+                {
+                    "y": 399.0713177808639,
+                    "x": 1128.3387861017882
+                },
+                {
+                    "y": 390.3814193652558,
+                    "x": 1201.8267828463358
+                },
+                {
+                    "y": 358.1306856566789,
+                    "x": 1227.3784985472132
+                },
+                {
+                    "y": 330.6230772374879,
+                    "x": 1213.0491064087987
+                },
+                {
+                    "y": 339.79785650889414,
+                    "x": 1256.2905613487167
+                },
+                {
+                    "y": 358.607201814964,
+                    "x": 1286.4104638910069
+                },
+                {
+                    "y": 340.4626226111927,
+                    "x": 1298.7706518150665
+                },
+                {
+                    "y": 316.0921236590196,
+                    "x": 1284.8394357582338
+                },
+                {
+                    "y": 313.6197802943002,
+                    "x": 1326.921350143001
+                },
+                {
+                    "y": 373.52972974197957,
+                    "x": 1315.3835662493566
+                },
+                {
+                    "y": 444.3441318866552,
+                    "x": 1233.2527380002018
+                },
+                {
+                    "y": 456.04493674681436,
+                    "x": 1156.385474710655
+                },
+                {
+                    "y": 525.6542018848985,
+                    "x": 1034.3995320494782
+                },
+                {
+                    "y": 544.0766678760259,
+                    "x": 1014.073618864439
+                },
+                {
+                    "y": 550.3046832238008,
+                    "x": 923.3148626762458
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_29",
+            "points": [
+                {
+                    "y": 954,
+                    "x": 761.25
+                },
+                {
+                    "y": 852,
+                    "x": 797.25
+                },
+                {
+                    "y": 785,
+                    "x": 851.25
+                },
+                {
+                    "y": 773,
+                    "x": 908.25
+                },
+                {
+                    "y": 806,
+                    "x": 954
+                },
+                {
+                    "y": 870,
+                    "x": 998
+                },
+                {
+                    "y": 945,
+                    "x": 1023.25
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_49",
+            "points": [
+                {
+                    "y": 857,
+                    "x": 842
+                },
+                {
+                    "y": 837,
+                    "x": 885.25
+                },
+                {
+                    "y": 862,
+                    "x": 918.25
+                },
+                {
+                    "y": 845,
+                    "x": 952.25
+                },
+                {
+                    "y": 886,
+                    "x": 986.25
+                },
+                {
+                    "y": 946,
+                    "x": 959.25
+                },
+                {
+                    "y": 951,
+                    "x": 765
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_30",
+            "points": [
+                {
+                    "y": 980,
+                    "x": 905.25
+                },
+                {
+                    "y": 869,
+                    "x": 982.25
+                },
+                {
+                    "y": 830,
+                    "x": 1026
+                },
+                {
+                    "y": 791,
+                    "x": 1113
+                },
+                {
+                    "y": 802,
+                    "x": 1238.25
+                },
+                {
+                    "y": 867,
+                    "x": 1309.25
+                },
+                {
+                    "y": 985,
+                    "x": 1357.25
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_21",
+            "points": [
+                {
+                    "y": 680,
+                    "x": 1127
+                },
+                {
+                    "y": 436,
+                    "x": 1205
+                },
+                {
+                    "y": 432,
+                    "x": 1247
+                },
+                {
+                    "y": 404,
+                    "x": 1246
+                },
+                {
+                    "y": 434,
+                    "x": 1263
+                },
+                {
+                    "y": 460,
+                    "x": 1225
+                },
+                {
+                    "y": 713,
+                    "x": 1163
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_48",
+            "points": [
+                {
+                    "y": 978,
+                    "x": 957.25
+                },
+                {
+                    "y": 878,
+                    "x": 1017.25
+                },
+                {
+                    "y": 887,
+                    "x": 1090.25
+                },
+                {
+                    "y": 855,
+                    "x": 1116.25
+                },
+                {
+                    "y": 863,
+                    "x": 1153.25
+                },
+                {
+                    "y": 801,
+                    "x": 1204.25
+                },
+                {
+                    "y": 805,
+                    "x": 1238.25
+                },
+                {
+                    "y": 869,
+                    "x": 1307.25
+                },
+                {
+                    "y": 983,
+                    "x": 1353.25
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_46",
+            "points": [
+                {
+                    "y": 690,
+                    "x": 1805
+                },
+                {
+                    "y": 580,
+                    "x": 1877
+                },
+                {
+                    "y": 318,
+                    "x": 1911
+                },
+                {
+                    "y": 457,
+                    "x": 1982
+                },
+                {
+                    "y": 581,
+                    "x": 2000.25
+                },
+                {
+                    "y": 827,
+                    "x": 2029.1999999999998
+                },
+                {
+                    "y": 973,
+                    "x": 2095.2
+                },
+                {
+                    "y": 968,
+                    "x": 1771.25
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_27",
+            "points": [
+                {
+                    "y": 597.5,
+                    "x": 1015
+                },
+                {
+                    "y": 583,
+                    "x": 1049.5
+                },
+                {
+                    "y": 578.5,
+                    "x": 1080
+                },
+                {
+                    "y": 591.5,
+                    "x": 1108.5
+                },
+                {
+                    "y": 615,
+                    "x": 1114.5
+                },
+                {
+                    "y": 676.5,
+                    "x": 1091
+                },
+                {
+                    "y": 653.5,
+                    "x": 1065.5
+                },
+                {
+                    "y": 644.5,
+                    "x": 1028
+                },
+                {
+                    "y": 640.5,
+                    "x": 1070
+                },
+                {
+                    "y": 664.5,
+                    "x": 1091.5
+                },
+                {
+                    "y": 610,
+                    "x": 1104.5
+                },
+                {
+                    "y": 598.5,
+                    "x": 1063
+                }
+            ],
+            "red": 219,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 118,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_36",
+            "points": [
+                {
+                    "y": 428.2874421968138,
+                    "x": 287.5317255067637
+                },
+                {
+                    "y": 305.4655289546806,
+                    "x": 286.1092702391562
+                },
+                {
+                    "y": 311.4838621459169,
+                    "x": 299.3509531231123
+                },
+                {
+                    "y": 303.7876579563708,
+                    "x": 327.91803165232477
+                },
+                {
+                    "y": 317.3567486780578,
+                    "x": 339.96965822040204
+                },
+                {
+                    "y": 317.07130807243686,
+                    "x": 359.78457743953265
+                },
+                {
+                    "y": 433.04427926023004,
+                    "x": 312.5891096709603
+                }
+            ],
+            "red": 214,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 119,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_37",
+            "points": [
+                {
+                    "y": 471.2907308899196,
+                    "x": 136.19323579249044
+                },
+                {
+                    "y": 394.4448405429458,
+                    "x": 40.023026596602904
+                },
+                {
+                    "y": 387.1774263618365,
+                    "x": 57.58533541748966
+                },
+                {
+                    "y": 353.0928888686982,
+                    "x": 53.402716156928705
+                },
+                {
+                    "y": 354.9735228731496,
+                    "x": 76.92851509641866
+                },
+                {
+                    "y": 339.0354370315156,
+                    "x": 86.78891162519506
+                },
+                {
+                    "y": 447.94211902709526,
+                    "x": 156.7563117391786
+                }
+            ],
+            "red": 214,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 119,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_32",
+            "points": [
+                {
+                    "y": 984.45,
+                    "x": 1422.5
+                },
+                {
+                    "y": 902,
+                    "x": 1500.2
+                },
+                {
+                    "y": 771,
+                    "x": 1506.25
+                },
+                {
+                    "y": 692,
+                    "x": 1379.25
+                },
+                {
+                    "y": 669.7542219441374,
+                    "x": 1364.2460782227663
+                },
+                {
+                    "y": 608.0012430970276,
+                    "x": 1393.83610362844
+                },
+                {
+                    "y": 615.6126256978749,
+                    "x": 1508.1913805285617
+                },
+                {
+                    "y": 641.9275001980859,
+                    "x": 1574.7686092185436
+                },
+                {
+                    "y": 628.3429673946875,
+                    "x": 1674.1640843092807
+                },
+                {
+                    "y": 637.4515671636265,
+                    "x": 1761.8112942491828
+                },
+                {
+                    "y": 817.7818529295132,
+                    "x": 1850.2932163327014
+                },
+                {
+                    "y": 955.388572441311,
+                    "x": 1879.040229137535
+                },
+                {
+                    "y": 998.461955790748,
+                    "x": 1932.53493585542
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_34",
+            "points": [
+                {
+                    "y": 990,
+                    "x": 30
+                },
+                {
+                    "y": 838,
+                    "x": 89
+                },
+                {
+                    "y": 614,
+                    "x": 138.75
+                },
+                {
+                    "y": 510,
+                    "x": 162.75
+                },
+                {
+                    "y": 432,
+                    "x": 164.75
+                },
+                {
+                    "y": 396,
+                    "x": 224.75
+                },
+                {
+                    "y": 414,
+                    "x": 298.75
+                },
+                {
+                    "y": 462,
+                    "x": 352.75
+                },
+                {
+                    "y": 582,
+                    "x": 376.75
+                },
+                {
+                    "y": 747,
+                    "x": 424.95000000000005
+                },
+                {
+                    "y": 853,
+                    "x": 431
+                },
+                {
+                    "y": 993,
+                    "x": 457
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 0,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": false,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_50",
+            "points": [
+                {
+                    "y": 880,
+                    "x": 108
+                },
+                {
+                    "y": 760,
+                    "x": 139
+                },
+                {
+                    "y": 724,
+                    "x": 184
+                },
+                {
+                    "y": 859,
+                    "x": 203
+                },
+                {
+                    "y": 912,
+                    "x": 255
+                },
+                {
+                    "y": 852,
+                    "x": 299
+                },
+                {
+                    "y": 766,
+                    "x": 253
+                },
+                {
+                    "y": 669,
+                    "x": 252.75
+                },
+                {
+                    "y": 638,
+                    "x": 271
+                },
+                {
+                    "y": 646,
+                    "x": 384
+                },
+                {
+                    "y": 749,
+                    "x": 423.75
+                },
+                {
+                    "y": 854,
+                    "x": 427.75
+                },
+                {
+                    "y": 989,
+                    "x": 454
+                },
+                {
+                    "y": 986,
+                    "x": 36
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_35",
+            "points": [
+                {
+                    "y": 542,
+                    "x": 116
+                },
+                {
+                    "y": 461,
+                    "x": 112
+                },
+                {
+                    "y": 379,
+                    "x": 155
+                },
+                {
+                    "y": 329,
+                    "x": 239
+                },
+                {
+                    "y": 338,
+                    "x": 311
+                },
+                {
+                    "y": 378,
+                    "x": 382
+                },
+                {
+                    "y": 457,
+                    "x": 413
+                },
+                {
+                    "y": 543,
+                    "x": 420
+                },
+                {
+                    "y": 651,
+                    "x": 403
+                },
+                {
+                    "y": 687,
+                    "x": 374
+                },
+                {
+                    "y": 686,
+                    "x": 303
+                },
+                {
+                    "y": 645,
+                    "x": 250.75
+                },
+                {
+                    "y": 557,
+                    "x": 235.75
+                },
+                {
+                    "y": 517,
+                    "x": 161.75
+                },
+                {
+                    "y": 564,
+                    "x": 150.75
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": false,
+            "shade": 221
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_38",
+            "points": [
+                {
+                    "y": 375,
+                    "x": 166
+                },
+                {
+                    "y": 397,
+                    "x": 254
+                },
+                {
+                    "y": 450,
+                    "x": 298
+                },
+                {
+                    "y": 519,
+                    "x": 318
+                },
+                {
+                    "y": 586.55,
+                    "x": 318.79999999999995
+                },
+                {
+                    "y": 594,
+                    "x": 374.5
+                },
+                {
+                    "y": 521,
+                    "x": 398
+                },
+                {
+                    "y": 445,
+                    "x": 395
+                },
+                {
+                    "y": 384,
+                    "x": 372
+                },
+                {
+                    "y": 361,
+                    "x": 346
+                },
+                {
+                    "y": 341,
+                    "x": 309
+                },
+                {
+                    "y": 331,
+                    "x": 239
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 0
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_39",
+            "points": [
+                {
+                    "y": 636.5,
+                    "x": 307
+                },
+                {
+                    "y": 632.5,
+                    "x": 288.5
+                },
+                {
+                    "y": 618.5,
+                    "x": 281
+                },
+                {
+                    "y": 599.5,
+                    "x": 283
+                },
+                {
+                    "y": 592,
+                    "x": 294
+                },
+                {
+                    "y": 593.5,
+                    "x": 310
+                },
+                {
+                    "y": 602.5,
+                    "x": 322
+                },
+                {
+                    "y": 613.5,
+                    "x": 323.5
+                },
+                {
+                    "y": 631.5,
+                    "x": 320
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 27
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_40",
+            "points": [
+                {
+                    "y": 610.6473047606545,
+                    "x": 286.7129073373029
+                },
+                {
+                    "y": 607.5,
+                    "x": 293.76249999999993
+                },
+                {
+                    "y": 612.0537422685328,
+                    "x": 299.0527587762974
+                },
+                {
+                    "y": 623.4295062673431,
+                    "x": 301.8081160023862
+                },
+                {
+                    "y": 627.8593594112633,
+                    "x": 296.9474163487042
+                },
+                {
+                    "y": 626.6013305557776,
+                    "x": 290.70903808197784
+                },
+                {
+                    "y": 619.5213904959112,
+                    "x": 286.00537474913926
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 167
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_42",
+            "points": [
+                {
+                    "y": 633.5,
+                    "x": 384.5
+                },
+                {
+                    "y": 629.5,
+                    "x": 366
+                },
+                {
+                    "y": 615.5,
+                    "x": 358.5
+                },
+                {
+                    "y": 596.5,
+                    "x": 360.5
+                },
+                {
+                    "y": 589,
+                    "x": 371.5
+                },
+                {
+                    "y": 590.5,
+                    "x": 387.5
+                },
+                {
+                    "y": 599.5,
+                    "x": 399.5
+                },
+                {
+                    "y": 610.5,
+                    "x": 401
+                },
+                {
+                    "y": 628.5,
+                    "x": 397.5
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 147,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 27
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_43",
+            "points": [
+                {
+                    "y": 609.1011508714704,
+                    "x": 381.82457543068506
+                },
+                {
+                    "y": 607,
+                    "x": 389.51249999999993
+                },
+                {
+                    "y": 611.0980539215284,
+                    "x": 394.0827310100806
+                },
+                {
+                    "y": 622.5929219221147,
+                    "x": 396.28908765602523
+                },
+                {
+                    "y": 626.7844488536682,
+                    "x": 391.2214351440567
+                },
+                {
+                    "y": 625.2285417849298,
+                    "x": 385.0506043091174
+                },
+                {
+                    "y": 617.931067098122,
+                    "x": 380.6920651965936
+                }
+            ],
+            "red": 9,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 167
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_44",
+            "points": [
+                {
+                    "y": 499.5,
+                    "x": 212
+                },
+                {
+                    "y": 521.5,
+                    "x": 248
+                },
+                {
+                    "y": 673,
+                    "x": 190.75
+                }
+            ],
+            "red": 7,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 11,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 208
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_41",
+            "points": [
+                {
+                    "y": 589,
+                    "x": 373.5
+                },
+                {
+                    "y": 597.09917838305,
+                    "x": 347.13082631914745
+                },
+                {
+                    "y": 593.6948076565939,
+                    "x": 322.373801862301
+                },
+                {
+                    "y": 580.8672597444768,
+                    "x": 305.8297994879565
+                },
+                {
+                    "y": 567.3283515239569,
+                    "x": 321.34424321618474
+                },
+                {
+                    "y": 564.5947538977534,
+                    "x": 358.0835606297952
+                },
+                {
+                    "y": 578.2,
+                    "x": 388.54999999999995
+                }
+            ],
+            "red": 211,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 118,
+            "theme": "Ice",
+            "outline": true,
+            "blue": 27,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 190
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_45",
+            "points": [
+                {
+                    "y": 986,
+                    "x": 1628.25
+                },
+                {
+                    "y": 958,
+                    "x": 1570.15
+                },
+                {
+                    "y": 811,
+                    "x": 1657.15
+                },
+                {
+                    "y": 792,
+                    "x": 1702.15
+                },
+                {
+                    "y": 698,
+                    "x": 1711.15
+                },
+                {
+                    "y": 650,
+                    "x": 1674.25
+                },
+                {
+                    "y": 640,
+                    "x": 1760.25
+                },
+                {
+                    "y": 819,
+                    "x": 1847.25
+                },
+                {
+                    "y": 955.35,
+                    "x": 1876
+                },
+                {
+                    "y": 994,
+                    "x": 1924.25
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_55",
+            "points": [
+                {
+                    "y": 456,
+                    "x": 617
+                },
+                {
+                    "y": 394,
+                    "x": 648
+                },
+                {
+                    "y": 377,
+                    "x": 668
+                },
+                {
+                    "y": 377,
+                    "x": 700
+                },
+                {
+                    "y": 392,
+                    "x": 725
+                },
+                {
+                    "y": 416,
+                    "x": 733
+                },
+                {
+                    "y": 473,
+                    "x": 737
+                }
+            ],
+            "red": 123,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 47,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 221
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_47",
+            "points": [
+                {
+                    "y": 670,
+                    "x": 1367.2
+                },
+                {
+                    "y": 702,
+                    "x": 1501.2
+                },
+                {
+                    "y": 689,
+                    "x": 1544.2
+                },
+                {
+                    "y": 711,
+                    "x": 1650.2
+                },
+                {
+                    "y": 757,
+                    "x": 1670.2
+                },
+                {
+                    "y": 790,
+                    "x": 1570.2
+                },
+                {
+                    "y": 769,
+                    "x": 1508.2
+                },
+                {
+                    "y": 691,
+                    "x": 1382
+                }
+            ],
+            "red": 0,
+            "grass_theme": "[None]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_winter.swf",
+            "texture_rotation": 0,
+            "green": 34,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 104,
+            "dynamic": false,
+            "texture_export": "landmass_bg_tile.png",
+            "no_fixtures": true,
+            "shade": 73
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_56",
+            "points": [
+                {
+                    "y": 425.5,
+                    "x": 633
+                },
+                {
+                    "y": 407.5,
+                    "x": 643
+                },
+                {
+                    "y": 423,
+                    "x": 732.5
+                },
+                {
+                    "y": 441,
+                    "x": 734
+                }
+            ],
+            "red": 182,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 9,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 171
+        },
+        {
+            "element_type": "TerrainBlockEntity",
+            "shape": "edgeShape",
+            "id": "terrain_54",
+            "points": [
+                {
+                    "y": 492,
+                    "x": 776
+                },
+                {
+                    "y": 464,
+                    "x": 561
+                },
+                {
+                    "y": 436,
+                    "x": 531
+                },
+                {
+                    "y": 410,
+                    "x": 530
+                },
+                {
+                    "y": 451,
+                    "x": 826
+                },
+                {
+                    "y": 476,
+                    "x": 809
+                }
+            ],
+            "red": 123,
+            "grass_theme": "[Material]",
+            "unbreakable": false,
+            "tint": 0,
+            "texture_swf": "level_graphics/level_assets_terrain_generic.swf",
+            "texture_rotation": 0,
+            "green": 47,
+            "theme": "Ice",
+            "outline": false,
+            "blue": 0,
+            "dynamic": false,
+            "texture_export": "landmass_terrain_generic.png",
+            "no_fixtures": true,
+            "shade": 221
+        },
+        {
+            "x": 1025.7,
+            "element_type": "DynamicObject",
+            "y": 310.45,
+            "fixture": "plank_medium",
+            "theme": "Wood",
+            "sleep": false,
+            "angle": -2.0890827543468973,
+            "unbreakable": false,
+            "name": "PlankMedium",
+            "id": "dynamic_8"
+        },
+        {
+            "x": 1145.05,
+            "element_type": "DynamicObject",
+            "y": 261.15,
+            "fixture": "plank_medium",
+            "theme": "Wood",
+            "sleep": false,
+            "angle": -1.4340634187936023,
+            "unbreakable": false,
+            "name": "PlankMedium",
+            "id": "dynamic_9"
+        },
+        {
+            "x": 921.2,
+            "element_type": "DynamicObject",
+            "y": 372.15,
+            "fixture": "plank_medium",
+            "theme": "Wood",
+            "sleep": false,
+            "angle": -2.543922247453605,
+            "unbreakable": false,
+            "name": "PlankMedium",
+            "id": "dynamic_10"
+        }
+    ],
+    "level_name": "winter_08_average",
+    "water_velocity_y": 0,
+    "power_up_percentage": 0,
+    "zoom_side": "height",
+    "water_line": 900,
+    "water_theme": "NotDefined",
+    "theme": "Winter",
+    "spawn_points": [
+        {
+            "y": 293,
+            "name": "SpawnPoint0",
+            "x": 253
+        },
+        {
+            "y": 246,
+            "name": "SpawnPoint1",
+            "x": 1735
+        },
+        {
+            "y": 384.5,
+            "name": "SpawnPoint2",
+            "x": 615
+        },
+        {
+            "y": 416,
+            "name": "SpawnPoint3",
+            "x": 1557
+        }
+    ],
+    "water_density": 100,
+    "power_ups": [],
+    "water_lineardrag": 2,
+    "width": 2000,
+    "parallax_layers": [
+        {
+            "graphics_export": [
+                "parallax_1_1",
+                "parallax_1_2",
+                "parallax_1_1"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 930,
+            "tile_horizontally": false,
+            "camera_z": 0.6,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_1",
+            "camera_y_pan": 0.75,
+            "gap": 1000,
+            "camera_x_pan": 0.4,
+            "x": 100
+        },
+        {
+            "graphics_export": [
+                "parallax_2_1"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 950,
+            "tile_horizontally": true,
+            "camera_z": 0.35,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_2",
+            "camera_y_pan": 0.8,
+            "gap": 300,
+            "camera_x_pan": 0.45,
+            "x": 0
+        },
+        {
+            "graphics_export": [
+                "parallax_3_2",
+                "parallax_3_1"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 900,
+            "tile_horizontally": true,
+            "camera_z": 0.3,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_3",
+            "camera_y_pan": 0.85,
+            "gap": 530,
+            "camera_x_pan": 0.6,
+            "x": 0
+        },
+        {
+            "graphics_export": [
+                "parallax_4_1",
+                "parallax_4_2"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 810,
+            "tile_horizontally": true,
+            "camera_z": 0.2,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_4",
+            "camera_y_pan": 0.9,
+            "gap": 650,
+            "camera_x_pan": 0.7,
+            "x": 70
+        },
+        {
+            "graphics_export": [
+                "parallax_5_1",
+                "parallax_5_2"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 730,
+            "tile_horizontally": false,
+            "camera_z": 0.15,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_5",
+            "camera_y_pan": 0.95,
+            "gap": 500,
+            "camera_x_pan": 0.8,
+            "x": 650
+        },
+        {
+            "graphics_export": [
+                "parallax_6_1",
+                "parallax_6_2"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 50,
+            "tile_horizontally": false,
+            "camera_z": 0.1,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_6",
+            "camera_y_pan": 0.97,
+            "gap": 500,
+            "camera_x_pan": 0.97,
+            "x": 200
+        },
+        {
+            "graphics_export": [
+                "parallax_6_3"
+            ],
+            "element_type": "ParallaxLayer",
+            "y": 150,
+            "tile_horizontally": false,
+            "camera_z": 0.1,
+            "graphics_swf": "level_graphics/level_bg_winter.swf",
+            "id": "parallax_7",
+            "camera_y_pan": 0.97,
+            "gap": 0,
+            "camera_x_pan": 0.97,
+            "x": 1200
+        }
+    ],
+    "water_angulardrag": 1,
+    "height": 1000,
+    "element_groups": []
+}

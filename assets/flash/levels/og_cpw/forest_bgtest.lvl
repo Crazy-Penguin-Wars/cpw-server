@@ -1,0 +1,307 @@
+{
+    "camera_bounds_width": 250,
+    "water_angulardrag": 1,
+    "water_lineardrag": 2,
+    "height": 1200,
+    "elements": [
+        {
+            "outline": true,
+            "grass_theme": "[None]",
+            "texture_swf": "",
+            "theme": "Stone",
+            "id": "terrain_7",
+            "texture_rotation": 0,
+            "shade": 123,
+            "tint": 0,
+            "red": 37,
+            "points": [
+                {
+                    "y": 1206,
+                    "x": 880
+                },
+                {
+                    "y": 1000,
+                    "x": 883
+                },
+                {
+                    "y": 1001,
+                    "x": 941
+                },
+                {
+                    "y": 1206,
+                    "x": 952
+                }
+            ],
+            "unbreakable": true,
+            "dynamic": false,
+            "blue": 22,
+            "shape": "edgeShape",
+            "texture_export": "",
+            "green": 0,
+            "element_type": "TerrainBlockEntity",
+            "no_fixtures": true
+        },
+        {
+            "outline": true,
+            "grass_theme": "[None]",
+            "texture_swf": "",
+            "theme": "Stone",
+            "id": "terrain_1",
+            "texture_rotation": 0,
+            "shade": 123,
+            "tint": 0,
+            "red": 37,
+            "points": [
+                {
+                    "y": 1195,
+                    "x": 1758
+                },
+                {
+                    "y": 989,
+                    "x": 1761
+                },
+                {
+                    "y": 990,
+                    "x": 1819
+                },
+                {
+                    "y": 1195,
+                    "x": 1830
+                }
+            ],
+            "unbreakable": true,
+            "dynamic": false,
+            "blue": 22,
+            "shape": "edgeShape",
+            "texture_export": "",
+            "green": 0,
+            "element_type": "TerrainBlockEntity",
+            "no_fixtures": true
+        },
+        {
+            "x": -908.4,
+            "y": 212296,
+            "fixture": "cube_medium",
+            "element_type": "DynamicObject",
+            "angle": -119.9497468065946,
+            "theme": "Stone",
+            "sleep": false,
+            "unbreakable": false,
+            "name": "CubeMedium",
+            "id": "dynamic_11"
+        },
+        {
+            "x": -919.2,
+            "y": 213733.8,
+            "fixture": "cube_medium",
+            "element_type": "DynamicObject",
+            "angle": -68.72616058469599,
+            "theme": "Stone",
+            "sleep": false,
+            "unbreakable": false,
+            "name": "CubeMedium",
+            "id": "dynamic_15"
+        },
+        {
+            "x": 3237.2,
+            "y": 194776.2,
+            "fixture": "cube_medium",
+            "element_type": "DynamicObject",
+            "angle": 109.69514540832655,
+            "theme": "Stone",
+            "sleep": false,
+            "unbreakable": false,
+            "name": "CubeMedium",
+            "id": "dynamic_16"
+        },
+        {
+            "x": 2066.8,
+            "y": 194360.4,
+            "fixture": "cube_medium",
+            "element_type": "DynamicObject",
+            "angle": 125.63639983162932,
+            "theme": "Stone",
+            "sleep": false,
+            "unbreakable": false,
+            "name": "CubeMedium",
+            "id": "dynamic_17"
+        }
+    ],
+    "power_up_percentage": 0,
+    "power_ups": [],
+    "parallax_layers": [
+        {
+            "x": 2800,
+            "tile_horizontally": false,
+            "y": 900,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_8",
+            "camera_z": 1,
+            "gap": 0,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_1_4"
+            ]
+        },
+        {
+            "x": 2000,
+            "tile_horizontally": false,
+            "y": 650,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_9",
+            "camera_z": 1,
+            "gap": 0,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_1_6"
+            ]
+        },
+        {
+            "x": 200,
+            "tile_horizontally": false,
+            "y": 800,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_1",
+            "camera_z": 1,
+            "gap": 500,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_1_1",
+                "parallax_1_2",
+                "parallax_1_3",
+                "parallax_1_5"
+            ]
+        },
+        {
+            "x": 500,
+            "tile_horizontally": false,
+            "y": 550,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_2",
+            "camera_z": 1,
+            "gap": 200,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_2_1",
+                "parallax_2_2",
+                "parallax_2_3"
+            ]
+        },
+        {
+            "x": 2200,
+            "tile_horizontally": false,
+            "y": 630,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_3",
+            "camera_z": 1,
+            "gap": 400,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_3_1"
+            ]
+        },
+        {
+            "x": 370,
+            "tile_horizontally": false,
+            "y": 1100,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_4",
+            "camera_z": 1,
+            "gap": 650,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_4_1"
+            ]
+        },
+        {
+            "x": 140,
+            "tile_horizontally": false,
+            "y": 400,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_5",
+            "camera_z": 1,
+            "gap": 0,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_5_1"
+            ]
+        },
+        {
+            "x": 2100,
+            "tile_horizontally": false,
+            "y": 250,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_6",
+            "camera_z": 1,
+            "gap": 300,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_6_1",
+                "parallax_6_3"
+            ]
+        },
+        {
+            "x": 850,
+            "tile_horizontally": false,
+            "y": 200,
+            "camera_x_pan": 1,
+            "graphics_swf": "level_graphics/level_bg_forest.swf",
+            "id": "parallax_7",
+            "camera_z": 1,
+            "gap": 1200,
+            "camera_y_pan": 1,
+            "element_type": "ParallaxLayer",
+            "graphics_export": [
+                "parallax_6_2"
+            ]
+        }
+    ],
+    "water_theme": "NotDefined",
+    "water_density": 100,
+    "water_line": 1200,
+    "camera_bounds_height": 250,
+    "zoom_side": "height",
+    "spawn_points": [
+        {
+            "y": 964,
+            "name": "SpawnPoint0",
+            "x": 910
+        },
+        {
+            "y": 966,
+            "name": "SpawnPoint1",
+            "x": 1796
+        },
+        {
+            "y": 967,
+            "name": "SpawnPoint2",
+            "x": 912
+        },
+        {
+            "y": 967,
+            "name": "SpawnPoint3",
+            "x": 1796
+        }
+    ],
+    "water_velocity_y": 0,
+    "width": 3000,
+    "water_velocity_x": 0,
+    "level_name": "forest_bgtest",
+    "theme": "Forest"
+}
