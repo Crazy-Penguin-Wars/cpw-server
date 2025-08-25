@@ -266,6 +266,18 @@
       "LevelFile": "flash/levels/forest_1.lvl"
     }
   },
+  "Level": {
+    "$DATA_TYPE": {
+      "ID": "String",
+      "MinLevel": "Integer",
+      "LevelFile": "String"
+    },
+    "test_level": {
+      "ID": "test_level",
+      "MinLevel": 0,
+      "LevelFile": "flash/levels/forest_1.lvl"
+    }
+  },
   "Tooltip": {
     "$DATA_TYPE": {
       "SWF": "String",
@@ -4863,7 +4875,7 @@
       "SoundID": "EmoticonLaugh",
       "Graphics": "#EmoticonGraphic.Laugh",
       "Icon": "#EmoticonIcon.Laugh",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWow": {
       "ID": "EmoticonWow",
@@ -4874,7 +4886,7 @@
       "SoundID": "EmoticonWow",
       "Graphics": "#EmoticonGraphic.Wow",
       "Icon": "#EmoticonIcon.Wow",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonSrsly": {
       "ID": "EmoticonSrsly",
@@ -4885,7 +4897,7 @@
       "SoundID": "EmoticonSrsly",
       "Graphics": "#EmoticonGraphic.Srsly",
       "Icon": "#EmoticonIcon.Srsly",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonCrying": {
       "ID": "EmoticonCrying",
@@ -4896,7 +4908,7 @@
       "SoundID": "EmoticonCrying",
       "Graphics": "#EmoticonGraphic.Crying",
       "Icon": "#EmoticonIcon.Crying",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonDizzy": {
       "ID": "EmoticonDizzy",
@@ -4907,7 +4919,7 @@
       "SoundID": "EmoticonDizzy",
       "Graphics": "#EmoticonGraphic.Dizzy",
       "Icon": "#EmoticonIcon.Dizzy",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonScream": {
       "ID": "EmoticonScream",
@@ -4918,7 +4930,7 @@
       "SoundID": "EmoticonScream",
       "Graphics": "#EmoticonGraphic.Scream",
       "Icon": "#EmoticonIcon.Scream",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonOuch": {
       "ID": "EmoticonOuch",
@@ -4929,7 +4941,7 @@
       "SoundID": "EmoticonOuch",
       "Graphics": "#EmoticonGraphic.Ouch",
       "Icon": "#EmoticonIcon.Ouch",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonPhew": {
       "ID": "EmoticonPhew",
@@ -4940,7 +4952,7 @@
       "SoundID": "EmoticonPhew",
       "Graphics": "#EmoticonGraphic.Phew",
       "Icon": "#EmoticonIcon.Phew",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWoot": {
       "ID": "EmoticonWoot",
@@ -4951,7 +4963,7 @@
       "SoundID": "EmoticonWoot",
       "Graphics": "#EmoticonGraphic.Woot",
       "Icon": "#EmoticonIcon.Woot",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonAngry": {
       "ID": "EmoticonAngry",
@@ -4962,7 +4974,7 @@
       "SoundID": "EmoticonAngry",
       "Graphics": "#EmoticonGraphic.Angry",
       "Icon": "#EmoticonIcon.Angry",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWaiting": {
       "ID": "EmoticonWaiting",
@@ -4973,7 +4985,7 @@
       "SoundID": "EmoticonWaiting",
       "Graphics": "#EmoticonGraphic.Waiting",
       "Icon": "#EmoticonIcon.Waiting",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonTaunt": {
       "ID": "EmoticonTaunt",
@@ -4984,7 +4996,7 @@
       "SoundID": "EmoticonTaunt",
       "Graphics": "#EmoticonGraphic.Taunt",
       "Icon": "#EmoticonIcon.Taunt",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWtf": {
       "ID": "EmoticonWtf",
@@ -4995,7 +5007,7 @@
       "SoundID": "EmoticonWtf",
       "Graphics": "#EmoticonGraphic.Wtf",
       "Icon": "#EmoticonIcon.Wtf",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonNice": {
       "ID": "EmoticonNice",
@@ -5006,7 +5018,7 @@
       "SoundID": "EmoticonNice",
       "Graphics": "#EmoticonGraphic.Nice",
       "Icon": "#EmoticonIcon.Nice",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonFacepalm": {
       "ID": "EmoticonFacepalm",
@@ -5017,7 +5029,7 @@
       "SoundID": "EmoticonFacepalm",
       "Graphics": "#EmoticonGraphic.Facepalm",
       "Icon": "#EmoticonIcon.Facepalm",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonTrollface": {
       "ID": "EmoticonTrollface",
@@ -5028,7 +5040,7 @@
       "SoundID": "EmoticonTrollface",
       "Graphics": "#EmoticonGraphic.Trollface",
       "Icon": "#EmoticonIcon.Trollface",
-      "Duration": 3000
+      "Duration": 4000
     }
   },
   "EmoticonGraphic": {
@@ -9236,7 +9248,7 @@
       "SoundID": "EmoticonLaugh",
       "Graphics": "#EmoticonGraphic.Laugh",
       "Icon": "#EmoticonIcon.Laugh",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWow": {
       "ID": "EmoticonWow",
@@ -9247,7 +9259,7 @@
       "SoundID": "EmoticonWow",
       "Graphics": "#EmoticonGraphic.Wow",
       "Icon": "#EmoticonIcon.Wow",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonSrsly": {
       "ID": "EmoticonSrsly",
@@ -9258,7 +9270,7 @@
       "SoundID": "EmoticonSrsly",
       "Graphics": "#EmoticonGraphic.Srsly",
       "Icon": "#EmoticonIcon.Srsly",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonCrying": {
       "ID": "EmoticonCrying",
@@ -9269,7 +9281,7 @@
       "SoundID": "EmoticonCrying",
       "Graphics": "#EmoticonGraphic.Crying",
       "Icon": "#EmoticonIcon.Crying",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonDizzy": {
       "ID": "EmoticonDizzy",
@@ -9280,7 +9292,7 @@
       "SoundID": "EmoticonDizzy",
       "Graphics": "#EmoticonGraphic.Dizzy",
       "Icon": "#EmoticonIcon.Dizzy",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonScream": {
       "ID": "EmoticonScream",
@@ -9291,7 +9303,7 @@
       "SoundID": "EmoticonScream",
       "Graphics": "#EmoticonGraphic.Scream",
       "Icon": "#EmoticonIcon.Scream",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonOuch": {
       "ID": "EmoticonOuch",
@@ -9302,7 +9314,7 @@
       "SoundID": "EmoticonOuch",
       "Graphics": "#EmoticonGraphic.Ouch",
       "Icon": "#EmoticonIcon.Ouch",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonPhew": {
       "ID": "EmoticonPhew",
@@ -9313,7 +9325,7 @@
       "SoundID": "EmoticonPhew",
       "Graphics": "#EmoticonGraphic.Phew",
       "Icon": "#EmoticonIcon.Phew",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWoot": {
       "ID": "EmoticonWoot",
@@ -9324,7 +9336,7 @@
       "SoundID": "EmoticonWoot",
       "Graphics": "#EmoticonGraphic.Woot",
       "Icon": "#EmoticonIcon.Woot",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonAngry": {
       "ID": "EmoticonAngry",
@@ -9335,7 +9347,7 @@
       "SoundID": "EmoticonAngry",
       "Graphics": "#EmoticonGraphic.Angry",
       "Icon": "#EmoticonIcon.Angry",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWaiting": {
       "ID": "EmoticonWaiting",
@@ -9346,7 +9358,7 @@
       "SoundID": "EmoticonWaiting",
       "Graphics": "#EmoticonGraphic.Waiting",
       "Icon": "#EmoticonIcon.Waiting",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonTaunt": {
       "ID": "EmoticonTaunt",
@@ -9357,7 +9369,7 @@
       "SoundID": "EmoticonTaunt",
       "Graphics": "#EmoticonGraphic.Taunt",
       "Icon": "#EmoticonIcon.Taunt",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonWtf": {
       "ID": "EmoticonWtf",
@@ -9368,7 +9380,7 @@
       "SoundID": "EmoticonWtf",
       "Graphics": "#EmoticonGraphic.Wtf",
       "Icon": "#EmoticonIcon.Wtf",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonNice": {
       "ID": "EmoticonNice",
@@ -9379,7 +9391,7 @@
       "SoundID": "EmoticonNice",
       "Graphics": "#EmoticonGraphic.Nice",
       "Icon": "#EmoticonIcon.Nice",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonFacepalm": {
       "ID": "EmoticonFacepalm",
@@ -9390,7 +9402,7 @@
       "SoundID": "EmoticonFacepalm",
       "Graphics": "#EmoticonGraphic.Facepalm",
       "Icon": "#EmoticonIcon.Facepalm",
-      "Duration": 3000
+      "Duration": 4000
     },
     "EmoticonTrollface": {
       "ID": "EmoticonTrollface",
@@ -9401,7 +9413,7 @@
       "SoundID": "EmoticonTrollface",
       "Graphics": "#EmoticonGraphic.Trollface",
       "Icon": "#EmoticonIcon.Trollface",
-      "Duration": 3000
+      "Duration": 4000
     }
   },
   "BundleIcon": {
@@ -11161,177 +11173,6 @@
   "Comments": {
     "$DATA_TYPE": {
       "ID": "String"
-    }
-  },
-  "Level": {
-    "$DATA_TYPE": {
-      "ID": "String",
-      "Name": "String",
-      "LevelFile": "String",
-      "MinLevel": "Integer",
-      "MaxLevel": "Integer",
-      "MinRequired": "Integer"
-    },
-    "forest_average_01": {
-      "ID": "forest_average_01",
-      "LevelFile": "res/levels/final/forest_01_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 20,
-      "MinRequired": 3
-    },
-    "forest_easy_01": {
-      "ID": "forest_easy_01",
-      "LevelFile": "res/levels/final/forest_02_easy.lvl",
-      "MinLevel": 1,
-      "MaxLevel": 15,
-      "MinRequired": 1
-    },
-    "forest_average_02": {
-      "ID": "forest_average_02",
-      "LevelFile": "res/levels/final/forest_06_average.lvl",
-      "MinLevel": 4,
-      "MaxLevel": 50,
-      "MinRequired": 4
-    },
-    "forest_average_03": {
-      "ID": "forest_average_03",
-      "LevelFile": "res/levels/final/forest_08_average.lvl",
-      "MinLevel": 4,
-      "MaxLevel": 50,
-      "MinRequired": 4
-    },
-    "forest_difficult_01": {
-      "ID": "forest_difficult_01",
-      "LevelFile": "res/levels/final/forest_07_difficult.lvl",
-      "MinLevel": 7,
-      "MaxLevel": 666,
-      "MinRequired": 5
-    },
-    "forest_easy_02": {
-      "ID": "forest_easy_02",
-      "LevelFile": "res/levels/final/forest_09_easy.lvl",
-      "MinLevel": 1,
-      "MaxLevel": 5,
-      "MinRequired": 1
-    },
-    "forest_10_difficult": {
-      "ID": "forest_10_difficult",
-      "LevelFile": "res/levels/final/forest_10_difficult.lvl",
-      "MinLevel": 10,
-      "MaxLevel": 666,
-      "MinRequired": 10
-    },
-    "desert_average_01": {
-      "ID": "desert_average_01",
-      "LevelFile": "res/levels/final/desert_01_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 25,
-      "MinRequired": 3
-    },
-    "desert_average_02": {
-      "ID": "desert_average_02",
-      "LevelFile": "res/levels/final/desert_02_average.lvl",
-      "MinLevel": 4,
-      "MaxLevel": 50,
-      "MinRequired": 3
-    },
-    "desert_difficult_01": {
-      "ID": "desert_difficult_01",
-      "LevelFile": "res/levels/final/desert_03_difficult.lvl",
-      "MinLevel": 7,
-      "MaxLevel": 666,
-      "MinRequired": 5
-    },
-    "desert_easy_01": {
-      "ID": "desert_easy_01",
-      "LevelFile": "res/levels/final/desert_04_easy.lvl",
-      "MinLevel": 1,
-      "MaxLevel": 7,
-      "MinRequired": 1
-    },
-    "mountain_average_01": {
-      "ID": "mountain_average_01",
-      "LevelFile": "res/levels/final/mountain_03_easy.lvl",
-      "MinLevel": 5,
-      "MaxLevel": 50,
-      "MinRequired": 4
-    },
-    "mountain_easy_01": {
-      "ID": "mountain_easy_01",
-      "LevelFile": "res/levels/final/mountain_01_average.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 30,
-      "MinRequired": 3
-    },
-    "mountain_difficult_01": {
-      "ID": "mountain_difficult_01",
-      "LevelFile": "res/levels/final/mountain_05_difficult.lvl",
-      "MinLevel": 6,
-      "MaxLevel": 666,
-      "MinRequired": 5
-    },
-    "mountain_easy_02": {
-      "ID": "mountain_easy_02",
-      "LevelFile": "res/levels/final/mountain_06_easy.lvl",
-      "MinLevel": 1,
-      "MaxLevel": 10,
-      "MinRequired": 1
-    },
-    "mountain_07_difficult": {
-      "ID": "mountain_07_difficult",
-      "LevelFile": "res/levels/final/mountain_07_difficult.lvl",
-      "MinLevel": 8,
-      "MaxLevel": 666,
-      "MinRequired": 7
-    },
-    "winter_easy_04": {
-      "ID": "winter_easy_04",
-      "LevelFile": "res/levels/final/winter_02_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 25,
-      "MinRequired": 3
-    },
-    "winter_easy_05": {
-      "ID": "winter_easy_05",
-      "LevelFile": "res/levels/final/winter_03_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 25,
-      "MinRequired": 3
-    },
-    "winter_average_01": {
-      "ID": "winter_average_01",
-      "LevelFile": "res/levels/final/winter_01_average.lvl",
-      "MinLevel": 4,
-      "MaxLevel": 50,
-      "MinRequired": 2
-    },
-    "winter_easy_03": {
-      "ID": "winter_easy_03",
-      "LevelFile": "res/levels/final/winter_05_difficult.lvl",
-      "MinLevel": 1,
-      "MaxLevel": 25,
-      "MinRequired": 1
-    },
-    "winter_easy_01": {
-      "ID": "winter_easy_01",
-      "LevelFile": "res/levels/final/winter_06_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 7,
-      "MinRequired": 3
-    },
-    "winter_easy_02": {
-      "ID": "winter_easy_02",
-      "LevelFile": "res/levels/final/winter_07_easy.lvl",
-      "MinLevel": 3,
-      "MaxLevel": 7,
-      "MinRequired": 3
-    },
-    "winter_average_02": {
-      "ID": "winter_average_02",
-      "LevelFile": "res/levels/final/winter_08_average.lvl",
-      "MinLevel": 8,
-      "MaxLevel": 666,
-      "MinRequired": 7
     }
   },
   "Missile": {
@@ -19860,6 +19701,10 @@
       "ID": "PENGUIN_ANIMATIONS",
       "SWF": "flash/characters/penguin_animations.swf"
     },
+    "PENGUIN_OVERHEAD_ANIMATIONS": {
+      "ID": "PENGUIN_OVERHEAD_ANIMATIONS",
+      "SWF": "flash/characters/penguin_overhead_animations.swf"
+    },
     "flash/ui/home_screen.swf": {
       "ID": "HOME_SCREEN",
       "SWF": "flash/ui/home_screen.swf",
@@ -19986,6 +19831,10 @@
     "WEAPON_ICONS": {
       "ID": "WEAPON_ICONS",
       "SWF": "flash/ui/icons_weapons.swf"
+    },
+    "DROPS_ICONS": {
+      "ID": "DROPS_ICONS",
+      "SWF": "flash/ui/icons_drops.swf"
     },
     "EMOTES": {
       "ID": "EMOTES",
@@ -21152,7 +21001,7 @@
       "PageContent": "Page1",
       "Content": "#Item.BasicNuke",
       "IconLabel": "#EmoticonIcon.Laugh",
-      "DefaultTab": "#Tab.Tab1",
+      "DefaultTab": "#Tab.Tab2",
       "Tab": ["#Tab.Tab1", "#Tab.Tab2"]
     }
   },
@@ -21165,7 +21014,6 @@
       "BigItems": ["#Item.BasicNuke", "#Item.Pistol", "#Item.Dynamite"],
       "Name": "TAB_ALL",
       "Sorting": "Level",
-      "Categorys": ["IsUnlockedCODE"],
       "Type": "Weapon"
     },
     "Tab2":{
@@ -21174,6 +21022,7 @@
       "BigItems": ["#Item.BasicNuke", "#Item.Pistol", "#Item.Dynamite"],
       "Name": "TAB_UNLOCKED",
       "Sorting": "Level",
+      "Categorys": ["IsUnlockedCODE"],
       "Type": "Weapon"
     }
   },
@@ -21210,6 +21059,42 @@
       "VIPPrice": 10,
       "ExpMultiplier": 1,
       "IngameMoneyMultiplier": 1
+    }
+  },
+  "Bet": {
+    "1NoBet":{
+      "ID": "1NoBet",
+      "ValueIngame": 0,
+      "ValuePremium": 0
+    },
+    "2BetCoins":{
+      "ID": "2BetCoins",
+      "ValueIngame": 100,
+      "ValuePremium": 0
+    },
+    "3BetPremium":{
+      "ID": "3BetPremium",
+      "ValueIngame": 0,
+      "ValuePremium": 1
+    }
+  },
+  "BettingSettings": {
+    "Default":{
+      "BettingTime": 10
+    }
+  },
+  "BattleRewardIconDefault": {
+    "Coin": {
+      "SWF": "flash/ui/icons_drops.swf",
+      "Export": "drop_coins"
+    },
+    "Cash": {
+      "SWF": "flash/ui/icons_drops.swf",
+      "Export": "drop_cash"
+    },
+    "Exp": {
+      "SWF": "flash/ui/icons_drops.swf",
+      "Export": "drop_exp"
     }
   }
 }

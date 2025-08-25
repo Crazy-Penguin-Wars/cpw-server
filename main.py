@@ -85,7 +85,11 @@ def crossdomain():
 
 @app.route("/play")
 def play():
-  return render_template("play.html")
+  return render_template("play.html", ID="sgid_04010210b1e184bc")
+
+@app.route("/play2")
+def play2():
+  return render_template("play.html", ID="sgid_2")
 
 @app.route("/demo")
 def demo():
@@ -120,31 +124,57 @@ def home():
 @app.route("/GetAccountInformation")
 def GetAccountInformation():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>sgid_04010210b1e184bc</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>2908997</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:5055/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + "' user_id='sgid_04010210b1e184bc'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:5055/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
 
   return Response(xml, mimetype='text/xml')
 
 @app.route("/SetFlag")
 def SetFlag():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='SetFlag' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>sgid_04010210b1e184bc</dcg_id><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>SetFlag</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='SetFlag' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>{args['uid']}</dcg_id><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>SetFlag</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
   return Response(xml, mimetype='text/xml')
 
 @app.route("/GetTournamentInformation")
 def GetTournamentInformation():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetTournamentInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>sgid_04010210b1e184bc</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>" + str(session["player_name"]) + "</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetTournamentInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='GetTournamentInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>{args['uid']}</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>{str(session['player_name'])}</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetTournamentInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
   return Response(xml, mimetype='text/xml')
 
 @app.route("/GetInboxStatus")
 def GetInboxStatus():
-  return ""
+  args = request.args
+  xml = f"<root call_id='{args['call_id']}' service='ClientTracking' type='DataReceived'><data></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  return Response(xml, mimetype='text/xml')
 
 @app.route("/PlayNow")
 def PlayNow():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='PlayNow' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><key>test</key><game_identifier>test</game_identifier><player_count>3</player_count><dcg_id>sgid_04010210b1e184bc</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>" + str(session["player_name"]) + "</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>2908997</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='PlayNow' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><host>127.0.0.1</host><port>5050</port><key>test</key><game_identifier>test</game_identifier><player_count>3</player_count><dcg_id>{args['uid']}</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>{str(session['player_name'])}</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
   #xml = f"<root call_id='{args['call_id']}' service='PlayNow' type='DataReceived'><data><game_identifier>test</game_identifier><player_count>3</player_count></root>"
+  return Response(xml, mimetype='text/xml')
+
+@app.route("/CheckServerStatus")
+def CheckServerStatus():
+  args = request.args
+  xml = f"<root call_id='{args['call_id']}' service='CheckServerStatus' type='DataReceived'><data><productionUpdate>false</productionUpdate></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  return Response(xml, mimetype='text/xml')
+
+@app.route("/ClientTracking")
+def ClientTracking():
+  args = request.args
+  xml = f"<root call_id='{args['call_id']}' service='ClientTracking' type='DataReceived'><data></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  return Response(xml, mimetype='text/xml')
+
+@app.route("/BuyItem")
+def BuyItem():
+  args = request.args
+  xml = f"<root call_id='{args['call_id']}' service='BuyItem' type='DataReceived'><data><item item_id='{args['item_id']}' total_amount='90' bought_amount='5' reduced_cash='90' reduced_coins='90'></item></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
+  return Response(xml, mimetype='text/xml')
+
+@app.route("/ConfirmBattleEnded")
+def ConfirmBattleEnded():
+  args = request.args
+  xml = f"<root call_id='{args['call_id']}' service='ConfirmBattleEnded' type='DataReceived'><data><internal_code>1</internal_code></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
   return Response(xml, mimetype='text/xml')
 
 if __name__ == '__main__':
