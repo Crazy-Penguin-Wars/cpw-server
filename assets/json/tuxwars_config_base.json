@@ -19743,6 +19743,10 @@
     "UI_MULTIPLAYER": {
       "ID": "UI_MULTIPLAYER",
       "SWF": "flash/ui/multiplayer.swf"
+    },
+    "MAPS_ICONS": {
+      "ID": "MAPS_ICONS",
+      "SWF": "flash/ui/icons_maps.swf"
     }
   },
   "Results": {

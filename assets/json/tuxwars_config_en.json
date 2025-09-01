@@ -988,6 +988,16 @@
     "EXIT_PRESSED_INGAME": { "ID": "EXIT_PRESSED_INGAME", "en":"is about to chicken out."},
     "EXIT_CONFIRMED_INGAME": { "ID": "EXIT_CONFIRMED_INGAME", "en":"has chickened out."},
     "REMATCH_LEFT": { "ID": "REMATCH_LEFT", "en":"No Rematch"},
-    "REMATCH_READY": { "ID": "REMATCH_READY", "en":"Rematch"}
+    "REMATCH_READY": { "ID": "REMATCH_READY", "en":"Rematch"},
+    "HOST_GAME_HEADER": { "ID": "HOST_GAME_HEADER", "en":"Host Game"},
+    "HOST_GAME_MAP": { "ID": "HOST_GAME_MAP", "en":"Map:"},
+    "HOST_GAME_NUM_PLAYERS": { "ID": "HOST_GAME_NUM_PLAYERS", "en":"Players:"},
+    "HOST_GAME_TURN_TIME": { "ID": "HOST_GAME_TURN_TIME", "en":"Turn:"},
+    "HOST_GAME_MATCH_TIME": { "ID": "HOST_GAME_MATCH_TIME", "en":"Match:"},
+    "HOST_GAME_MESSAGE": { "ID": "HOST_GAME_MESSAGE", "en":"Waiting for friends..."},
+    "PLAYER_1": { "ID": "PLAYER_1", "en":"Player 1"},
+    "PLAYER_2": { "ID": "PLAYER_2", "en":"Player 2"},
+    "PLAYER_3": { "ID": "PLAYER_3", "en":"Player 3"},
+    "PLAYER_4": { "ID": "PLAYER_4", "en":"Player 4"}
   }
 }
