@@ -119,7 +119,7 @@ function runFlash() {
 	if (devEnv) {
 		rnd = '?r='+Math.random();
 	}
-	swfobject.embedSWF("http://127.0.0.1:5055/assets/GameLauncher.swf"+rnd, "flash", "760", "668", requiredFlashVersion, false, flashVars, params, attributes);
+	swfobject.embedSWF("http://127.0.0.1:5055/assets/GameLauncher.swf"+rnd, "flash", "100%", "668", requiredFlashVersion, false, flashVars, params, attributes);
 	jQuery(document).ready(function(){
 	    if(!swfobject.hasFlashPlayerVersion(requiredFlashVersion)){
 	    	jQuery("#flash").show();

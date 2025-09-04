@@ -1,0 +1,43 @@
+{
+    "flags": {
+        "Tutorial": "false",
+        "settingMusic": "true",
+        "settingSfx": "true"
+    },
+    "cash": 45,
+    "coins": 2020,
+    "incoming_gift_requests": [],
+    "incoming_neighbor_requests": [],
+    "level": 1,
+    "score": 0,
+    "pic_url": "",
+    "slot_machine_used_spins": 0,
+    "items": [
+        {
+            "item_id": "BasicNuke",
+            "amount": "5"
+        },
+        {
+            "item_id": "Punch",
+            "amount": "5"
+        },
+        {
+            "item_id": "TeleportationGrenade",
+            "amount": "5"
+        },
+        {
+            "item_id": "Pistol",
+            "amount": "5"
+        },
+        {
+            "item_id": "Grenade",
+            "amount": "5"
+        }
+    ],
+    "unlocked_items": [],
+    "worn_items": [],
+    "neighbors": [],
+    "user_data": [],
+    "known_recipes": [],
+    "ongoing_research": {}
+}

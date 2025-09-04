@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Verification - Crazy Penguin Wars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-900 text-gray-100">
+  <div class="bg-gray-800 p-8 rounded-2xl shadow-lg w-full max-w-sm space-y-6">
+
+    <h1 class="text-3xl font-bold text-center text-white-400">Verify Email</h1>
+    <p class="text-center text-gray-400 text-sm">
+      We sent you a verification code by email. Please enter it below:
+    </p>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="space-y-2">
+          {% for category, message in messages %}
+            <div class="p-3 rounded-lg text-sm font-medium
+              {% if category == 'error' %} bg-red-600 text-white
+              {% elif category == 'success' %} bg-green-600 text-white
+              {% else %} bg-gray-700 text-gray-200 {% endif %}">
+              {{ message }}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('verify') }}" class="space-y-4">
+      <div>
+        <input type="text" id="code" name="code" required maxlength="6"
+          placeholder="Enter 6-digit code"
+          class="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-blue-500 tracking-widest text-center font-mono">
+      </div>
+      <button type="submit"
+        class="w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition text-white font-semibold">
+        Verify
+      </button>
+    </form>
+
+    <p class="text-center text-gray-400 text-sm">
+      Be sure to check your spam folder as well!
+    </p>
+  </div>
+</body>
+</html>

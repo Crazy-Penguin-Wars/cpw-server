@@ -1,7 +1,18 @@
-import os
 import json
+from flask import Flask, Response, render_template, request, redirect, send_from_directory, session, url_for, flash
+from werkzeug.security import generate_password_hash, check_password_hash
+import pymongo
+import random
+import re
+import smtplib, ssl
+from email.message import EmailMessage
+import os
+from dotenv import load_dotenv
+import uuid
 from pathlib import Path
-from flask import Flask, render_template, send_from_directory, request, redirect, session, Response
+import connectionUtils
+import xml.etree.ElementTree as ET
+from commands import *
 
 p = Path(__file__).parents[0]
 
@@ -9,174 +20,196 @@ TEMPLATES_DIR = os.path.join(p, "templates")
 ASSETS_DIR = os.path.join(p, "assets")
 STYLES_DIR = os.path.join(p, "templates", "styles")
 
+AVAILABLE_COMMANDS = {
+    "GetAccountInformation": handle_GetAccountInformation
+}
+
 host = '0.0.0.0'
 port = 5055
 
-app = Flask(__name__, template_folder=TEMPLATES_DIR)
+app = Flask(__name__)
+app.secret_key = "CPW-secret"
 
-# STATIC PART
+load_dotenv()
 
+# Connecct to database
+uri = os.environ["MONGO_URI"]
+client = pymongo.MongoClient(uri, server_api=pymongo.server_api.ServerApi(version="1"))
+db = client["cpw-dev"]
+auth_db = db["cpw-auth"]
+data_db = db["cpw-data"]
+
+EMAIL_REGEX = re.compile(r"^[\w\.-]+@[\w\.-]+\.\w+$")
+
+def send_verification_email(email, code, name):
+    msg = EmailMessage()
+    msg['Subject'] = "Welcome to Crazy Penguin Wars!"
+    msg['From'] = "noreply@crazypenguinwars.me"
+    msg['To'] = email
+
+    text = f"Your verification code is {code}"
+    html = f"<h2>Dear {name}</h2><h1>Welcome to Crazy Penguin Wars!</h1><br>Your activation code is: <h3>{code}</h3><br>Enjoy playing the game!<br><br><img src=https://crazypenguinwars.me/assets/logo.png width=150><br><a href=https://discord.gg/PxxhzcbemQ target=_blank><img src=https://i.imgur.com/7S5ZLPZ.png width=40 height=40 title='Join our Discord!' /> </a>"
+
+    msg.set_content(text)
+    msg.add_alternative(html, subtype='html')
+
+    try:
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL("smtp.zeptomail.eu", 465, context=context) as server:
+            server.login(os.environ['MAIL_USERNAME'], os.environ['MAIL_PASSWORD'])
+            server.send_message(msg)
+        return True
+    except Exception as e:
+        print(e)
+        return False
+
+@app.route("/")
+def home():
+    return redirect(url_for("login"))
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        email = request.form.get("email", "").strip()
+        password = request.form.get("password", "").strip()
+
+        if not EMAIL_REGEX.match(email):
+            flash("Please enter a valid email address.", "error")
+        elif len(password) < 6:
+            flash("Password must be at least 6 characters long.", "error")
+        else:
+            query_filter = {"email": email}
+            document = auth_db.find_one(query_filter, {"password": 1, "id": 1})
+            pwhash = document["password"]
+            id = document["id"]
+            if check_password_hash(pwhash, password):
+                session["id"] = id
+                token = str(uuid.uuid4())
+                session["token"] = token
+                update_operation = { "$set" : { "token" : token}}
+                auth_db.update_one(query_filter, update_operation)
+                return redirect(url_for("play"))
+            else:
+                flash("Wrong e-mail or password.", "error")
+            return redirect(url_for("home"))
+
+    return render_template("login.html")
+
+
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        username = request.form.get("username", "").strip()
+        email = request.form.get("email", "").strip()
+        password = request.form.get("password", "").strip()
+        confirm_password = request.form.get("confirm_password", "").strip()
+
+        # Input validation
+        if len(username) < 3:
+            flash("Username must be at least 3 characters long.", "error")
+        elif not EMAIL_REGEX.match(email):
+            flash("Please enter a valid email address.", "error")
+        elif len(password) < 6:
+            flash("Password must be at least 6 characters long.", "error")
+        elif password != confirm_password:
+            flash("Passwords do not match.", "error")
+        elif auth_db.find_one({'email' : email}):
+            flash("An account with this e-mail already exists.", "error")
+        else:
+            hashed_pw = generate_password_hash(password)
+            code = f"{random.randint(0, 999999):06d}"
+            id = str(uuid.uuid4())
+            session["verifId"] = id
+            session["verifName"] = username
+            document = {
+                "id": id,
+                "username": username,
+                "email": email,
+                "password": hashed_pw,
+                "verified": False,
+                "verification_code": code,
+                "token": ""
+            }
+            if not send_verification_email(email, code, username):
+                # Could not send e-mail, skip verification
+                document["verified"] = True
+                del document["verification_code"]
+                auth_db.insert_one(document)
+                flash("Your account has been created, but skipped e-mail verification because of an error. Please contact the developers about this.", "warning")
+                return redirect(url_for("login"))
+            auth_db.insert_one(document)
+            return redirect(url_for("verify"))
+
+    return render_template("register.html")
+
+@app.route("/verify", methods=["GET", "POST"])
+def verify():
+    if request.method == "POST":
+        code = request.form.get("code", "").strip()
+
+        if not code.isdigit() or len(code) != 6:
+            flash("Invalid code format. Must be 6 digits.", "error")
+        else:
+            query_filter = {'id' : session["verifId"]}
+            verifcode = auth_db.find_one(query_filter, {"verification_code": 1})["verification_code"]
+            if verifcode == code:
+                flash("Your account has been created!", "success")
+                update_operation = { "$set" : { "verified" : True}, "$unset": {"verification_code": ""}}
+                auth_db.update_one(query_filter, update_operation)
+
+                # Create account
+                with open(os.path.join(ASSETS_DIR, "json", "default_player.json")) as d:
+                    document = json.load(d)
+                    d.close()
+                document["id"] = session["verifId"]
+                document["name"] = session["verifName"]
+                data_db.insert_one(document)
+                return redirect(url_for("login"))
+            else:
+                flash("You entered the wrong code.", "error")
+
+    return render_template("verify.html")
+
+@app.route("/play")
+def play():
+  return render_template("play.html", ID=session["id"], TOKEN=session["token"])
+
+@app.route("/assets/<path:path>")
+def assetsLoader(path):
+	return send_from_directory(ASSETS_DIR, path)
 
 @app.route("/styles/<path:path>")
 def styles(path):
   return send_from_directory(STYLES_DIR, path)
 
+@app.route("/api/<command>", methods=["GET",])
+def handle_command(command):
+    params = request.args.to_dict()
 
-@app.route("/assets/<path:path>")
-def assetsLoader(path):
-	print(path)
-	if path == "json/tuxwars_config_base.json":
-		with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_base.json"), "r") as f:
-			data = json.load(f)
+    id = params.get("uid")
+
+    # Check signature
+    given_signature = params.get("sig")
+    calculated_signature = connectionUtils.generate_signature(params, session["token"])
+    print(given_signature)
+    print(calculated_signature)
+    if given_signature != calculated_signature:
+        print(session["token"])
+        return "Wrong token"
     
-		# Replace placeholders
-		replacements = {
-    	    "{{OpponentAmount}}": int(session["OpponentAmount"]),
-    	    "{{MatchDuration}}": int(session["MatchDuration"]),
-    	    "{{TurnDuration}}": int(session["TurnDuration"]),
-    	    "{{bot1_enable}}": 99,
-    	    "{{bot2_enable}}": 99 if int(session["OpponentAmount"]) >=2 else 10,
-    	    "{{bot3_enable}}": 99 if int(session["OpponentAmount"]) >=3 else 10
-    	}
-        
-		def replace_placeholders(obj):
-			if isinstance(obj, dict):
-				return {key: replace_placeholders(value) for key, value in obj.items()}
-               
-			elif isinstance(obj, list):
-				return [replace_placeholders(item) for item in obj]
-               
-			elif isinstance(obj, str) and obj in replacements:
-				return replacements[obj]
-               
-			return obj
-          
-		data = replace_placeholders(data)
-	
-		return Response(json.dumps(data), 
-                mimetype="application/json", 
-                headers={"Content-Disposition": 'inline; filename="tuxwars_config_base.json"'})
+    xml = ET.Element("root", {
+        "call_id": params.get("call_id", ""),
+        "service": command
+    })
 
-	elif path == "json/tuxwars_config_en.json":
-		with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_en.json"), "r") as f:
-			content = f.read()
-    
-		# Replace placeholders
-		replacements = {
-        "{{bot1_name}}": session["OpponentNames"][0],
-        "{{bot2_name}}": session["OpponentNames"][1] if int(session["OpponentAmount"]) >=2 else "",
-        "{{bot3_name}}": session["OpponentNames"][2] if int(session["OpponentAmount"]) >=3 else ""
-    	}
-	
-		for placeholder, value in replacements.items():
-			content = content.replace(placeholder, value)
-	
-		return Response(content, 
-                mimetype="application/json", 
-                headers={"Content-Disposition": 'inline; filename="tuxwars_config_en.json"'})
-	
-	return send_from_directory(ASSETS_DIR, path)
+    if command in AVAILABLE_COMMANDS:
+        handler = AVAILABLE_COMMANDS[command]
+        xml = handler(params, id, xml, data_db)
+    else:
+        print(f"Command not handled: {command}")
 
+    return Response(ET.tostring(xml, encoding="utf-8", xml_declaration=True), mimetype="application/xml")
 
-@app.route("/crossdomain.xml")
-def crossdomain():
-  return send_from_directory(ASSETS_DIR, "crossdomain.xml")
-
-
-@app.route("/play")
-def play():
-  return render_template("play.html", ID="sgid_04010210b1e184bc")
-
-@app.route("/play2")
-def play2():
-  return render_template("play.html", ID="sgid_2")
-
-@app.route("/demo")
-def demo():
-	if "OpponentAmount" in session:
-		match_minutes = int(int(session["MatchDuration"]) / 60)
-		match_seconds = int(session["MatchDuration"]) % 60
-		return render_template("demo.html", match_minutes=match_minutes, match_seconds=match_seconds, turn_time=int(session["TurnDuration"]), map="", botCount=session["OpponentAmount"], bot1_name = session["OpponentNames"][0], bot2_name = session["OpponentNames"][1], bot3_name = session["OpponentNames"][2], bot4_name = session["OpponentNames"][3], player_name=session["player_name"])
-	else:
-		return render_template("demo.html", match_minutes=5, match_seconds=0, turn_time=20, map="", botCount=1, bot1_name="", bot2_name="", bot3_name="", bot4_name="", player_name="")
-
-@app.route("/start_game", methods=['POST'])
-def startGame():
-  print(request.form)
-  session["OpponentAmount"] = request.form["botCount"]
-  session["TurnDuration"] = request.form["turn_time"]
-  session["MatchDuration"] = request.form["match_time"]
-  session["map"] = request.form["map"]
-  session["player_name"] = request.form["player_name"]
-  session["OpponentNames"] = ["", "", "", ""]
-  for i in range(int(request.form["botCount"])):
-      session["OpponentNames"][i] = request.form["bot" + str(i + 1) + "_name"]
-  return redirect("/play")
-
-@app.route("/")
-def home():
-  return redirect("/demo")
-
-
-# DYNAMIC PART
-
-
-@app.route("/GetAccountInformation")
-def GetAccountInformation():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:5055/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
-
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/SetFlag")
-def SetFlag():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='SetFlag' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>{args['uid']}</dcg_id><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>SetFlag</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/GetTournamentInformation")
-def GetTournamentInformation():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetTournamentInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><dcg_id>{args['uid']}</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>{str(session['player_name'])}</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetTournamentInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/GetInboxStatus")
-def GetInboxStatus():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='ClientTracking' type='DataReceived'><data></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/PlayNow")
-def PlayNow():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='PlayNow' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><host>127.0.0.1</host><port>5050</port><key>test</key><game_identifier>test</game_identifier><player_count>3</player_count><dcg_id>{args['uid']}</dcg_id><rank>1</rank><points>1000</points><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><played_matches>10</played_matches><status>0</status><name>{str(session['player_name'])}</name><user_id>515998816</user_id><platform>SpilGamesPortals</platform><pic_url></pic_url></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  #xml = f"<root call_id='{args['call_id']}' service='PlayNow' type='DataReceived'><data><game_identifier>test</game_identifier><player_count>3</player_count></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/CheckServerStatus")
-def CheckServerStatus():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='CheckServerStatus' type='DataReceived'><data><productionUpdate>false</productionUpdate></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/ClientTracking")
-def ClientTracking():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='ClientTracking' type='DataReceived'><data></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/BuyItem")
-def BuyItem():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='BuyItem' type='DataReceived'><data><item item_id='{args['item_id']}' total_amount='90' bought_amount='5' reduced_cash='90' reduced_coins='90'></item></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-@app.route("/ConfirmBattleEnded")
-def ConfirmBattleEnded():
-  args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='ConfirmBattleEnded' type='DataReceived'><data><internal_code>1</internal_code></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>PlayNow</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><level>99</level><score>12059</score><cash>4999</cash><coins>1000</coins><time>{args['time']}</time><uid>515998816</uid></root>"
-  return Response(xml, mimetype='text/xml')
-
-if __name__ == '__main__':
-  app.secret_key = 'CPW-today-24-3-25'
-  app.run(host=host, port=port, debug=True)
+if __name__ == "__main__":
+    app.run(host=host, port=port, debug=True)
