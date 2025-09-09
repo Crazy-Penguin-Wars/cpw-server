@@ -13,6 +13,7 @@ from pathlib import Path
 import connectionUtils
 import xml.etree.ElementTree as ET
 from commands import *
+import base64
 
 p = Path(__file__).parents[0]
 
@@ -21,7 +22,12 @@ ASSETS_DIR = os.path.join(p, "assets")
 STYLES_DIR = os.path.join(p, "templates", "styles")
 
 AVAILABLE_COMMANDS = {
-    "GetAccountInformation": handle_GetAccountInformation
+    "GetAccountInformation": handle_GetAccountInformation,
+    "GetTournamentInformation": handle_GetTournamentInformation,
+    "SetFlag": handle_SetFlag,
+    "PlayNow": handle_PlayNow,
+    "ClientTracking": handle_ClientTracking,
+    "ConfirmBattleEnded": handle_ConfirmBattleEnded
 }
 
 host = '0.0.0.0'
@@ -183,7 +189,7 @@ def assetsLoader(path):
 def styles(path):
   return send_from_directory(STYLES_DIR, path)
 
-@app.route("/api/<command>", methods=["GET",])
+@app.route("/api/<command>", methods=["GET"])
 def handle_command(command):
     params = request.args.to_dict()
 
@@ -208,8 +214,112 @@ def handle_command(command):
         xml = handler(params, id, xml, data_db)
     else:
         print(f"Command not handled: {command}")
+        return f"Command not handled: {command}"
+    
+    ET.SubElement(xml, "maintenance").text = "false"
+    ET.SubElement(xml, "responseCode").text = "0"
+
+    connectionUtils.refresh_online_status(id)
 
     return Response(ET.tostring(xml, encoding="utf-8", xml_declaration=True), mimetype="application/xml")
+
+@app.route("/status", methods=["GET"])
+def get_status():
+    return {"estimated_online_player_count": connectionUtils.get_online_players()}
+
+@app.route("/get-player-data", methods=["GET"])
+def get_player_data():
+    params = request.args.to_dict()
+    return connectionUtils.find_key(params.get("key"))
+
+@app.route("/update-rewards", methods=["POST"])
+def update_rewards():
+    params = request.args.to_dict()
+    if not params.get("connectionKey") or params.get("connectionKey") != os.environ["CONNECTION_KEY"]:
+        # Someone is impersonating the battle server
+        print("AMOGUS DETECTED")
+        return "bruh"
+    rewards_base64 = params.get("rewards")
+    rewards_json = base64.urlsafe_b64decode(rewards_base64).decode("utf-8")
+    rewards = json.loads(rewards_json)
+    print(rewards)
+    keys = list(rewards.keys())
+    increments = {}
+    substractions = {}
+
+    for player in keys:
+        query_filter = {"id": player}
+        update_operation = { "$set" : {}, "$inc" : {}}
+        for item in rewards[player]:
+            match item:
+                case "coins" | "cash":
+                    update_operation["$inc"][item] = rewards[player][item]
+                case "experience":
+                    update_operation["$inc"]["score"] = rewards[player][item]
+                case "usedItems":
+                    substractions = rewards[player][item]
+                case "earnedItems":
+                    increments = rewards[player][item]
+
+        # Items (don't ask me what this code does, chatgpt made it lol)
+        changes = {}
+        
+        for k, v in increments.items():
+            changes[k] = changes.get(k, 0) + v
+        
+        for k, v in substractions.items():
+            changes[k] = changes.get(k, 0) - v
+        
+        branches = []
+        for item_id, delta in changes.items():
+            branches.append({
+                "case": {"$eq": ["$$item.item_id", item_id]},
+                "then": {
+                    "item_id": "$$item.item_id",
+                    "amount": {
+                        "$toString": {
+                            "$add": [
+                                {"$toInt": "$$item.amount"},
+                                delta
+                            ]
+                        }
+                    }
+                }
+            })
+        
+        branches.append({"case": True, "then": "$$item"})
+        
+        item_update_operation = [
+            {
+                "$set": {
+                    "items": {
+                        "$filter": {
+                            "input": {
+                                "$map": {
+                                    "input": "$items",
+                                    "as": "item",
+                                    "in": {
+                                        "$switch": {
+                                            "branches": branches
+                                        }
+                                    }
+                                }
+                            },
+                            "as": "mappedItem",
+                            "cond": {"$ne": ["$$mappedItem.amount", "0"]}
+                        }
+                    }
+                }
+            }
+        ]
+
+        data_db.update_one(query_filter,item_update_operation)
+        # End of chatgpt code
+
+        # Update coins and cash as well
+        data_db.update_one(query_filter,update_operation)
+        return ""
+
 
 if __name__ == "__main__":
     app.run(host=host, port=port, debug=True)

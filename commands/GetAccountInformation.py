@@ -48,7 +48,4 @@ def handle_GetAccountInformation(params, id, xml, data_db):
 
     ET.SubElement(data, "ongoing_research", document["ongoing_research"])
 
-    ET.SubElement(xml, "maintenance").text = "false"
-    ET.SubElement(xml, "responseCode").text = "0"
-
     return xml

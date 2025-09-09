@@ -20704,9 +20704,9 @@
     "Default": {
       "ID": "Default",
       "NumberOfPlayers": 2,
-      "MatchTime": 200,
-      "MinMatchTime": 200,
-      "MaxMatchTime": 200,
+      "MatchTime": 240,
+      "MinMatchTime": 180,
+      "MaxMatchTime": 480,
       "TurnTime": 10,
       "MinTurnTime": 10,
       "MaxTurnTime": 10,
