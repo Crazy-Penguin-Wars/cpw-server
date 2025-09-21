@@ -179,6 +179,8 @@ def verify():
 
 @app.route("/play")
 def play():
+  if "id" not in session or "token" not in session:
+      return redirect(url_for("login"))
   return render_template("play.html", ID=session["id"], TOKEN=session["token"])
 
 @app.route("/assets/<path:path>")

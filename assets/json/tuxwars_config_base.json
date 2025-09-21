@@ -189,7 +189,7 @@
         "id": "Pistol"
       },
       "MinLevel": 1,
-      "MaxLevel": "{{bot1_enable}}"
+      "MaxLevel": 99
     },
     "test1": {
       "ID": "test1",
@@ -213,7 +213,7 @@
         "id": "Pistol"
       },
       "MinLevel": 1,
-      "MaxLevel": "{{bot2_enable}}"
+      "MaxLevel": 99
     },
     "test2": {
       "ID": "test2",
@@ -237,7 +237,7 @@
         "id": "Pistol"
       },
       "MinLevel": 1,
-      "MaxLevel": "{{bot3_enable}}"
+      "MaxLevel": 99
     }
   },
   "Practice": {
@@ -249,9 +249,9 @@
     },
     "Default": {
       "ID": "Default",
-      "OpponentAmount": "{{OpponentAmount}}",
-      "TurnDuration": "{{TurnDuration}}",
-      "MatchDuration": "{{MatchDuration}}"
+      "OpponentAmount": 3,
+      "TurnDuration": 20,
+      "MatchDuration": 300
     }
   },
   "PracticeLevel": {
@@ -9414,6 +9414,342 @@
       "Graphics": "#EmoticonGraphic.Trollface",
       "Icon": "#EmoticonIcon.Trollface",
       "Duration": 4000
+    },
+    "Burrito": {
+      "ID": "Burrito",
+      "Name": "BURRITO",
+      "Description": "BURRITODESC",
+      "SortPriority": 18,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Burrito",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "SpicySushi": {
+      "ID": "SpicySushi",
+      "Name": "SPICYSUSHI",
+      "Description": "SPICYSUSHIDESC",
+      "SortPriority": 11,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.SpicySushi",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "WasabiSushi": {
+      "ID": "WasabiSushi",
+      "Name": "WASABISUSHI",
+      "Description": "WASABISUSHIDESC",
+      "SortPriority": 12,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.WasabiSushi",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Shield": {
+      "ID": "Shield",
+      "Name": "SHIELD",
+      "Description": "SHIELDDESC",
+      "SortPriority": 13,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Shield",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Umbrella": {
+      "ID": "Umbrella",
+      "Name": "UMBRELLA",
+      "Description": "UMBRELLADESC",
+      "SortPriority": 14,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Umbrella",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Scroll": {
+      "ID": "Scroll",
+      "Name": "SCROLL",
+      "Description": "SCROLLDESC",
+      "SortPriority": 15,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Scroll",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "PogoStick": {
+      "ID": "PogoStick",
+      "Name": "POGOSTICK",
+      "Description": "POGOSTICKDESC",
+      "SortPriority": 16,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.PogoStick",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Bandage": {
+      "ID": "Bandage",
+      "Name": "BANDAGE",
+      "Description": "BANDAGEDESC",
+      "SortPriority": 17,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Bandage",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "SalmonSushi": {
+      "ID": "SalmonSushi",
+      "Name": "SALMONSUSHI",
+      "Description": "SALMONSUSHIDESC",
+      "SortPriority": 10,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.SalmonSushi",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Kamikaze": {
+      "ID": "Kamikaze",
+      "Name": "KAMIKAZE",
+      "Description": "KAMIKAZEDESC",
+      "SortPriority": 19,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Kamikaze",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Caltrops": {
+      "ID": "Caltrops",
+      "Name": "CALTROPS",
+      "Description": "CALTROPSDESC",
+      "SortPriority": 20,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Caltrops",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Mine": {
+      "ID": "Mine",
+      "Name": "MINE",
+      "Description": "MINEDESC",
+      "SortPriority": 21,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Mine",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "FlameMine": {
+      "ID": "FlameMine",
+      "Name": "FLAMEMINE",
+      "Description": "FLAMEMINEDESC",
+      "SortPriority": 22,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.FlameMine",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "ProteinBar": {
+      "ID": "ProteinBar",
+      "Name": "PROTEINBAR",
+      "Description": "PROTEINBARDESC",
+      "SortPriority": 23,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.ProteinBar",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Mushroom": {
+      "ID": "Mushroom",
+      "Name": "MUSHROOM",
+      "Description": "MUSHROOMDESC",
+      "SortPriority": 24,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Mushroom",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "Confetti": {
+      "ID": "Confetti",
+      "Name": "CONFETTI",
+      "Description": "CONFETTIDESC",
+      "SortPriority": 25,
+      "Type": "Booster",
+      "Category": [
+        "Special",
+        "Practice"
+      ],
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Confetti",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
     }
   },
   "BundleIcon": {
@@ -10287,6 +10623,88 @@
       "ID": "Fireworks",
       "SWF": "flash/weapons/weapon_animations.swf",
       "Export": "fireworks_rocket"
+    }
+  },
+  "BoosterIcon": {
+    "SalmonSushi": {
+      "ID": "SalmonSushi",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "salmonsushi"
+    },
+    "SpicySushi": {
+      "ID": "SpicySushi",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "spicysushi"
+    },
+    "WasabiSushi": {
+      "ID": "WasabiSushi",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "wasabisushi"
+    },
+    "Shield": {
+      "ID": "Shield",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "shield"
+    },
+    "Umbrella": {
+      "ID": "Umbrella",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "umbrella"
+    },
+    "Scroll": {
+      "ID": "Scroll",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "explosionscroll"
+    },
+    "PogoStick": {
+      "ID": "PogoStick",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "pogostick"
+    },
+    "Bandage": {
+      "ID": "Bandage",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "bandage"
+    },
+    "Burrito": {
+      "ID": "Burrito",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "burrito"
+    },
+    "Kamikaze": {
+      "ID": "Kamikaze",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "kamikaze"
+    },
+    "Caltrops": {
+      "ID": "Caltrops",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "caltrops"
+    },
+    "Mine": {
+      "ID": "Mine",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "mine"
+    },
+    "FlameMine": {
+      "ID": "FlameMine",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "flamemine"
+    },
+    "ProteinBar": {
+      "ID": "ProteinBar",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "proteinbar"
+    },
+    "Mushroom": {
+      "ID": "Mushroom",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "mushroom"
+    },
+    "Confetti": {
+      "ID": "Confetti",
+      "SWF": "flash/ui/icons_boosters.swf",
+      "Export": "confetti"
     }
   },
   "Dictionaries": {
@@ -19805,6 +20223,14 @@
     "EMOTES": {
       "ID": "EMOTES",
       "SWF": "flash/ui/emotes.swf"
+    },
+    "PARTICLES": {
+      "ID": "PARTICLES",
+      "SWF": "flash/fx/particles.swf"
+    },
+    "BOOSTERS": {
+      "ID": "BOOSTERS",
+      "SWF": "flash/fx/boosters.swf"
     }
   },
   "BattleShared": {
@@ -19839,6 +20265,10 @@
     "DROPS_ICONS": {
       "ID": "DROPS_ICONS",
       "SWF": "flash/ui/icons_drops.swf"
+    },
+    "BOOSTER_ICONS": {
+      "ID": "BOOSTER_ICONS",
+      "SWF": "flash/ui/icons_boosters.swf"
     },
     "EMOTES": {
       "ID": "EMOTES",
@@ -20999,35 +21429,70 @@
       "PageContent": "String",
       "IconLabel": "Float"
     },
-    "Page1": {
-      "ID": "Page1",
+    "IngameWeaponselection": {
+      "ID": "IngameWeaponselection",
       "Name": "POPUP_CHOOSEWEAPON",
       "PageContent": "Page1",
       "Content": "#Item.BasicNuke",
       "IconLabel": "#EmoticonIcon.Laugh",
-      "DefaultTab": "#Tab.Tab2",
-      "Tab": ["#Tab.Tab1", "#Tab.Tab2"]
+      "DefaultTab": "#Tab.WeaponSelectionTab2",
+      "Tab": [
+        "#Tab.WeaponSelectionTab1",
+        "#Tab.WeaponSelectionTab2"
+      ]
+    },
+    "IngameBoosterselection": {
+      "ID": "IngameBoosterselection",
+      "Name": "POPUP_CHOOSEBOOSTER",
+      "PageContent": "Page1",
+      "Content": "#Item.BasicNuke",
+      "IconLabel": "#EmoticonIcon.Laugh",
+      "DefaultTab": "#Tab.BoosterSelectionTab1",
+      "Tab": [
+        "#Tab.BoosterSelectionTab1"
+      ]
     }
   },
-  "Tab":{
-    "$DATA_TYPE": {
-    },
-    "Tab1":{
-      "ID": "Tab1",
+  "Tab": {
+    "$DATA_TYPE": {},
+    "WeaponSelectionTab1": {
+      "ID": "WeaponSelectionTab1",
       "SlotSize": 8,
-      "BigItems": ["#Item.BasicNuke", "#Item.Pistol", "#Item.Dynamite"],
+      "BigItems": [
+        "#Item.BasicNuke",
+        "#Item.Pistol",
+        "#Item.Dynamite"
+      ],
       "Name": "TAB_ALL",
       "Sorting": "Level",
       "Type": "Weapon"
     },
-    "Tab2":{
-      "ID": "Tab2",
+    "WeaponSelectionTab2": {
+      "ID": "WeaponSelectionTab2",
       "SlotSize": 8,
-      "BigItems": ["#Item.BasicNuke", "#Item.Pistol", "#Item.Dynamite"],
+      "BigItems": [
+        "#Item.BasicNuke",
+        "#Item.Pistol",
+        "#Item.Dynamite"
+      ],
       "Name": "TAB_UNLOCKED",
       "Sorting": "Level",
-      "Categorys": ["IsUnlockedCODE"],
+      "Categorys": [
+        "IsUnlockedCODE"
+      ],
       "Type": "Weapon"
+    },
+    "BoosterSelectionTab1": {
+      "ID": "BoosterSelectionTab1",
+      "SlotSize": 8,
+      "BigItems": [
+        "#Item.BasicNuke",
+        "#Item.Pistol",
+        "#Item.Dynamite"
+      ],
+      "Name": "TAB_ALL",
+      "Sorting": "Rating",
+      "Type": "Booster"
     }
   },
   "Screen": {
@@ -21040,21 +21505,33 @@
     },
     "WeaponSelectionPractice": {
       "ID": "WeaponSelectionPractice",
-      "Page": "#Page.Page1",
+      "Page": "#Page.IngameWeaponselection",
       "IconLabel": "Float",
-      "DefaultPage": "#Page.Page1"
+      "DefaultPage": "#Page.IngameWeaponselection"
     },
     "WeaponSelection": {
       "ID": "WeaponSelection",
-      "Page": "#Page.Page1",
+      "Page": "#Page.IngameWeaponselection",
       "IconLabel": "Float",
-      "DefaultPage": "#Page.Page1"
+      "DefaultPage": "#Page.IngameWeaponselection"
     },
     "WeaponSelectionTutorial": {
       "ID": "WeaponSelectionTutorial",
-      "Page": "#Page.Page1",
+      "Page": "#Page.IngameWeaponselection",
       "IconLabel": "Float",
-      "DefaultPage": "#Page.Page1"
+      "DefaultPage": "#Page.IngameWeaponselection"
+    },
+    "BoosterSelectionTutorial": {
+      "ID": "BoosterSelectionTutorial",
+      "Page": "#Page.IngameBoosterselection",
+      "IconLabel": "Float",
+      "DefaultPage": "#Page.IngameBoosterselection"
+    },
+    "BoosterSelection": {
+      "ID": "BoosterSelection",
+      "Page": "#Page.IngameBoosterselection",
+      "IconLabel": "Float",
+      "DefaultPage": "#Page.IngameBoosterselection"
     }
   },
   "VIP": {
@@ -21066,24 +21543,24 @@
     }
   },
   "Bet": {
-    "1NoBet":{
+    "1NoBet": {
       "ID": "1NoBet",
       "ValueIngame": 0,
       "ValuePremium": 0
     },
-    "2BetCoins":{
+    "2BetCoins": {
       "ID": "2BetCoins",
       "ValueIngame": 100,
       "ValuePremium": 0
     },
-    "3BetPremium":{
+    "3BetPremium": {
       "ID": "3BetPremium",
       "ValueIngame": 0,
       "ValuePremium": 1
     }
   },
   "BettingSettings": {
-    "Default":{
+    "Default": {
       "BettingTime": 10
     }
   },
@@ -21099,6 +21576,18 @@
     "Exp": {
       "SWF": "flash/ui/icons_drops.swf",
       "Export": "drop_exp"
+    }
+  },
+  "GlowFilter": {
+    "Test": {
+      "Color": 11165796,
+      "Alpha": 70,
+      "BlurX": 10,
+      "BlurY": 10,
+      "Strength": 2,
+      "Quality": 2,
+      "Inner": false,
+      "Knockout": false
     }
   }
 }
