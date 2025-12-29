@@ -31,24 +31,15 @@ def get_online_players():
 
     return len(online_players)
 
-def add_key(key, player):
-    active_keys.append({
-        "key": key,
-        "player": player,
-        "expiration_time": time.time() + 60
-    })
+def find_player_data(data_db, id):
+    # Get account from database
+    query_filter = {"id": id}
+    document = data_db.find_one(query_filter, {"level": 1, "name": 1})
 
-def find_key(key):
-    current_time = time.time()
-    for active_key in active_keys:
-        # Also check for inactive keys
-        if current_time >= active_key["expiration_time"]:
-            active_keys.remove(active_key)
+    player = {
+        "id": id,
+        "name": document["name"],
+        "level": int(document["level"])
+    }
 
-        if active_key["key"] == key:
-            player = active_key["player"]
-            active_keys.remove(active_key)
-            return player
-
-    print("Key not found")    
-    return ""
+    return player

@@ -232,7 +232,7 @@ def get_status():
 @app.route("/get-player-data", methods=["GET"])
 def get_player_data():
     params = request.args.to_dict()
-    return connectionUtils.find_key(params.get("key"))
+    return connectionUtils.find_player_data(data_db, params.get("id"))
 
 @app.route("/update-rewards", methods=["POST"])
 def update_rewards():

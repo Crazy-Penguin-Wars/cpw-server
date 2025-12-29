@@ -9,18 +9,7 @@ def handle_PlayNow(params, id, xml, data_db):
     ET.SubElement(data, "host").text = "127.0.0.1"
     ET.SubElement(data, "port").text = "5050"
 
-    key = str(uuid.uuid4())
+    key = "NoKey" # Can't be empty for some reason
 
     ET.SubElement(data, "key").text = key
-
-    # Get account from database
-    query_filter = {"id": id}
-    document = data_db.find_one(query_filter, {"level": 1, "name": 1})
-
-    player = {
-        "id": id,
-        "name": document["name"],
-        "level": int(document["level"])
-    }
-    connectionUtils.add_key(key, player)
     return xml

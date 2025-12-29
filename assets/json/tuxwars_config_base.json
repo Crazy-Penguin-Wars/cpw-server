@@ -315,7 +315,7 @@
     },
     "Default": {
       "id": "Default",
-      "MaxDailySlotMachinePlays": 10
+      "MaxDailySlotMachinePlays": 3
     }
   },
   "Gift": {
@@ -20131,6 +20131,10 @@
     "POPUPS": {
       "ID": "POPUPS",
       "SWF": "flash/ui/popups.swf"
+    },
+    "SLOT_MACHINE": {
+      "ID": "SLOT_MACHINE",
+      "SWF": "flash/ui/slot_machine.swf"
     }
   },
   "StartUpTutorial": {
@@ -21214,7 +21218,7 @@
       "BoosterCooldown": 10,
       "TimeToRespawn": 5,
       "TimeToResume": 5,
-      "TimeToStartRematch": 20,
+      "TimeToStartRematch": 10,
       "ScoreDamager": 1
     }
   },
@@ -21588,6 +21592,18 @@
       "Quality": 2,
       "Inner": false,
       "Knockout": false
+    }
+  },
+  "AfterResultsSalesWinner":
+  {
+    "1": {
+      "ItemId": "BasicNuke"
+    },
+    "2": {
+      "ItemId": "BasicNuke"
+    },
+    "3": {
+      "ItemId": "BasicNuke"
     }
   }
 }

@@ -1031,6 +1031,7 @@
     "MUSHROOM": { "ID": "MUSHROOM", "en":"Poisonous Mushroom"},
     "MUSHROOMDESC": { "ID": "MUSHROOMDESC", "en":"If these go unchecked for too long they will reproduce."},
     "CONFETTI": { "ID": "CONFETTI", "en":"Confetti"},
-    "CONFETTIDESC": { "ID": "CONFETTIDESC", "en":"Celebrate the new year with this colorful party favor."}
+    "CONFETTIDESC": { "ID": "CONFETTIDESC", "en":"Celebrate the new year with this colorful party favor."},
+    "BUTTON_FREE_SPINS": { "ID": "BUTTON_FREE_SPINS", "en":"%U Free Spins"}
   }
 }
