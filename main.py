@@ -27,11 +27,12 @@ AVAILABLE_COMMANDS = {
     "SetFlag": handle_SetFlag,
     "PlayNow": handle_PlayNow,
     "ClientTracking": handle_ClientTracking,
-    "ConfirmBattleEnded": handle_ConfirmBattleEnded
+    "ConfirmBattleEnded": handle_ConfirmBattleEnded,
+    "PlaySlotMachine": handle_PlaySlotMachine
 }
 
 host = '0.0.0.0'
-port = 5055
+port = 8000
 
 app = Flask(__name__)
 app.secret_key = "CPW-secret"
@@ -142,6 +143,14 @@ def register():
                 document["verified"] = True
                 del document["verification_code"]
                 auth_db.insert_one(document)
+
+                # Also insert player data
+                with open(os.path.join(ASSETS_DIR, "json", "default_player.json")) as d:
+                    player_document = json.load(d)
+                    d.close()
+                player_document["id"] = id
+                player_document["name"] = username
+                data_db.insert_one(player_document)
                 flash("Your account has been created, but skipped e-mail verification because of an error. Please contact the developers about this.", "warning")
                 return redirect(url_for("login"))
             auth_db.insert_one(document)
@@ -199,9 +208,9 @@ def handle_command(command):
 
     # Check signature
     given_signature = params.get("sig")
+    if not session or "token" not in session:
+        session["token"] = "local"
     calculated_signature = connectionUtils.generate_signature(params, session["token"])
-    print(given_signature)
-    print(calculated_signature)
     if given_signature != calculated_signature:
         print(session["token"])
         return "Wrong token"
@@ -222,6 +231,8 @@ def handle_command(command):
     ET.SubElement(xml, "responseCode").text = "0"
 
     connectionUtils.refresh_online_status(id)
+
+    print(xml)
 
     return Response(ET.tostring(xml, encoding="utf-8", xml_declaration=True), mimetype="application/xml")
 

@@ -1032,6 +1032,21 @@
     "MUSHROOMDESC": { "ID": "MUSHROOMDESC", "en":"If these go unchecked for too long they will reproduce."},
     "CONFETTI": { "ID": "CONFETTI", "en":"Confetti"},
     "CONFETTIDESC": { "ID": "CONFETTIDESC", "en":"Celebrate the new year with this colorful party favor."},
-    "BUTTON_FREE_SPINS": { "ID": "BUTTON_FREE_SPINS", "en":"%U Free Spins"}
+    "BUTTON_FREE_SPINS": { "ID": "BUTTON_FREE_SPINS", "en":"%U Free Spins"},
+    "SLOTMACHINE_PRESS_SPIN": { "ID": "SLOTMACHINE_PRESS_SPIN", "en":"Spin"},
+    "SLOTMACHINE_INSERT_CASH": { "ID": "SLOTMACHINE_INSERT_CASH", "en":"Spin"},
+    "SLOTMACHINE_WIN": { "ID": "SLOTMACHINE_WIN", "en":"You won!"},
+    "FREE_SPINS": { "ID": "FREE_SPINS", "en":"Free spins"},
+    "BANNER_MORE_CASH": { "ID": "BANNER_MORE_CASH", "en":"Get more cash now!"},
+    "SHOPTAB_FEATURED": { "ID": "SHOPTAB_FEATURED", "en":"Featured"},
+    "SHOPTAB_BUNDLES": { "ID": "SHOPTAB_BUNDLES", "en":"Bundles"},
+    "SHOPTAB_WEAPONS": { "ID": "SHOPTAB_WEAPONS", "en":"Weapons"},
+    "SHOPTAB_BOOSTERS": { "ID": "SHOPTAB_BOOSTERS", "en":"Boosters"},
+    "SHOPTAB_CLOTHES": { "ID": "SHOPTAB_CLOTHES", "en":"Clothing"},
+    "SORTING": { "ID": "SORTING", "en":"Sorting"},
+    "TAB_ROCKETS": { "ID": "TAB_ROCKETS", "en":"Rockets"},
+    "TAB_GRENADES": { "ID": "TAB_GRENADES", "en":"Grenades"},
+    "TAB_GUNS": { "ID": "TAB_GUNS", "en":"Guns"},
+    "TAB_SPECIAL": { "ID": "TAB_SPECIAL", "en":"Special"}
   }
 }

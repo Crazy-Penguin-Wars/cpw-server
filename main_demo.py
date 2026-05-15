@@ -10,7 +10,7 @@ ASSETS_DIR = os.path.join(p, "assets")
 STYLES_DIR = os.path.join(p, "templates", "styles")
 
 host = '0.0.0.0'
-port = 5055
+port = 8000
 
 app = Flask(__name__, template_folder=TEMPLATES_DIR)
 
@@ -124,7 +124,7 @@ def home():
 @app.route("/GetAccountInformation")
 def GetAccountInformation():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:5055/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:8000/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
 
   return Response(xml, mimetype='text/xml')
 

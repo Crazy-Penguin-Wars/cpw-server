@@ -299,23 +299,588 @@
       "ID": "errorpopup_1",
       "Title": "Error",
       "Description": "An (un)expected error has occured. Please refresh the game.",
-      "Picture": "images/errorpopup_1.png"
+      "Picture": "flash/ui/png/popups/errorpopup_1.png"
     },
     "practice": {
       "ID": "practice",
       "Title": "PRACTICE",
       "Description": "PRACTICE_POP_UP_MESSAGE_TEXT",
-      "Picture": "images/practice.png"
+      "Picture": "flash/ui/png/popups/practice.png"
     }
   },
   "SlotMachineConfiguration": {
-    "$DATA_TYPE": {
-      "id": "String",
-      "MaxDailySlotMachinePlays": "Integer"
-    },
     "Default": {
       "id": "Default",
-      "MaxDailySlotMachinePlays": 3
+      "MaxDailySlotMachinePlays": 3,
+      "CentralRowActiveFriends": 0,
+      "BottomRowActiveFriends": 0,
+      "TopRowActiveFriends": 0,
+      "BottomLeftToTopRightActiveFriends": 0,
+      "TopLeftToBottomRightActiveFriends": 0,
+      "PlayPriceInCash": 10
+    }
+  },
+  "SlotWin": {
+    "Win_3_Cash": {
+      "id": "Win_3_Cash",
+      "SortOrder": 1,
+      "WinResult1": "#SlotMachine.SetCash",
+      "WinResult2": "#SlotMachine.SetCash",
+      "WinResult3": "#SlotMachine.SetCash",
+      "RewardCash": 100,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_3_Crafting_Rare": {
+      "id": "Win_3_Crafting_Rare",
+      "SortOrder": 2,
+      "WinResult1": "#SlotMachine.SetCraftRare",
+      "WinResult2": "#SlotMachine.SetCraftRare",
+      "WinResult3": "#SlotMachine.SetCraftRare",
+      "RewardCash": 0,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_2_Crafting_Common": {
+      "id": "Win_2_Crafting_Common",
+      "SortOrder": 3,
+      "WinResult1": "#SlotMachine.SetCraftCommon",
+      "WinResult2": "#SlotMachine.SetCraftCommon",
+      "RewardCash": 0,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_3_Lemon": {
+      "id": "Win_3_Lemon",
+      "SortOrder": 4,
+      "WinResult1": "#SlotMachine.SetLemon",
+      "WinResult2": "#SlotMachine.SetLemon",
+      "WinResult3": "#SlotMachine.SetLemon",
+      "RewardCash": 0,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_3_Ammo": {
+      "id": "Win_3_Ammo",
+      "SortOrder": 5,
+      "WinResult1": "#SlotMachine.SetAmmo",
+      "WinResult2": "#SlotMachine.SetAmmo",
+      "WinResult3": "#SlotMachine.SetAmmo",
+      "RewardCash": 0,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_2_Ammo": {
+      "id": "Win_2_Ammo",
+      "SortOrder": 6,
+      "WinResult1": "#SlotMachine.SetAmmo",
+      "WinResult2": "#SlotMachine.SetAmmo",
+      "RewardCash": 0,
+      "RewardCoin": 0,
+      "RewardXP": 0
+    },
+    "Win_3_Coins": {
+      "id": "Win_3_Coins",
+      "SortOrder": 7,
+      "WinResult1": "#SlotMachine.SetCoin",
+      "WinResult2": "#SlotMachine.SetCoin",
+      "WinResult3": "#SlotMachine.SetCoin",
+      "RewardCoin": 1000,
+      "RewardCash": 0,
+      "RewardXP": 0
+    },
+    "Win_2_Coins": {
+      "id": "Win_2_Coins",
+      "SortOrder": 8,
+      "WinResult1": "#SlotMachine.SetCoin",
+      "WinResult2": "#SlotMachine.SetCoin",
+      "RewardCoin": 100,
+      "RewardCash": 0,
+      "RewardXP": 0
+    },
+    "Win_1_Coin": {
+      "id": "Win_1_Coin",
+      "SortOrder": 9,
+      "WinResult1": "#SlotMachine.SetCoin",
+      "RewardCoin": 10,
+      "RewardCash": 0,
+      "RewardXP": 0
+    },
+    "Win_3_XP": {
+      "id": "Win_3_XP",
+      "SortOrder": 10,
+      "WinResult1": "#SlotMachine.SetXP",
+      "WinResult2": "#SlotMachine.SetXP",
+      "WinResult3": "#SlotMachine.SetXP",
+      "RewardXP": 1000,
+      "RewardCash": 0,
+      "RewardCoin": 0
+    },
+    "Win_2_XP": {
+      "id": "Win_2_XP",
+      "SortOrder": 11,
+      "WinResult1": "#SlotMachine.SetXP",
+      "WinResult2": "#SlotMachine.SetXP",
+      "RewardXP": 100,
+      "RewardCash": 0,
+      "RewardCoin": 0
+    },
+    "Win_1_XP": {
+      "id": "Win_1_XP",
+      "SortOrder": 12,
+      "WinResult1": "#SlotMachine.SetXP",
+      "RewardXP": 10,
+      "RewardCash": 0,
+      "RewardCoin": 0
+    }
+  },
+  "SlotMachineGraphic": {
+    "Lemon": {
+      "ID": "Lemon",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_lemon"
+    },
+    "Ammo": {
+      "ID": "Ammo",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_ammo"
+    },
+    "Xp": {
+      "ID": "Xp",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_xp"
+    },
+    "Coin": {
+      "ID": "Coin",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_coin"
+    },
+    "Bolt": {
+      "ID": "Bolt",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_bolt"
+    },
+    "Cash": {
+      "ID": "Cash",
+      "SWF": "flash/ui/slot_machine.swf",
+      "Export": "icon_cash"
+    }
+  },
+  "SlotMachine": {
+    "Set1": {
+      "id": "Set1",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Lemon",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Lemon",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set2": {
+      "id": "Set2",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Coin",
+      "Reel1": "#SlotMachineGraphic.Ammo",
+      "Reel2": "#SlotMachineGraphic.Cash",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set3": {
+      "id": "Set3",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Ammo",
+      "Reel1": "#SlotMachineGraphic.Lemon",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set4": {
+      "id": "Set4",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Ammo",
+      "Reel1": "#SlotMachineGraphic.Bolt",
+      "Reel2": "#SlotMachineGraphic.Bolt",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set5": {
+      "id": "Set5",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Xp",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set6": {
+      "id": "Set6",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Bolt",
+      "Reel1": "#SlotMachineGraphic.Cash",
+      "Reel2": "#SlotMachineGraphic.Coin",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set7": {
+      "id": "Set7",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Coin",
+      "Reel1": "#SlotMachineGraphic.Xp",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set8": {
+      "id": "Set8",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Cash",
+      "Reel1": "#SlotMachineGraphic.Lemon",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set9": {
+      "id": "Set9",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Xp",
+      "Reel1": "#SlotMachineGraphic.Xp",
+      "Reel2": "#SlotMachineGraphic.Coin",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set10": {
+      "id": "Set10",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Cash",
+      "Reel1": "#SlotMachineGraphic.Ammo",
+      "Reel2": "#SlotMachineGraphic.Bolt",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set11": {
+      "id": "Set11",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Lemon",
+      "Reel1": "#SlotMachineGraphic.Xp",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set12": {
+      "id": "Set12",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Coin",
+      "Reel1": "#SlotMachineGraphic.Xp",
+      "Reel2": "#SlotMachineGraphic.Bolt",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set13": {
+      "id": "Set13",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Lemon",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Lemon",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set14": {
+      "id": "Set14",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Xp",
+      "Reel1": "#SlotMachineGraphic.Bolt",
+      "Reel2": "#SlotMachineGraphic.Ammo",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set15": {
+      "id": "Set15",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Bolt",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Ammo",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set16": {
+      "id": "Set16",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Ammo",
+      "Reel1": "#SlotMachineGraphic.Bolt",
+      "Reel2": "#SlotMachineGraphic.Lemon",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set17": {
+      "id": "Set17",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Xp",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Coin",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set18": {
+      "id": "Set18",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Cash",
+      "Reel1": "#SlotMachineGraphic.Ammo",
+      "Reel2": "#SlotMachineGraphic.Lemon",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set19": {
+      "id": "Set19",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Lemon",
+      "Reel1": "#SlotMachineGraphic.Xp",
+      "Reel2": "#SlotMachineGraphic.Coin",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set20": {
+      "id": "Set20",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Coin",
+      "Reel1": "#SlotMachineGraphic.Ammo",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set21": {
+      "id": "Set21",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Lemon",
+      "Reel1": "#SlotMachineGraphic.Lemon",
+      "Reel2": "#SlotMachineGraphic.Ammo",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set22": {
+      "id": "Set22",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Xp",
+      "Reel1": "#SlotMachineGraphic.Cash",
+      "Reel2": "#SlotMachineGraphic.Xp",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set23": {
+      "id": "Set23",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Bolt",
+      "Reel1": "#SlotMachineGraphic.Coin",
+      "Reel2": "#SlotMachineGraphic.Bolt",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "Set24": {
+      "id": "Set24",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel0": "#SlotMachineGraphic.Cash",
+      "Reel1": "#SlotMachineGraphic.Lemon",
+      "Reel2": "#SlotMachineGraphic.Bolt",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "SetCash": {
+      "id": "SetCash",
+      "SortOrder": 1,
+      "Title": "Cash",
+      "Picture": "ui/slot/cash.png",
+      "Description": "Premium cash symbol",
+      "Reel1": "#SlotMachineGraphic.Lemon",
+      "Reel2": "#SlotMachineGraphic.Lemon",
+      "Reel3": "#SlotMachineGraphic.Lemon",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "SetCraftRare": {
+      "id": "SetCraftRare",
+      "SortOrder": 2,
+      "Title": "Rare Crafting",
+      "Picture": "ui/slot/craft_rare.png",
+      "Description": "Rare crafting materials",
+      "Reel1": "ui/slot/reels/craft_rare_r1.png",
+      "Reel2": "ui/slot/reels/craft_rare_r2.png",
+      "Reel3": "ui/slot/reels/craft_rare_r3.png",
+      "RewardItem": [
+        "#Item.BasicNuke",
+        "#Item.BasicNuke",
+        "#Item.BasicNuke"
+      ],
+      "RewardItemAmount": 1,
+      "PlayPriceInCash": 5
+    },
+    "SetCraftCommon": {
+      "id": "SetCraftCommon",
+      "SortOrder": 3,
+      "Title": "Common Crafting",
+      "Picture": "ui/slot/craft_common.png",
+      "Description": "Common crafting materials",
+      "Reel1": "ui/slot/reels/craft_common_r1.png",
+      "Reel2": "ui/slot/reels/craft_common_r2.png",
+      "Reel3": "ui/slot/reels/craft_common_r3.png",
+      "RewardItem": [
+        "#Item.BasicNuke",
+        "#Item.BasicNuke"
+      ],
+      "RewardItemAmount": 1,
+      "PlayPriceInCash": 5
+    },
+    "SetLemon": {
+      "id": "SetLemon",
+      "SortOrder": 4,
+      "Title": "Lemon Grenade",
+      "Picture": "ui/slot/lemon.png",
+      "Description": "Explosive lemon grenade",
+      "Reel1": "ui/slot/reels/lemon_r1.png",
+      "Reel2": "ui/slot/reels/lemon_r2.png",
+      "Reel3": "ui/slot/reels/lemon_r3.png",
+      "RewardItem": [
+        "#Item.BasicNuke"
+      ],
+      "RewardItemAmount": 3,
+      "PlayPriceInCash": 5
+    },
+    "SetAmmo": {
+      "id": "SetAmmo",
+      "SortOrder": 5,
+      "Title": "Ammo",
+      "Picture": "ui/slot/ammo.png",
+      "Description": "Powerful ammunition",
+      "Reel1": "ui/slot/reels/ammo_r1.png",
+      "Reel2": "ui/slot/reels/ammo_r2.png",
+      "Reel3": "ui/slot/reels/ammo_r3.png",
+      "RewardItem": [
+        "#Item.BasicNuke",
+        "#Item.BasicNuke"
+      ],
+      "RewardItemAmount": 1,
+      "PlayPriceInCash": 5
+    },
+    "SetCoin": {
+      "id": "SetCoin",
+      "SortOrder": 6,
+      "Title": "Coins",
+      "Picture": "ui/slot/coins.png",
+      "Description": "Soft currency coins",
+      "Reel1": "ui/slot/reels/coin_r1.png",
+      "Reel2": "ui/slot/reels/coin_r2.png",
+      "Reel3": "ui/slot/reels/coin_r3.png",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
+    },
+    "SetXP": {
+      "id": "SetXP",
+      "SortOrder": 7,
+      "Title": "XP",
+      "Picture": "ui/slot/xp.png",
+      "Description": "Experience points",
+      "Reel1": "ui/slot/reels/xp_r1.png",
+      "Reel2": "ui/slot/reels/xp_r2.png",
+      "Reel3": "ui/slot/reels/xp_r3.png",
+      "RewardItem": [],
+      "RewardItemAmount": 0,
+      "PlayPriceInCash": 5
     }
   },
   "Gift": {
@@ -8432,7 +8997,8 @@
       "SortPriority": 9,
       "Type": "Weapon",
       "Category": [
-        "Grenades"
+        "Grenades",
+        "ShopFeatured"
       ],
       "RequiredLevel": 16,
       "DropRatio": 1,
@@ -8903,7 +9469,8 @@
       "SortPriority": 27,
       "Type": "Weapon",
       "Category": [
-        "Rockets"
+        "Rockets",
+        "ShopFeatured"
       ],
       "RequiredLevel": 1,
       "DropRatio": 1,
@@ -8985,7 +9552,8 @@
       "Type": "Weapon",
       "Category": [
         "Grenades",
-        "VIP"
+        "VIP",
+        "ShopFeatured"
       ],
       "RequiredLevel": 37,
       "DropRatio": 1,
@@ -9090,7 +9658,8 @@
       "SortPriority": 34,
       "Type": "Weapon",
       "Category": [
-        "Grenades"
+        "Grenades",
+        "ShopFeatured"
       ],
       "RequiredLevel": 25,
       "DropRatio": 1,
@@ -9750,6 +10319,87 @@
       "GlowEffect": "#GlowFilter.Test",
       "DurationType": "Turn",
       "DurationAmount": 1
+    },
+    "Banner": {
+      "ID": "Banner",
+      "Type": "Booster",
+      "BigType": "Banner",
+      "Size": 12,
+      "SortOrder": 1,
+      "Text": "BANNER_MORE_CASH",
+      "Image": "flash/ui/png/daily_news/default.png",
+      "ActionCode": "gotostore",
+      "ActionLabel": "BUTTON_OK",
+      "Item": "#Item.BasicNuke",
+      "Tag": "Sale",
+      "RequiredLevel": 1,
+      "DropRatio": 0,
+      "Icon": "#BoosterIcon.Confetti",
+      "PriceInfo": "#ItemPrice.Punch",
+      "AmountPurchased": 1,
+      "Graphics": "#WeaponGraphic.Punch",
+      "StatBonuses": "#Bonus.SalmonSushi",
+      "GlowEffect": "#GlowFilter.Test",
+      "DurationType": "Turn",
+      "DurationAmount": 1
+    },
+    "FeaturedMegaNuke": {
+      "ID": "FeaturedMegaNuke",
+      "Name": "MEGANUKE",
+      "Description": "MEGANUKEDESC",
+      "SortPriority": 38,
+      "BigType": "Item",
+      "Item": "#Item.MegaNuke",
+      "Size": 4,
+      "Type": "Weapon",
+      "Category": [
+        "Rockets"
+      ],
+      "RequiredLevel": 26,
+      "DropRatio": 1,
+      "Icon": "#WeaponIcon.MegaNuke",
+      "PriceInfo": "#ItemPrice.MegaNuke",
+      "AmountPurchased": 5,
+      "Graphics": "#WeaponGraphic.MegaNuke",
+      "AnimationType": "large_weapon",
+      "Targeting": "PowerBar",
+      "Emitters": [
+        "#Emitter.MegaNuke"
+      ],
+      "AllowRotation": true,
+      "IsInfinite": false,
+      "SimulationDistance": 2000,
+      "SimulationTime": 1000,
+      "SimulationSpawnDistance": 20
+    },
+    "FeaturedDoomsdayDevice": {
+      "ID": "FeaturedDoomsdayDevice",
+      "Name": "DOOMSDAYDEVICE",
+      "Description": "DOOMSDAYDEVICEDESC",
+      "SortPriority": 39,
+      "BigType": "Item",
+      "Item": "#Item.DoomsdayDevice",
+      "Size": 4,
+      "Type": "Weapon",
+      "Category": [
+        "Rockets"
+      ],
+      "RequiredLevel": 40,
+      "DropRatio": 1,
+      "Icon": "#WeaponIcon.DoomsdayDevice",
+      "PriceInfo": "#ItemPrice.DoomsdayDevice",
+      "AmountPurchased": 5,
+      "Graphics": "#WeaponGraphic.DoomsdayDevice",
+      "AnimationType": "large_object",
+      "Targeting": "PowerBar",
+      "Emitters": [
+        "#Emitter.DoomsdayDevice"
+      ],
+      "AllowRotation": true,
+      "IsInfinite": false,
+      "SimulationDistance": 2000,
+      "SimulationTime": 1000,
+      "SimulationSpawnDistance": 20
     }
   },
   "BundleIcon": {
@@ -20135,6 +20785,10 @@
     "SLOT_MACHINE": {
       "ID": "SLOT_MACHINE",
       "SWF": "flash/ui/slot_machine.swf"
+    },
+    "SHOP_NEW": {
+      "ID": "SHOP_NEW",
+      "SWF": "flash/ui/shops_new.swf"
     }
   },
   "StartUpTutorial": {
@@ -21455,6 +22109,71 @@
       "Tab": [
         "#Tab.BoosterSelectionTab1"
       ]
+    },
+    "ShopFeatured": {
+      "ID": "ShopFeatured",
+      "Name": "SHOPTAB_FEATURED",
+      "PageContent": "Content_Supplies",
+      "SlotSize": 12,
+      "IconLabel": "Featured",
+      "DefaultTab": "#Tab.ShopFeaturedTab",
+      "Tab": [
+        "#Tab.ShopFeaturedTab"
+      ]
+    },
+    "ShopBundles": {
+      "ID": "ShopBundles",
+      "Name": "SHOPTAB_BUNDLES",
+      "PageContent": "Content_Supplies",
+      "SlotSize": 12,
+      "IconLabel": "Bundles",
+      "DefaultTab": "#Tab.ShopBundlesTab",
+      "Tab": [
+        "#Tab.ShopBundlesTab"
+      ]
+    },
+    "ShopWeapons": {
+      "ID": "ShopWeapons",
+      "Name": "SHOPTAB_WEAPONS",
+      "PageContent": "Content_Supplies",
+      "SlotSize": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "IconLabel": "Weapons",
+      "DefaultTab": "#Tab.ShopWeaponsTabAll",
+      "Tab": [
+        "#Tab.ShopWeaponsTabAll",
+        "#Tab.ShopWeaponsTabRockets",
+        "#Tab.ShopWeaponsTabGrenades",
+        "#Tab.ShopWeaponsTabGuns",
+        "#Tab.ShopWeaponsTabSpecial"
+      ]
+    },
+    "ShopBoosters": {
+      "ID": "ShopBoosters",
+      "Name": "SHOPTAB_BOOSTERS",
+      "PageContent": "Content_Supplies",
+      "SlotSize": 12,
+      "IconLabel": "Boosters",
+      "DefaultTab": "#Tab.ShopBoostersTab",
+      "Tab": [
+        "#Tab.ShopBoostersTab"
+      ]
+    },
+    "ShopClothes": {
+      "ID": "ShopClothes",
+      "Name": "SHOPTAB_CLOTHES",
+      "PageContent": "Content_Supplies",
+      "SlotSize": 12,
+      "IconLabel": "Clothes",
+      "DefaultTab": "#Tab.ShopClothesTab",
+      "Tab": [
+        "#Tab.ShopClothesTab"
+      ]
     }
   },
   "Tab": {
@@ -21497,6 +22216,129 @@
       "Name": "TAB_ALL",
       "Sorting": "Rating",
       "Type": "Booster"
+    },
+    "ShopFeaturedTab": {
+      "ID": "ShopFeaturedTab",
+      "SlotSize": 12,
+      "BigItems": [
+        "#Item.Banner",
+        "#Item.FeaturedDoomsdayDevice",
+        "#Item.FeaturedMegaNuke"
+      ],
+      "Name": "TAB_ALL",
+      "Sorting": [
+        "None"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "ShopFeatured"
+      ]
+    },
+    "ShopBundlesTab": {
+      "ID": "ShopBundlesTab",
+      "SlotSize": 12,
+      "BigItems": [
+        "#Item.Banner",
+        "#Item.FeaturedDoomsdayDevice",
+        "#Item.FeaturedMegaNuke"
+      ],
+      "Name": "TAB_ALL",
+      "Sorting": [
+        "None"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "ShopFeatured"
+      ]
+    },
+    "ShopWeaponsTabAll": {
+      "ID": "ShopWeaponsTabAll",
+      "SlotSize": 12,
+      "Name": "TAB_ALL",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Weapon"
+    },
+    "ShopWeaponsTabRockets": {
+      "ID": "ShopWeaponsTabRockets",
+      "SlotSize": 12,
+      "Name": "TAB_ROCKETS",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "Rockets"
+      ]
+    },
+    "ShopWeaponsTabGrenades": {
+      "ID": "ShopWeaponsTabGrenades",
+      "SlotSize": 12,
+      "Name": "TAB_GRENADES",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "Grenades"
+      ]
+    },
+    "ShopWeaponsTabGuns": {
+      "ID": "ShopWeaponsTabGuns",
+      "SlotSize": 12,
+      "Name": "TAB_GUNS",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "Guns"
+      ]
+    },
+    "ShopWeaponsTabSpecial": {
+      "ID": "ShopWeaponsTabSpecial",
+      "SlotSize": 12,
+      "Name": "TAB_SPECIAL",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "Special"
+      ]
+    },
+    "ShopBoostersTab": {
+      "ID": "ShopBoostersTab",
+      "SlotSize": 12,
+      "Name": "TAB_ALL",
+      "Sorting": [
+        "Rating",
+        "Price"
+      ],
+      "Type": "Booster"
+    },
+    "ShopClothesTab": {
+      "ID": "ShopClothesTab",
+      "SlotSize": 12,
+      "BigItems": [
+        "#Item.Banner",
+        "#Item.FeaturedDoomsdayDevice",
+        "#Item.FeaturedMegaNuke"
+      ],
+      "Name": "TAB_ALL",
+      "Sorting": [
+        "None"
+      ],
+      "Type": "Weapon",
+      "Categorys": [
+        "ShopFeatured"
+      ]
     }
   },
   "Screen": {
@@ -21524,6 +22366,17 @@
       "Page": "#Page.IngameWeaponselection",
       "IconLabel": "Float",
       "DefaultPage": "#Page.IngameWeaponselection"
+    },
+    "Shop": {
+      "ID": "Shop",
+      "Page": [
+        "#Page.ShopFeatured",
+        "#Page.ShopBundles",
+        "#Page.ShopWeapons",
+        "#Page.ShopBoosters",
+        "#Page.ShopClothes"
+      ],
+      "DefaultPage": "#Page.ShopFeatured"
     },
     "BoosterSelectionTutorial": {
       "ID": "BoosterSelectionTutorial",
@@ -21594,8 +22447,7 @@
       "Knockout": false
     }
   },
-  "AfterResultsSalesWinner":
-  {
+  "AfterResultsSalesWinner": {
     "1": {
       "ItemId": "BasicNuke"
     },

@@ -19,7 +19,7 @@ def handle_GetAccountInformation(params, id, xml, data_db):
     ET.SubElement(data, "level").text = str(document["level"])
     ET.SubElement(data, "score").text = str(document["score"])
     ET.SubElement(data, "name").text = document["name"]
-    ET.SubElement(data, "pic_url").text = "http://127.0.01:5055/styles/michi.jpg"
+    ET.SubElement(data, "pic_url").text = "http://127.0.01:8000/styles/michi.jpg"
     ET.SubElement(data, "slot_machine_used_spins").text = str(document["slot_machine_used_spins"])
 
     items = ET.SubElement(data, "items")
