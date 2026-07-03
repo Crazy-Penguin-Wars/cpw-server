@@ -2,7 +2,9 @@ import json
 import os
 import random
 import re
+import time
 import uuid
+from datetime import datetime, timedelta
 
 from flask import render_template, redirect, send_from_directory, session, url_for, current_app, flash, request, Blueprint
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -39,42 +41,149 @@ def styles(path):
 def home():
     return redirect(url_for("site.login"))
 
+@site_bp.post("/exchange")
+def exchange():
+    exchange_cache = current_app.exchange_cache
+
+    body = request.get_json(force=True)
+    code = body.get("code")
+
+    if not code:
+        print("Missing code in request body")
+        return {"error": "missing_code"}
+
+    document = exchange_cache.find_one_and_delete({
+        "code": code
+    })
+
+    if not document:
+        print("Invalid code")
+        return {"error": "invalid_code"}
+
+    print(document["session_data"])
+    return document["session_data"]
+
+@site_bp.post("/fastlogin")
+def fastlogin():
+    auth_db = current_app.auth_db
+
+    body = request.get_json(force=True)
+
+    user_id = body["userid"]
+    client_password = body["client_password"]
+
+    if not user_id or not client_password:
+        print("fastlogin: issing data")
+        return {"error": "missing_fields"}
+
+    user = auth_db.find_one(
+        {"id": user_id}, {"client_passwords": 1}
+    )
+
+    if not user:
+        print("fastlogin: user not found")
+        return {"error": "invalid_user"}
+
+    valid = False
+
+    for entry in user.get("client_passwords", []):
+        if (check_password_hash(entry["password"], client_password) and entry["expiration"] > time.time()):
+            valid = True
+            break
+
+    if not valid:
+        print("fastlogin: no valid non-expired client password found that matches")
+        return {"error": "invalid_or_expired"}
+
+    token = str(uuid.uuid4())
+
+    update_operation = {"$set": {"token": token}}
+    auth_db.update_one({"id": user_id},update_operation)
+
+    session_data = QUERIES.copy()
+    session_data["userId"] = user_id
+    session_data["token"] = token
+    session_data["rememberme"] = True
+
+    print(session_data)
+
+    return session_data
+
 
 @site_bp.route("/login", methods=["GET", "POST"])
 def login():
     auth_db = current_app.auth_db
+    exchange_cache = current_app.exchange_cache
 
     if request.method == "POST":
         email = request.form.get("email", "").strip()
         password = request.form.get("password", "").strip()
+        rememberme = "remember" in request.form
+
+        checks_passed = True
 
         if not EMAIL_REGEX.match(email):
+            checks_passed = False
             flash("Please enter a valid email address.", "error")
         elif len(password) < 6:
+            checks_passed = False
             flash("Password must be at least 6 characters long.", "error")
         else:
             query_filter = {"email": email}
             document = auth_db.find_one(query_filter, {"password": 1, "id": 1})
-            pwhash = document["password"]
-            id = document["id"]
-            if check_password_hash(pwhash, password):
-                session["id"] = id
-                token = str(uuid.uuid4())
-                session["token"] = token
-                update_operation = { "$set" : { "token" : token}}
-                auth_db.update_one(query_filter, update_operation)
-
-                uses_client = request.headers.get('User-Agent').startswith("TuxWarsDesktop")
-                print(request.headers.get('User-Agent'))
-                if uses_client:
-                    session_data = QUERIES.copy()
-                    session_data["userId"] = id
-                    session_data["token"] = token
-                    return redirect(url_for("site.success", **session_data))
-                return redirect(url_for("site.play"))
-            else:
+            if document is None:
+                checks_passed = False
                 flash("Wrong e-mail or password.", "error")
-            return redirect(url_for("site.home"))
+            else:
+                pwhash = document["password"]
+                id = document["id"]
+                if not check_password_hash(pwhash, password):
+                    checks_passed = False
+                    flash("Wrong e-mail or password.", "error")
+
+        if not checks_passed:
+            return render_template("login.html")
+        
+        # Preparing session
+        session["id"] = id
+        token = str(uuid.uuid4())
+        session["token"] = token
+        update_operation = { "$set" : { "token" : token}}
+
+        uses_client = request.headers.get("User-Agent", "").startswith("TuxWarsDesktop")
+        if uses_client:
+            session_data = QUERIES.copy()
+            session_data["userId"] = id
+            session_data["token"] = token
+            session_data["rememberme"] = rememberme
+
+            code = str(uuid.uuid4())
+
+            if rememberme:
+                client_password = str(uuid.uuid4())
+                client_dict = {"password": client_password, "expiration": round((time.time() + 2592000) * 1000)} # 30 days
+                client_dict_hashed = {"password": generate_password_hash(client_password), "expiration": round((time.time() + 2592000) * 1000)}
+                session_data["client_password"] = client_dict
+                # Store up to 5 client passwords at the same time
+                update_operation["$push"] = {
+                        "client_passwords": {
+                            "$each": [client_dict_hashed],
+                            "$slice": -5
+                        }
+                    }
+                
+            exchange_cache.insert_one({
+                "code": code,
+                "createdAt": datetime.utcnow(),
+                "expiresAt": datetime.utcnow() + timedelta(seconds=30),
+
+                "session_data": session_data
+            })
+            auth_db.update_one(query_filter, update_operation)
+            return redirect(url_for("site.success", code=code))
+        else:
+            auth_db.update_one(query_filter, update_operation)
+            return redirect(url_for("site.play"))
 
     return render_template("login.html")
 

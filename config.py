@@ -16,6 +16,7 @@ PORT = 8000
 DB_NAME = "cpw-dev"
 AUTH_COLLECTION = "cpw-auth"
 DATA_COLLECTION = "cpw-data"
+EXCHANGE_COLLECTION = "exchange-cache"
 
 # Login
 QUERIES = {
@@ -28,5 +29,6 @@ QUERIES = {
     "platform": "FB",
     "env": "dev",
     "version": "1.0.0",
-    "secure": "false"
+    "secure": "false",
+    "rememberme": "false"
 }
