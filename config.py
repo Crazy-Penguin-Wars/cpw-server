@@ -20,8 +20,8 @@ EXCHANGE_COLLECTION = "exchange-cache"
 
 # Login
 QUERIES = {
-    "serverURL": f"http://127.0.0.1:{PORT}/api/",
-    "dataDir": f"http://127.0.0.1:{PORT}/assets/",
+    "serverURL": f"https://cpw-server.onrender.com/api/",
+    "dataDir": f"https://cpw-server.onrender.com/assets/",
     "userId": -1,
     "token": "",
     "platformUserId": None,

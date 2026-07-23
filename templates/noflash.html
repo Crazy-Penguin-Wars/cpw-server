@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crazy Penguin Wars - Download Client</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+    }
+    .form-card {
+      background-color: #1e293b;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .form-card:hover {
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+    }
+    .btn {
+      @apply px-12 py-3 rounded-xl font-bold shadow-lg transition transform inline-block text-center bg-gray-800 text-white;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+      background-color: #1f2937;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+  <div class="form-card w-full max-w-md p-8">
+    <div class="text-center mb-6">
+      <img src="/styles/logo.png" alt="Logo" class="mx-auto mb-4 shadow" style="max-width: 200px;">
+      <h1 class="text-3xl font-bold text-white-400">Download Our Client</h1>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg p-4 mb-6 text-center text-sm text-gray-300 leading-relaxed">
+      You're opening Crazy Penguin Wars from your browser. Modern browsers no longer support the Adobe Flash Player required for this game.
+      <br><br>Please download our client to continue. If you know what you're doing, you also choose to continue anyway.
+    </div>
+
+    <div class="space-y-4">
+      <a href=""
+         onclick="alert('just download from our super secret channel on discord cuz i\'m too lazy to upload a new client every time xd')"
+         class="btn w-full py-3 rounded-lg bg-blue-600 hover:bg-blue-700 transition text-white font-semibold flex items-center justify-center">
+        Download
+      </a>
+      <a href="/play"
+         class="btn w-full py-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition text-white font-semibold flex items-center justify-center">
+        Continue Anyway
+      </a>
+    </div>
+  </div>
+</body>
+</html>

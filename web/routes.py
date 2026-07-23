@@ -23,6 +23,10 @@ def play():
       return redirect(url_for("site.login"))
   return render_template("play.html", ID=session["id"], TOKEN=session["token"])
 
+@site_bp.route("/noflash")
+def noflash():
+    return render_template("noflash.html")
+
 @site_bp.route("/success")
 def success():
     return("you shouldn't see this")
@@ -183,7 +187,7 @@ def login():
             return redirect(url_for("site.success", code=code))
         else:
             auth_db.update_one(query_filter, update_operation)
-            return redirect(url_for("site.play"))
+            return redirect(url_for("site.noflash"))
 
     return render_template("login.html")
 
