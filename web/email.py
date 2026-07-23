@@ -4,6 +4,9 @@ from email.message import EmailMessage
 
 
 def send_verification_email(email, code, name):
+    return False
+
+    # Disable for now
     msg = EmailMessage()
     msg['Subject'] = "Welcome to Crazy Penguin Wars!"
     msg['From'] = "noreply@crazypenguinwars.me"
