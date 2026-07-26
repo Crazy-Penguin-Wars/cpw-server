@@ -155,6 +155,7 @@ def login():
         update_operation = { "$set" : { "token" : token}}
 
         uses_client = request.headers.get("User-Agent", "").startswith("TuxWarsDesktop")
+        uses_client = True
         if uses_client:
             session_data = QUERIES.copy()
             session_data["userId"] = id
@@ -187,7 +188,7 @@ def login():
             return redirect(url_for("site.success", code=code))
         else:
             auth_db.update_one(query_filter, update_operation)
-            return redirect(url_for("site.success"))
+            return redirect(url_for("site.noflash"))
 
     return render_template("login.html")
 
