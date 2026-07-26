@@ -18,10 +18,15 @@ AUTH_COLLECTION = "cpw-auth"
 DATA_COLLECTION = "cpw-data"
 EXCHANGE_COLLECTION = "exchange-cache"
 
+dev_mode = os.environ.get("DEV_MODE", "1") == "1"
+
+SERVER_URL = f"http://127.0.0.1:{PORT}/api/" if dev_mode else "https://cpw-server.onrender.com/api/"
+DATA_URL = f"http://127.0.0.1:{PORT}/assets/" if dev_mode else "https://cpw-server.onrender.com/assets/"
+
 # Login
 QUERIES = {
-    "serverURL": f"https://cpw-server.onrender.com/api/",
-    "dataDir": f"https://cpw-server.onrender.com/assets/",
+    "serverURL": SERVER_URL,
+    "dataDir": DATA_URL,
     "userId": -1,
     "token": "",
     "platformUserId": None,

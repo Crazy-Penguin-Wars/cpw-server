@@ -58,6 +58,6 @@ def get_player_data():
     return connectionUtils.find_player_data(current_app.data_db, params.get("id"))
 
 
-@api_bp.route("/update-rewards", methods=["POST"])
+@api_bp.route("/update-rewards", methods=["POST", "GET"])
 def update_player_rewards():
-    update_rewards()
+    return update_rewards()

@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from flask import render_template, redirect, send_from_directory, session, url_for, current_app, flash, request, Blueprint
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from config import ASSETS_DIR, STYLES_DIR, QUERIES
+from config import ASSETS_DIR, STYLES_DIR, QUERIES, SERVER_URL, DATA_URL
 
 from web.email import send_verification_email
 
@@ -21,7 +21,7 @@ EMAIL_REGEX = re.compile(r"^[\w\.-]+@[\w\.-]+\.\w+$")
 def play():
   if "id" not in session or "token" not in session:
       return redirect(url_for("site.login"))
-  return render_template("play.html", ID=session["id"], TOKEN=session["token"])
+  return render_template("play.html", ID=session["id"], TOKEN=session["token"], SERVER_URL=SERVER_URL, DATA_URL=DATA_URL)
 
 @site_bp.route("/noflash")
 def noflash():
@@ -187,7 +187,7 @@ def login():
             return redirect(url_for("site.success", code=code))
         else:
             auth_db.update_one(query_filter, update_operation)
-            return redirect(url_for("site.noflash"))
+            return redirect(url_for("site.success"))
 
     return render_template("login.html")
 
