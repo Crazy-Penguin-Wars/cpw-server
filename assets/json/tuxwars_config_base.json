@@ -306,6 +306,12 @@
       "Title": "PRACTICE",
       "Description": "PRACTICE_POP_UP_MESSAGE_TEXT",
       "Picture": "flash/ui/png/popups/practice.png"
+    },
+    "error_maintenance_ongoing": {
+      "ID": "error_maintenance_ongoing",
+      "Title": "MAINTENANCE_HEADER",
+      "Description": "MAINTENANCE_DESCRIPTION",
+      "Picture": "flash/ui/png/popups/maintenance.png"
     }
   },
   "SlotMachineConfiguration": {
