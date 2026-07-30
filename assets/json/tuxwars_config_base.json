@@ -22463,5 +22463,93 @@
     "3": {
       "ItemId": "BasicNuke"
     }
+  },
+  "BettingShopItems": {
+    "1": {
+      "Item": "#Item.WasabiSushi"
+    },
+    "2": {
+      "Item": "#Item.WasabiSushi",
+      "comment": "NEEDS TO BE ORBITAL LASER"
+    },
+    "3": {
+      "Item": "#Item.PlasmaCannon"
+    },
+    "4": {
+      "Item": "#Item.ClusterRocket"
+    },
+    "5": {
+      "Item": "#Item.SalmonSushi"
+    },
+    "6": {
+      "Item": "#Item.MegaNuke"
+    },
+    "7": {
+      "Item": "#Item.Scroll"
+    },
+    "8": {
+      "Item": "#Item.ImpactCannon"
+    },
+    "9": {
+      "Item": "#Item.Cat"
+    },
+    "10": {
+      "Item": "#Item.Drill"
+    },
+    "11": {
+      "Item": "#Item.Mushroom"
+    },
+    "12": {
+      "Item": "#Item.VoidGenerator"
+    },
+    "13": {
+      "Item": "#Item.WasabiSushi"
+    },
+    "14": {
+      "Item": "#Item.Umbrella"
+    },
+    "15": {
+      "Item": "#Item.Kamikaze"
+    },
+    "16": {
+      "Item": "#Item.ProteinBar"
+    },
+    "17": {
+      "Item": "#Item.Molotov"
+    },
+    "18": {
+      "Item": "#Item.Caltrops"
+    },
+    "19": {
+      "Item": "#Item.Fireworks"
+    },
+    "20": {
+      "Item": "#Item.Dynamite"
+    },
+    "21": {
+      "Item": "#Item.Shield"
+    },
+    "22": {
+      "Item": "#Item.Railgun"
+    },
+    "23": {
+      "Item": "#Item.FlareGun"
+    },
+    "24": {
+      "Item": "#Item.Burrito"
+    },
+    "25": {
+      "Item": "#Item.Mine"
+    },
+    "26": {
+      "Item": "#Item.FragmentationMissile"
+    },
+    "27": {
+      "Item": "#Item.SniperRifle"
+    },
+    "28": {
+      "Item": "#Item.FlameMine",
+      "comment": "randomly picked cuz couldn't find this one"
+    }
   }
 }
