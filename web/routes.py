@@ -154,6 +154,7 @@ def login():
         update_operation = { "$set" : { "token" : token}}
 
         uses_client = request.headers.get("User-Agent", "").startswith("TuxWarsDesktop")
+        uses_client = True
         if uses_client:
             session_data = QUERIES.copy()
             session_data["userId"] = id
