@@ -12,91 +12,46 @@ def get_token_from_user_id(user_id):
         return document["token"]
     return None
 
-# To-do: rewrite this because it's sketchy AI code
-def update_rewards():
-    data_db = current_app.data_db
-    params = request.args.to_dict()
-    if not params.get("connectionKey") or params.get("connectionKey") != os.environ["CONNECTION_KEY"]:
-        # Someone is impersonating the battle server
-        print("AMOGUS DETECTED")
-        return "bruh"
-    rewards_base64 = params.get("rewards")
-    rewards_json = base64.urlsafe_b64decode(rewards_base64).decode("utf-8")
-    rewards = json.loads(rewards_json)
-    print(rewards)
-    keys = list(rewards.keys())
-    increments = {}
-    substractions = {}
+def update_coins(amount):
+    """Pipeline stage: add amount to the player's coins."""
+    return {"$set": {"coins": {"$add": [{"$ifNull": ["$coins", 0]}, amount]}}}
 
-    for player in keys:
-        query_filter = {"id": player}
-        update_operation = { "$set" : {}, "$inc" : {}}
-        for item in rewards[player]:
-            match item:
-                case "coins" | "cash":
-                    update_operation["$inc"][item] = rewards[player][item]
-                case "experience":
-                    update_operation["$inc"]["score"] = rewards[player][item]
-                case "usedItems":
-                    substractions = rewards[player][item]
-                case "earnedItems":
-                    increments = rewards[player][item]
 
-        # Items (don't ask me what this code does, chatgpt made it lol)
-        changes = {}
-        
-        for k, v in increments.items():
-            changes[k] = changes.get(k, 0) + v
-        
-        for k, v in substractions.items():
-            changes[k] = changes.get(k, 0) - v
-        
-        branches = []
-        for item_id, delta in changes.items():
-            branches.append({
-                "case": {"$eq": ["$$item.item_id", item_id]},
-                "then": {
-                    "item_id": "$$item.item_id",
-                    "amount": {
-                        "$toString": {
-                            "$add": [
-                                {"$toInt": "$$item.amount"},
-                                delta
-                            ]
+def update_cash(amount):
+    """Pipeline stage: add amount to the player's cash."""
+    return {"$set": {"cash": {"$add": [{"$ifNull": ["$cash", 0]}, amount]}}}
+
+def update_experience(amount):
+    """Pipeline stage: add amount to the player's score."""
+    return {"$set": {"score": {"$add": [{"$ifNull": ["$score", 0]}, amount]}}}
+
+def add_items(item_amounts):
+    branches = [
+        {
+            "case": {"$eq": ["$$item.item_id", item_id]},
+            "then": {
+                "item_id": "$$item.item_id",
+                "amount": {"$add": ["$$item.amount", amount]}
+            }
+        }
+        for item_id, amount in item_amounts.items()
+    ]
+    branches.append({"case": True, "then": "$$item"})
+
+    return {
+        "$set": {
+            "items": {
+                "$filter": {
+                    "input": {
+                        "$map": {
+                            "input": "$items",
+                            "as": "item",
+                            "in": {"$switch": {"branches": branches}}
                         }
-                    }
-                }
-            })
-        
-        branches.append({"case": True, "then": "$$item"})
-        
-        item_update_operation = [
-            {
-                "$set": {
-                    "items": {
-                        "$filter": {
-                            "input": {
-                                "$map": {
-                                    "input": "$items",
-                                    "as": "item",
-                                    "in": {
-                                        "$switch": {
-                                            "branches": branches
-                                        }
-                                    }
-                                }
-                            },
-                            "as": "mappedItem",
-                            "cond": {"$ne": ["$$mappedItem.amount", "0"]}
-                        }
-                    }
+                    },
+                    "as": "mappedItem",
+                    "cond": {"$ne": ["$$mappedItem.amount", 0]}
                 }
             }
-        ]
-
-        data_db.update_one(query_filter,item_update_operation)
-        # End of chatgpt code
-
-        # Update coins and cash as well
-        data_db.update_one(query_filter,update_operation)
-        return ""
+        }
+    }

@@ -5,6 +5,7 @@ import re
 import time
 import uuid
 from datetime import datetime, timedelta
+import logging
 
 from flask import render_template, redirect, send_from_directory, session, url_for, current_app, flash, request, Blueprint
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -53,7 +54,7 @@ def exchange():
     code = body.get("code")
 
     if not code:
-        print("Missing code in request body")
+        logging.error("exchange: missing code in request body")
         return {"error": "missing_code"}
 
     document = exchange_cache.find_one_and_delete({
@@ -61,10 +62,9 @@ def exchange():
     })
 
     if not document:
-        print("Invalid code")
+        logging.error("exchange: invalid code")
         return {"error": "invalid_code"}
 
-    print(document["session_data"])
     return document["session_data"]
 
 @site_bp.post("/fastlogin")
@@ -77,7 +77,7 @@ def fastlogin():
     client_password = body["client_password"]
 
     if not user_id or not client_password:
-        print("fastlogin: issing data")
+        logging.error("fastlogin: missing data")
         return {"error": "missing_fields"}
 
     user = auth_db.find_one(
@@ -85,7 +85,7 @@ def fastlogin():
     )
 
     if not user:
-        print("fastlogin: user not found")
+        logging.error("fastlogin: user not found")
         return {"error": "invalid_user"}
 
     valid = False
@@ -96,7 +96,7 @@ def fastlogin():
             break
 
     if not valid:
-        print("fastlogin: no valid non-expired client password found that matches")
+        logging.debug("fastlogin: no valid non-expired client password found that matches")
         return {"error": "invalid_or_expired"}
 
     token = str(uuid.uuid4())
@@ -109,8 +109,7 @@ def fastlogin():
     session_data["token"] = token
     session_data["rememberme"] = True
 
-    print(session_data)
-
+    logging.info(f"Successful fast client login for user {user_id}")
     return session_data
 
 
@@ -184,9 +183,11 @@ def login():
                 "session_data": session_data
             })
             auth_db.update_one(query_filter, update_operation)
+            logging.info(f"Successful client login for user {id}")
             return redirect(url_for("site.success", code=code))
         else:
             auth_db.update_one(query_filter, update_operation)
+            logging.info(f"Successful browser login for user {id}")
             return redirect(url_for("site.noflash"))
 
     return render_template("login.html")
@@ -243,8 +244,10 @@ def register():
                 player_document["name"] = username
                 data_db.insert_one(player_document)
                 flash("Your account has been created, but skipped e-mail verification because of an error. Please contact the developers about this.", "warning")
+                logging.info(f"Account created for user {id} without verification")
                 return redirect(url_for("site.login"))
             auth_db.insert_one(document)
+            logging.info(f"Successfully sent verification e-mail to user {id}")
             return redirect(url_for("site.verify"))
 
     return render_template("register.html")
@@ -275,6 +278,7 @@ def verify():
                 document["id"] = session["verifId"]
                 document["name"] = session["verifName"]
                 data_db.insert_one(document)
+                logging.info(f"Account created for user {session['verifId']}")
                 return redirect(url_for("site.login"))
             else:
                 flash("You entered the wrong code.", "error")

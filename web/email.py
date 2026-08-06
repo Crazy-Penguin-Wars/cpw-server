@@ -25,5 +25,5 @@ def send_verification_email(email, code, name):
             server.send_message(msg)
         return True
     except Exception as e:
-        print(e)
+        logging.error(f"Error occurred while sending verification email to {email}: {e}")
         return False

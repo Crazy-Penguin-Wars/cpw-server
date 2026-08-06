@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+import json
+from types import MappingProxyType
 
 p = Path(__file__).parents[0]
 
@@ -37,3 +39,17 @@ QUERIES = {
     "secure": "false",
     "rememberme": "false"
 }
+
+# Recursively freezes a nested dictionary (so that the config can't be accidentally modified)
+def freeze(obj):
+    if isinstance(obj, dict):
+        return MappingProxyType({k: freeze(v) for k, v in obj.items()})
+    elif isinstance(obj, list):
+        return tuple(freeze(v) for v in obj)
+    elif isinstance(obj, set):
+        return frozenset(freeze(v) for v in obj)
+    return obj
+
+with open(os.path.join(p, "assets", "json", "tuxwars_config_base.json"), "r", encoding="utf-8") as f:
+    CONFIG_BASE = f.read()
+    #CONFIG_BASE = freeze(CONFIG_BASE)
