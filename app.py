@@ -18,7 +18,7 @@ app.secret_key = os.environ.get("FLASK_SECRET_KEY", "CPW-secret")
 
 logging.info("[+] Connecting to MongoDB...")
 uri = os.environ["MONGO_URI"]
-client = pymongo.MongoClient(uri, server_api=pymongo.server_api.ServerApi(version="1"))
+client = pymongo.MongoClient(uri, server_api=pymongo.server_api.ServerApi(version="1"), connect=False)
 app.db = client[DB_NAME]
 app.auth_db = app.db[AUTH_COLLECTION]
 app.exchange_cache = app.db[EXCHANGE_COLLECTION]
@@ -29,4 +29,4 @@ app.register_blueprint(api_bp)
 
 if __name__ == "__main__":
     logging.info(f"[+] Server started on {HOST}:{PORT}...")
-    app.run(host=HOST, port=PORT, debug=True)
+    app.run(host=HOST, port=PORT, debug=os.environ.get("FLASK_DEBUG", "0") == "1")

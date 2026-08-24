@@ -20,10 +20,10 @@ AUTH_COLLECTION = "cpw-auth"
 DATA_COLLECTION = "cpw-data"
 EXCHANGE_COLLECTION = "exchange-cache"
 
-dev_mode = os.environ.get("DEV_MODE", "1") == "1"
+dev_mode = os.environ.get("DEV_MODE", "0") == "1"
 
-SERVER_URL = f"http://127.0.0.1:{PORT}/api/" if dev_mode else "https://cpw-server.onrender.com/api/"
-DATA_URL = f"http://127.0.0.1:{PORT}/assets/" if dev_mode else "https://cpw-server.onrender.com/assets/"
+SERVER_URL = f"http://127.0.0.1:{PORT}/api/" if dev_mode else f"{os.environ.get('ONLINE_URL')}/api/"
+DATA_URL = f"http://127.0.0.1:{PORT}/assets/" if dev_mode else f"{os.environ.get('ONLINE_URL')}/assets/"
 
 # Login
 QUERIES = {
@@ -51,5 +51,5 @@ def freeze(obj):
     return obj
 
 with open(os.path.join(p, "assets", "json", "tuxwars_config_base.json"), "r", encoding="utf-8") as f:
-    CONFIG_BASE = f.read()
-    #CONFIG_BASE = freeze(CONFIG_BASE)
+    CONFIG_BASE = json.loads(f.read())
+    CONFIG_BASE = freeze(CONFIG_BASE)
