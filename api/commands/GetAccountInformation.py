@@ -24,7 +24,11 @@ def handle_GetAccountInformation(params, id, xml, data_db):
 
     items = ET.SubElement(data, "items")
     for item in document["items"]:
-        ET.SubElement(items, "item", item)
+        ET.SubElement(
+            items,
+            "item",
+            attrib={k: str(v) for k, v in item.items()}, # convert all ints to strings
+        )
 
     unlocked_items = ET.SubElement(data, "unlocked_items")
     for item in document["unlocked_items"]:

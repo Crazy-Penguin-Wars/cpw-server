@@ -15,19 +15,19 @@
     "items": [
         {
             "item_id": "BasicNuke",
-            "amount": "5"
+            "amount": 5
         },
         {
             "item_id": "Punch",
-            "amount": "5"
+            "amount": 5
         },
         {
             "item_id": "Pistol",
-            "amount": "5"
+            "amount": 5
         },
         {
             "item_id": "Grenade",
-            "amount": "5"
+            "amount": 5
         }
     ],
     "unlocked_items": [],

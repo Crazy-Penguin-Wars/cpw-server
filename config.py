@@ -2,6 +2,8 @@ import os
 from pathlib import Path
 import json
 from types import MappingProxyType
+import logging
+import re
 
 p = Path(__file__).parents[0]
 
@@ -40,7 +42,36 @@ QUERIES = {
     "rememberme": "false"
 }
 
-# Recursively freezes a nested dictionary (so that the config can't be accidentally modified)
+REF_PATTERN = re.compile(r"^#([A-Za-z0-9_]+)\.([A-Za-z0-9_]+)$")
+
+# Concatenate #Item.Punch type of references
+def concat_references(obj, root, stack=None):
+    if stack is None:
+        stack = set()
+
+    if isinstance(obj, str):
+        m = REF_PATTERN.match(obj)
+        if not m:
+            return obj
+        category, key = m.group(1), m.group(2)
+        ref_id = (category, key)
+        if ref_id in stack:
+            logging.error(f"Circular reference detected: {obj}")
+        try:
+            target = root[category][key]
+        except KeyError:
+            logging.error(f"Broken reference '{obj}': '{category}.{key}' not found in config")
+        return concat_references(target, root, stack | {ref_id})
+
+    if isinstance(obj, dict):
+        return {k: concat_references(v, root, stack) for k, v in obj.items()}
+
+    if isinstance(obj, list):
+        return [concat_references(v, root, stack) for v in obj]
+
+    return obj
+
+
 def freeze(obj):
     if isinstance(obj, dict):
         return MappingProxyType({k: freeze(v) for k, v in obj.items()})
@@ -51,5 +82,7 @@ def freeze(obj):
     return obj
 
 with open(os.path.join(p, "assets", "json", "tuxwars_config_base.json"), "r", encoding="utf-8") as f:
-    CONFIG_BASE = json.loads(f.read())
-    CONFIG_BASE = freeze(CONFIG_BASE)
+    raw = json.loads(f.read())
+
+concatenated = concat_references(raw, raw)
+CONFIG_BASE = freeze(concatenated)
