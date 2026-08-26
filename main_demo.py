@@ -1,7 +1,12 @@
+# A leftover from the demo
+# but now being recycled for the map editor cuz easier to update the browser version than to make new client for every change
+
 import os
 import json
+import secrets
+import time
 from pathlib import Path
-from flask import Flask, render_template, send_from_directory, request, redirect, session, Response
+from flask import Flask, abort, jsonify, render_template, send_from_directory, request, redirect, session, Response, url_for
 
 p = Path(__file__).parents[0]
 
@@ -12,7 +17,73 @@ STYLES_DIR = os.path.join(p, "templates", "styles")
 host = '0.0.0.0'
 port = 8000
 
+TEST_MAPS = {}
+TEST_MAP_TTL_SECONDS = 60 * 60
+MAX_TEST_MAP_BYTES = 5 * 1024 * 1024
+
+TEST_MATCH_SETTINGS = {
+  "OpponentAmount": 3,
+  "TurnDuration": 20,
+  "MatchDuration": 300,
+  "player_name": "You",
+  "OpponentNames": ["Bot 1", "Bot 2", "Bot 3", ""],
+}
+
 app = Flask(__name__, template_folder=TEMPLATES_DIR)
+app.secret_key = 'CPW-today-24-3-25'
+
+
+def cleanup_test_maps():
+  expires_before = time.time() - TEST_MAP_TTL_SECONDS
+  for map_id, record in list(TEST_MAPS.items()):
+    if record["created_at"] < expires_before:
+      del TEST_MAPS[map_id]
+
+
+def get_uploaded_level():
+  uploaded_file = request.files.get("level")
+  if uploaded_file:
+    raw_level = uploaded_file.read(MAX_TEST_MAP_BYTES + 1)
+  elif "level" in request.form:
+    raw_level = request.form["level"]
+  else:
+    raw_level = request.get_data(cache=False, as_text=True)
+
+  if isinstance(raw_level, bytes):
+    if len(raw_level) > MAX_TEST_MAP_BYTES:
+      abort(413, "Level file is larger than 5 MiB.")
+    try:
+      raw_level = raw_level.decode("utf-8")
+    except UnicodeDecodeError:
+      abort(400, "Level file must be UTF-8 JSON.")
+  elif len(raw_level.encode("utf-8")) > MAX_TEST_MAP_BYTES:
+    abort(413, "Level file is larger than 5 MiB.")
+
+  try:
+    level = json.loads(raw_level)
+  except (TypeError, json.JSONDecodeError):
+    abort(400, "Level file must contain valid JSON.")
+
+  if isinstance(level, dict) and set(level) == {"level"}:
+    level = level["level"]
+  if not isinstance(level, dict):
+    abort(400, "Level JSON must be an object.")
+
+  return json.dumps(level, ensure_ascii=False, separators=(",", ":"))
+
+
+def active_test_map():
+  map_id = session.get("test_map_id")
+  record = TEST_MAPS.get(map_id)
+  if record and record["created_at"] >= time.time() - TEST_MAP_TTL_SECONDS:
+    return map_id, record
+  session.pop("test_map_id", None)
+  return None, None
+
+
+def apply_test_match_settings():
+  """Set only this browser's practice session; the normal demo settings remain untouched."""
+  session.update(TEST_MATCH_SETTINGS)
 
 # STATIC PART
 
@@ -24,58 +95,81 @@ def styles(path):
 
 @app.route("/assets/<path:path>")
 def assetsLoader(path):
-	print(path)
-	if path == "json/tuxwars_config_base.json":
-		with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_base.json"), "r") as f:
-			data = json.load(f)
+  print(path)
+  if "OpponentAmount" not in session:
+    session.update(TEST_MATCH_SETTINGS)
+  map_id, test_map = active_test_map()
+  if path == "flash/levels/test-maps/" + str(map_id) + ".lvl" and test_map:
+    return Response(test_map["level"], mimetype="application/json")
+
+  if path == "json/tuxwars_config_base.json":
+    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_base.json"), "r") as f:
+      data = json.load(f)
+
+    if test_map:
+      # PracticeLevels chooses a random row.  Leave exactly one test row so the
+      # uploaded map is always selected while keeping the client in practice mode.
+      data["Practice"]["Default"].update({
+        "OpponentAmount": TEST_MATCH_SETTINGS["OpponentAmount"],
+        "TurnDuration": TEST_MATCH_SETTINGS["TurnDuration"],
+        "MatchDuration": TEST_MATCH_SETTINGS["MatchDuration"],
+      })
+      data["PracticeLevel"] = {
+        "$DATA_TYPE": data["PracticeLevel"]["$DATA_TYPE"],
+        "editor_test_map": {
+          "ID": "editor_test_map",
+          "MinLevel": 0,
+          "LevelFile": "flash/levels/test-maps/" + map_id + ".lvl",
+        },
+      }
     
-		# Replace placeholders
-		replacements = {
-    	    "{{OpponentAmount}}": int(session["OpponentAmount"]),
-    	    "{{MatchDuration}}": int(session["MatchDuration"]),
-    	    "{{TurnDuration}}": int(session["TurnDuration"]),
-    	    "{{bot1_enable}}": 99,
-    	    "{{bot2_enable}}": 99 if int(session["OpponentAmount"]) >=2 else 10,
-    	    "{{bot3_enable}}": 99 if int(session["OpponentAmount"]) >=3 else 10
-    	}
+    # Replace placeholders
+    replacements = {
+          "{{OpponentAmount}}": int(session["OpponentAmount"]),
+          "{{MatchDuration}}": int(session["MatchDuration"]),
+          "{{TurnDuration}}": int(session["TurnDuration"]),
+          "{{bot1_enable}}": 99,
+          "{{bot2_enable}}": 99 if int(session["OpponentAmount"]) >=2 else 10,
+          "{{bot3_enable}}": 99 if int(session["OpponentAmount"]) >=3 else 10
+      }
         
-		def replace_placeholders(obj):
-			if isinstance(obj, dict):
-				return {key: replace_placeholders(value) for key, value in obj.items()}
+    def replace_placeholders(obj):
+      if isinstance(obj, dict):
+        return {key: replace_placeholders(value) for key, value in obj.items()}
                
-			elif isinstance(obj, list):
-				return [replace_placeholders(item) for item in obj]
+      elif isinstance(obj, list):
+        return [replace_placeholders(item) for item in obj]
                
-			elif isinstance(obj, str) and obj in replacements:
-				return replacements[obj]
+      elif isinstance(obj, str) and obj in replacements:
+        return replacements[obj]
                
-			return obj
+      return obj
           
-		data = replace_placeholders(data)
-	
-		return Response(json.dumps(data), 
+    data = replace_placeholders(data)
+  
+    return Response(json.dumps(data), 
                 mimetype="application/json", 
                 headers={"Content-Disposition": 'inline; filename="tuxwars_config_base.json"'})
 
-	elif path == "json/tuxwars_config_en.json":
-		with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_en.json"), "r") as f:
-			content = f.read()
+  elif path == "json/tuxwars_config_en.json":
+    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_en.json"), "r") as f:
+      content = f.read()
     
-		# Replace placeholders
-		replacements = {
+    # Replace placeholders
+    replacements = {
         "{{bot1_name}}": session["OpponentNames"][0],
         "{{bot2_name}}": session["OpponentNames"][1] if int(session["OpponentAmount"]) >=2 else "",
         "{{bot3_name}}": session["OpponentNames"][2] if int(session["OpponentAmount"]) >=3 else ""
-    	}
-	
-		for placeholder, value in replacements.items():
-			content = content.replace(placeholder, value)
-	
-		return Response(content, 
+      }
+  
+    for placeholder, value in replacements.items():
+      content = content.replace(placeholder, value)
+  
+    return Response(content, 
                 mimetype="application/json", 
                 headers={"Content-Disposition": 'inline; filename="tuxwars_config_en.json"'})
-	
-	return send_from_directory(ASSETS_DIR, path)
+  
+  return send_from_directory(ASSETS_DIR, path)
 
 
 @app.route("/crossdomain.xml")
@@ -85,20 +179,40 @@ def crossdomain():
 
 @app.route("/play")
 def play():
-  return render_template("play.html", ID="sgid_04010210b1e184bc")
+  return render_template("play.html", ID="sgid_04010210b1e184bc", TOKEN="test", SERVER_URL="http://127.0.0.1:8000/", DATA_URL="http://127.0.0.1:8000/assets/")
 
-@app.route("/play2")
-def play2():
-  return render_template("play.html", ID="sgid_2")
+
+@app.route("/test-map", methods=["GET", "POST"])
+def test_map():
+  cleanup_test_maps()
+  if request.method == "POST":
+    level = get_uploaded_level()
+    map_id = secrets.token_urlsafe(18)
+    TEST_MAPS[map_id] = {"level": level, "created_at": time.time()}
+    return jsonify({
+      "map_id": map_id,
+      "launch_url": url_for("test_map", map=map_id, _external=True),
+      "expires_in_seconds": TEST_MAP_TTL_SECONDS,
+    }), 201
+
+  map_id = request.args.get("map")
+  if not map_id:
+    return jsonify({"error": "Upload a level with POST, then open the returned launch_url."}), 400
+  if map_id not in TEST_MAPS:
+    abort(404, "This test map does not exist or has expired.")
+
+  session["test_map_id"] = map_id
+  apply_test_match_settings()
+  return redirect("/play")
 
 @app.route("/demo")
 def demo():
-	if "OpponentAmount" in session:
-		match_minutes = int(int(session["MatchDuration"]) / 60)
-		match_seconds = int(session["MatchDuration"]) % 60
-		return render_template("demo.html", match_minutes=match_minutes, match_seconds=match_seconds, turn_time=int(session["TurnDuration"]), map="", botCount=session["OpponentAmount"], bot1_name = session["OpponentNames"][0], bot2_name = session["OpponentNames"][1], bot3_name = session["OpponentNames"][2], bot4_name = session["OpponentNames"][3], player_name=session["player_name"])
-	else:
-		return render_template("demo.html", match_minutes=5, match_seconds=0, turn_time=20, map="", botCount=1, bot1_name="", bot2_name="", bot3_name="", bot4_name="", player_name="")
+  if "OpponentAmount" in session:
+    match_minutes = int(int(session["MatchDuration"]) / 60)
+    match_seconds = int(session["MatchDuration"]) % 60
+    return render_template("demo.html", match_minutes=match_minutes, match_seconds=match_seconds, turn_time=int(session["TurnDuration"]), map="", botCount=session["OpponentAmount"], bot1_name = session["OpponentNames"][0], bot2_name = session["OpponentNames"][1], bot3_name = session["OpponentNames"][2], bot4_name = session["OpponentNames"][3], player_name=session["player_name"])
+  else:
+    return render_template("demo.html", match_minutes=5, match_seconds=0, turn_time=20, map="", botCount=1, bot1_name="", bot2_name="", bot3_name="", bot4_name="", player_name="")
 
 @app.route("/start_game", methods=['POST'])
 def startGame():
@@ -178,5 +292,4 @@ def ConfirmBattleEnded():
   return Response(xml, mimetype='text/xml')
 
 if __name__ == '__main__':
-  app.secret_key = 'CPW-today-24-3-25'
   app.run(host=host, port=port, debug=True)
