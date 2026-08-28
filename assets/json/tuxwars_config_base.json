@@ -17255,6 +17255,10 @@
             "ID": "LEVEL_MUD",
             "SWF": "level_graphics/level_mud_desert.swf"
         },
+        "LEVEL_LAVA": {
+            "ID": "LEVEL_LAVA",
+            "SWF": "level_graphics/level_lava_mountain.swf"
+        },
         "POWER_UP_ICONS": {
             "ID": "POWER_UP_ICONS",
             "SWF": "flash/level_obstacles/level_items.swf"
@@ -17721,7 +17725,7 @@
             "ParticleStreamScaleIPhone": 1.4,
             "ParticleStreamScaleIPad": 1,
             "MessageQueue": false,
-            "WorldUpdateTime": 100,
+            "WorldUpdateTime": 45,
             "RankMultiplier1": 1,
             "RankMultiplier2": 1,
             "RankMultiplier3": 1,
