@@ -17734,8 +17734,8 @@
             "BonusCoinsModifier": 1,
             "DisableWorldSync": false,
             "BoosterCooldown": 10,
-            "TimeToRespawn": 5,
-            "TimeToResume": 5,
+            "TimeToRespawn": 5000,
+            "TimeToResume": 5000,
             "TimeToStartRematch": 10,
             "ScoreDamager": 1
         }
