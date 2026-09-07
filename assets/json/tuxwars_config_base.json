@@ -13846,15 +13846,17 @@
         },
         "Default": {
             "ID": "Default",
-            "Density": 35,
-            "Friction": 1.1,
+            "Density": 75,
+            "Friction": 0.3,
             "Restitution": 0,
             "AllowSleep": true,
             "FixedRotation": true,
             "BodyType": "dynamic",
             "Shape": "Circle",
-            "Radius": 25,
-            "Bullet": true
+            "Radius": 22,
+            "Bullet": false,
+            "GravityScale": 1,
+            "IsSensor": false
         }
     },
     "BattleRewardDropOption": {
@@ -17761,21 +17763,14 @@
         },
         "Default": {
             "ID": "Default",
-            "Gravity": 200,
-            "WalkSpeed": 480,
-            "MaxSpeed": 800,
-            "MinJumpPower": 8000,
-            "MaxJumpPower": 10000,
-            "JumpPower": 12000,
-            "JumpAngle": 45,
+            "Gravity": 500,
+            "WalkSpeed": 2000,
+            "MaxSpeed": 150,
+            "JumpPower": 35000,
+            "JumpAngle": 0.5,
             "FallImpulseThreshold": 300,
             "FallDamageMultiplier": 0,
-            "FallDamageEffectStartValue": 2,
-            "CollisionImpulseThreshold": 20,
-            "CollisionSilenceTime": 100,
-            "PointSpawnDistance": 25,
-            "JumpImpulseVerticalPower": 200,
-            "JumpImpulseVerticalModifier": 5
+            "FallDamageEffectStartValue": 2
         }
     },
     "Page": {
