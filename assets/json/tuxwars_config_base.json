@@ -17764,9 +17764,9 @@
         "Default": {
             "ID": "Default",
             "Gravity": 500,
-            "WalkSpeed": 2000,
-            "MaxSpeed": 150,
-            "JumpPower": 35000,
+            "WalkSpeed": 1500,
+            "MaxSpeed": 180,
+            "JumpPower": 38000,
             "JumpAngle": 0.5,
             "FallImpulseThreshold": 300,
             "FallDamageMultiplier": 0,

@@ -183,6 +183,18 @@
       "theme": "Wood",
       "fixture": "cube_medium",
       "name": "CubeMedium"
+    },
+    {
+      "id": "dynamic_4",
+      "element_type": "DynamicObject",
+      "unbreakable": false,
+      "sleep": false,
+      "angle": 15.0,
+      "x": 643.7161192112244,
+      "y": 312.0808741730321,
+      "theme": "Wood",
+      "fixture": "cube_medium",
+      "name": "CubeMedium"
     }
   ],
   "spawn_points": [
