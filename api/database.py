@@ -109,3 +109,13 @@ def add_items(item_amounts):
         add_existing_items(item_amounts),
         add_missing_items(item_amounts),
     ]
+
+def remove_items(item_amounts):
+    item_amounts = {k: -v for k, v in item_amounts.items() if v != 0}
+    if not item_amounts:
+        return []
+
+    return [
+        add_existing_items(item_amounts),
+        add_missing_items(item_amounts),
+    ]

@@ -17,4 +17,5 @@ def handle_PlayNow(params, id, xml, data_db):
     key = "NoKey" # Can't be empty for some reason
 
     ET.SubElement(data, "key").text = key
+    print(battle_server[0], battle_server[1], id, key)
     return xml

@@ -87,6 +87,7 @@ def update_rewards():
         pipeline = []
 
         for item, value in player_rewards.items():
+            print(value)
             match item:
                 case "coins":
                     pipeline.append(update_coins(value))
@@ -95,9 +96,9 @@ def update_rewards():
                 case "experience":
                     pipeline.append(update_experience(value))
                 case "earnedItems":
-                    pipeline.append(add_items(value))
+                    pipeline.extend(add_items(value))
                 case "usedItems":
-                    pipeline.append(add_items(-value))
+                    pipeline.extend(remove_items(value))
                 case _:
                     logging.warning(f"Unknown reward type: {item}")
 
