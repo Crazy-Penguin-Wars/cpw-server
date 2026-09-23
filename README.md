@@ -11,6 +11,13 @@ To get started with this server, do the following:
 
 At any point you can exit the venv by running `deactivate`, to re-enter again run `python -m venv venv`
 
+## Running
+If you have everything set up from the config, you can run the app with:
+`python app.py`
+
+otherwise you can run a version without mongo using:
+`python main_demo.py`
+
 ## Config
 Copy the `.env.example` and rename it to `.env`, in here you will set all the necessary environment variables.  
 For a development setup, the defaults should work.
