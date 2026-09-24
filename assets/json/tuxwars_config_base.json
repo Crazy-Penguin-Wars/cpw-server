@@ -319,10 +319,10 @@
             "id": "Default",
             "MaxDailySlotMachinePlays": 3,
             "CentralRowActiveFriends": 0,
-            "BottomRowActiveFriends": 0,
-            "TopRowActiveFriends": 0,
-            "BottomLeftToTopRightActiveFriends": 0,
-            "TopLeftToBottomRightActiveFriends": 0,
+            "BottomRowActiveFriends": 5,
+            "TopRowActiveFriends": 10,
+            "BottomLeftToTopRightActiveFriends": 15,
+            "TopLeftToBottomRightActiveFriends": 25,
             "PlayPriceInCash": 10
         }
     },
