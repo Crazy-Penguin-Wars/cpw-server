@@ -11,6 +11,11 @@ def handle_GetAccountInformation(params, id, xml, data_db):
     for flag in document["flags"]:
         ET.SubElement(flags, "flag", {"key": flag, "value": document["flags"][flag]})
 
+    picurl = document["pic_url"]
+
+    if not picurl:
+        picurl = "http://127.0.01:8000/styles/michi.jpg"
+
     ET.SubElement(data, "cash").text = str(document["cash"])
     ET.SubElement(data, "coins").text = str(document["coins"])
     ET.SubElement(data, "dcg_id").text = id
@@ -19,7 +24,7 @@ def handle_GetAccountInformation(params, id, xml, data_db):
     ET.SubElement(data, "level").text = str(document["level"])
     ET.SubElement(data, "score").text = str(document["score"])
     ET.SubElement(data, "name").text = document["name"]
-    ET.SubElement(data, "pic_url").text = "http://127.0.01:8000/styles/michi.jpg"
+    ET.SubElement(data, "pic_url").text = picurl
     ET.SubElement(data, "slot_machine_used_spins").text = str(document["slot_machine_used_spins"])
 
     items = ET.SubElement(data, "items")
