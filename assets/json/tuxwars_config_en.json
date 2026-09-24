@@ -217,7 +217,7 @@
     "FIREWORKSDESC": { "ID":"FIREWORKSDESC", "en":"A short range rocket that creates a series of explosions." },
     "CAT": { "ID":"CAT", "en":"Very Angry Cat" },
     "CATDESC": { "ID":"CATDESC", "en":"Requires precise aim and causes enemies to be knocked around by an enraged feline." },
-    "TOOLTIP_SUPPLIES": { "ID": "TOOLTIP_SUPPLIES", "en":":clueless:"},
+    "TOOLTIP_SUPPLIES": { "ID": "TOOLTIP_SUPPLIES", "en":"Buy weapons and boosters"},
     "POPUP_CHOOSEWEAPON": { "ID": "POPUP_CHOOSEWEAPON", "en":"Select Weapon"},
     "POPUP_CHOOSEBOOSTER": { "ID": "POPUP_CHOOSEBOOSTER", "en":"Select Booster"},
     "TAB_ALL": { "ID": "TAB_ALL", "en":"All"},
@@ -311,6 +311,23 @@
     "PLAYER_1": { "ID": "PLAYER_1", "en":"Player 1"},
     "PLAYER_2": { "ID": "PLAYER_2", "en":"Player 2"},
     "PLAYER_3": { "ID": "PLAYER_3", "en":"Player 3"},
-    "PLAYER_4": { "ID": "PLAYER_4", "en":"Player 4"}
+    "PLAYER_4": { "ID": "PLAYER_4", "en":"Player 4"},
+    "TOOLTIP_CRAFTING": { "ID":"TOOLTIP_CRAFTING", "en":"Craft and research items" },
+    "TOOLTIP_CHARACTER": { "ID":"TOOLTIP_CHARACTER", "en":"Buy equipment, customize c haacter and get medals" },
+    "TOOLTIP_LEADERBOARD": { "ID":"TOOLTIP_LEADERBOARD", "en":"View your stats and compare them with your friends." },
+    "TOOLTIP_ADD_CASH": { "ID":"TOOLTIP_ADD_CASH", "en":"TOOLTIP_ADD_CASH" },
+    "TOOLTIP_ADD_COINS": { "ID":"TOOLTIP_ADD_COINS", "en":"TOOLTIP_ADD_COINS" },
+    "TOOLTIP_XP": { "ID":"TOOLTIP_XP", "en":"TOOLTIP_XP" },
+    "TOOLTIP_FRIENDS": { "ID":"TOOLTIP_FRIENDS", "en":"TOOLTIP_FRIENDS" },
+    "TOOLTIP_HELP": { "ID":"TOOLTIP_HELP", "en":"TOOLTIP_HELP" },
+    "TOOLTIP_NEWS": { "ID":"TOOLTIP_NEWS", "en":"TOOLTIP_NEWS" },
+    "TOOLTIP_SETTINGS": { "ID":"TOOLTIP_SETTINGS", "en":"TOOLTIP_SETTINGS" },
+    "TOOLTIP_SLOT_MACHINE": { "ID":"TOOLTIP_SLOT_MACHINE", "en":"The daily winning machine!" },
+    "TOOLTIP_CUSTOM": { "ID":"TOOLTIP_CUSTOM", "en":"Create custom games with your friends or play practice match against AI" },
+    "TOOLTIP_PLAY": { "ID":"TOOLTIP_PLAY", "en":"Get into a multiplayer match" },
+    "TOOLTIP_TOURNAMENT": { "ID":"TOOLTIP_TOURNAMENT", "en":"Get to the tournament" },
+    "BUTTON_TOURNAMENT": { "ID":"BUTTON_TOURNAMENT", "en":"Tournament" },
+    "TOOLTIP_CLOSE_BUTTON": { "ID":"TOOLTIP_CLOSE_BUTTON", "en":"Close Window" },
+    "TOOLTIP_ADD_FRIEND": { "ID":"TOOLTIP_ADD_FRIEND", "en":"TOOLTIP_ADD_FRIEND" }
   }
 }
