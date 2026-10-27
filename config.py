@@ -84,5 +84,6 @@ def freeze(obj):
 with open(os.path.join(p, "assets", "json", "tuxwars_config_base.json"), "r", encoding="utf-8") as f:
     raw = json.loads(f.read())
 
-concatenated = concat_references(raw, raw)
-CONFIG_BASE = freeze(concatenated)
+#concatenated = concat_references(raw, raw)
+#CONFIG_BASE = freeze(concatenated)
+CONFIG_BASE = raw

@@ -14,13 +14,11 @@
 					<filter_categoryBits>1</filter_categoryBits>
 					<filter_groupIndex>0</filter_groupIndex>
 					<filter_maskBits>65535</filter_maskBits>
-					<fixture_type>POLYGON</fixture_type>
+					<fixture_type>CIRCLE</fixture_type>
 
-					<polygons>
 
-                        <polygon>  25.4515, -7.3116  ,  22.6863, 14.0976  ,  9.8905, 25.2899  ,  -12.2273, 24.3950  ,  -24.9355, 9.9554  ,  -25.1036, -9.3571  ,  -12.1800, -23.7091  ,  10.2922, -23.7493 </polygon>
+                    <circle r="26.370" x="0.250" y="0.000"/>
 
-					</polygons>
 				</fixture>
 
 			</fixtures>
@@ -37,13 +35,11 @@
 					<filter_categoryBits>1</filter_categoryBits>
 					<filter_groupIndex>0</filter_groupIndex>
 					<filter_maskBits>65535</filter_maskBits>
-					<fixture_type>POLYGON</fixture_type>
+					<fixture_type>CIRCLE</fixture_type>
 
-					<polygons>
 
-                        <polygon>  -13.3532, -0.3722  ,  -7.9200, -10.5631  ,  0.3032, -13.3532  ,  8.8201, -10.4163  ,  13.8128, -0.4310  ,  9.4075, 9.2606  ,  0.3032, 13.3722  ,  -9.0360, 9.7599 </polygon>
+                    <circle r="13.288" x="0.250" y="0.000"/>
 
-					</polygons>
 				</fixture>
 
 			</fixtures>
@@ -62,11 +58,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  50.1634, -50.1776  ,  49.7973, 50.0434  ,  -49.7332, 49.9567  ,  -49.7765, -50.1466 </polygon>
+                        <polygon>  49.9134, -50.1776  ,  49.7973, 50.0434  ,  -49.7332, 49.9567  ,  -49.7765, -50.1466 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -85,11 +83,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  25.7654, 25.5350  ,  -25.9147, 25.4817  ,  -26.1034, -25.7739  ,  25.7500, -25.9470 </polygon>
+                        <polygon>  -26.1034, -26.0239  ,  25.7500, -25.9470  ,  25.7654, 25.5350  ,  -25.9147, 25.4817 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -108,11 +108,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
                         <polygon>  -13.0000, 12.7621  ,  -13.0000, -13.0000  ,  12.9632, -13.0000  ,  12.9296, 12.7621 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -131,11 +133,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  26.3721, -25.1920  ,  -24.7904, 24.9450  ,  -24.0627, -24.6408 </polygon>
+                        <polygon>  26.3721, -25.1920  ,  -24.7904, 24.9450  ,  -24.6627, -25.2408 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -154,11 +158,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  13.2886, -12.8374  ,  -12.4295, 11.7458  ,  -12.5187, -13.0000 </polygon>
+                        <polygon>  13.2886, -12.8374  ,  -12.4295, 11.7458  ,  -12.4187, -12.8000 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -177,11 +183,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  95.5198, -26.3931  ,  94.8130, 26.3786  ,  -96.2663, 26.2384  ,  -95.7753, -26.3414 </polygon>
+                        <polygon>  -96.2753, -26.3414  ,  95.5198, -26.3931  ,  95.5630, 26.1286  ,  -96.2663, 26.2384 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -200,11 +208,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
                         <polygon>  -49.0643, 26.4584  ,  -49.0851, -26.4572  ,  50.1279, -26.4430  ,  50.0533, 26.2178 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -223,11 +233,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
                         <polygon>  -96.4467, 14.9296  ,  -96.5747, -14.8786  ,  95.8513, -14.9272  ,  95.6701, 14.7660 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -246,11 +258,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  -198.4899, -14.6650  ,  197.0627, -14.7865  ,  197.8738, 14.7725  ,  -198.6308, 15.0397 </polygon>
+                        <polygon>  -198.7399, -14.6650  ,  197.8127, -14.7865  ,  197.8738, 14.7725  ,  -198.6308, 15.0397 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -269,11 +283,13 @@
 					<filter_maskBits>65535</filter_maskBits>
 					<fixture_type>POLYGON</fixture_type>
 
+
 					<polygons>
 
-                        <polygon>  -72.1275, -14.7877  ,  73.4149, -14.3512  ,  73.3513, 14.8810  ,  -71.9710, 14.9467 </polygon>
+                        <polygon>  -71.8775, -14.7877  ,  73.1649, -14.3512  ,  73.3513, 14.8810  ,  -71.9710, 14.9467 </polygon>
 
 					</polygons>
+
 				</fixture>
 
 			</fixtures>
@@ -285,3 +301,6 @@
 		<ptm_ratio>2</ptm_ratio>
 	</metadata>
 </bodydef>
+
+
+

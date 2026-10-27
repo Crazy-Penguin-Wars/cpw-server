@@ -65,6 +65,8 @@ def exchange():
         logging.error("exchange: invalid code")
         return {"error": "invalid_code"}
 
+
+    print(document["session_data"])
     return document["session_data"]
 
 @site_bp.post("/fastlogin")

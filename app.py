@@ -8,7 +8,7 @@ from api.routes import api_bp
 import logging
 
 format = '%(asctime)s %(message)s'
-logging.basicConfig(level=logging.DEBUG, format=format)
+logging.basicConfig(level=logging.ERROR, format=format)
 logging.info("[+] Starting...")
 logging.info("[+] Loading environment variables...")
 load_dotenv()
