@@ -99,11 +99,15 @@ def assetsLoader(path):
   if "OpponentAmount" not in session:
     session.update(TEST_MATCH_SETTINGS)
   map_id, test_map = active_test_map()
+  if path == "GameLauncher.swf":
+    if "60fps" in session and session["60fps"]:
+      return send_from_directory(ASSETS_DIR, "GameLauncher_60fps.swf", mimetype="application/x-shockwave-flash")
+    return send_from_directory(ASSETS_DIR, path, mimetype="application/x-shockwave-flash")
   if path == "flash/levels/test-maps/" + str(map_id) + ".lvl" and test_map:
     return Response(test_map["level"], mimetype="application/json")
 
   if path == "json/tuxwars_config_base.json":
-    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_base.json"), "r") as f:
+    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_base_demo.json"), "r") as f:
       data = json.load(f)
 
     if test_map:
@@ -127,10 +131,7 @@ def assetsLoader(path):
     replacements = {
           "{{OpponentAmount}}": int(session["OpponentAmount"]),
           "{{MatchDuration}}": int(session["MatchDuration"]),
-          "{{TurnDuration}}": int(session["TurnDuration"]),
-          "{{bot1_enable}}": 99,
-          "{{bot2_enable}}": 99 if int(session["OpponentAmount"]) >=2 else 10,
-          "{{bot3_enable}}": 99 if int(session["OpponentAmount"]) >=3 else 10
+          "{{TurnDuration}}": int(session["TurnDuration"])
       }
         
     def replace_placeholders(obj):
@@ -152,7 +153,7 @@ def assetsLoader(path):
                 headers={"Content-Disposition": 'inline; filename="tuxwars_config_base.json"'})
 
   elif path == "json/tuxwars_config_en.json":
-    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_en.json"), "r") as f:
+    with open(os.path.join(ASSETS_DIR, "json/tuxwars_config_en.json"), "r", encoding="utf-8") as f:
       content = f.read()
     
     # Replace placeholders
@@ -223,8 +224,9 @@ def startGame():
   session["map"] = request.form["map"]
   session["player_name"] = request.form["player_name"]
   session["OpponentNames"] = ["", "", "", ""]
+  session["60fps"] = request.form.get("fps60") == "1"
   for i in range(int(request.form["botCount"])):
-      session["OpponentNames"][i] = request.form["bot" + str(i + 1) + "_name"]
+      session["OpponentNames"][i] = "test"
   return redirect("/play")
 
 @app.route("/")
@@ -238,7 +240,7 @@ def home():
 @app.route("/GetAccountInformation")
 def GetAccountInformation():
   args = request.args
-  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:8000/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='BasicNuke'></worn_item><worn_item item_id='Punch'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
+  xml = f"<root call_id='{args['call_id']}' service='GetAccountInformation' type='DataReceived'><data><gameVersion>0.69.1</gameVersion><flags><flag key='Tutorial' value='false'></flag><flag key='settingMusic' value='true'></flag></flags><cash>4999</cash><coins>1000</coins><dcg_id>{args['uid']}</dcg_id><incoming_gift_requests/><incoming_neighbor_requests/><level>99</level><score>12059</score><name>" + str(session["player_name"]) + "</name><pic_url>http://127.0.0.1:8000/styles/michi.jpg</pic_url><slot_machine_used_spins>0</slot_machine_used_spins><id>515998816</id><platforms_data><platform_data name='" + str(session["player_name"]) + f"' user_id='{args['uid']}'></platform_data></platforms_data><items><item item_id='BasicNuke' amount='100'></item><item item_id='Punch' amount='100'></item></items><unlocked_items><unlocked_item item_id='BasicNuke'></unlocked_item></unlocked_items><worn_items><worn_item item_id='FacialExpression01'></worn_item></worn_items></data><gameVersion>0.69.1</gameVersion><maintenance>false</maintenance><maintenanceMode>false</maintenanceMode><platform>SpilGamesPortals</platform><responseCode>0</responseCode><response_code>0</response_code><service>GetAccountInformation</service><sessionId>454</sessionId><sig>e6400557bbd0842536fecf4076a3371e</sig><time>{args['time']}</time><uid>515998816</uid></root>"
 
   return Response(xml, mimetype='text/xml')
 
