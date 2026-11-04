@@ -700,6 +700,7 @@
   },
   "Experience": {
     "$DATA_TYPE": { "ID":"String", "Score":"Integer", "RewardCoins":"Integer", "RewardCash":"Integer", "RewardItems":"List:String", "RewardItemsAmount":"List:Integer", "RewardDaysOfVip":"Integer" },
+    "0": { "ID":"0", "Score":0, "RewardCoins":0, "RewardCash":0, "RewardItems":["NULL"], "RewardItemsAmount":[0], "RewardDaysOfVip":0 },
     "1": { "ID":"1", "Score":0, "RewardCoins":0, "RewardCash":0, "RewardItems":["NULL"], "RewardItemsAmount":[0], "RewardDaysOfVip":0 },
     "2": { "ID":"2", "Score":54, "RewardCoins":0, "RewardCash":0, "RewardItems":["NULL"], "RewardItemsAmount":[0], "RewardDaysOfVip":0 },
     "3": { "ID":"3", "Score":173, "RewardCoins":0, "RewardCash":1, "RewardItems":["NULL"], "RewardItemsAmount":[0], "RewardDaysOfVip":0 },
